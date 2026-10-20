@@ -1,0 +1,1370 @@
+{
+  "schema_version": "1.0.0",
+  "content_manifest_sha256": "783a2eb2f6096855ca66ad6a1e9c9a9ced1e21a604963c67039eab87582a375e",
+  "reviewed_at": "2026-10-19",
+  "coordinate_system": "WGS84",
+  "nodes": [
+    {
+      "event_id": "EV-4a16b45c628982a3be374302",
+      "record_id": "REC-7e1cc5076af889df323ef552",
+      "revision_id": "REV-e8d50c9f98cc045f5f7c9d63",
+      "feature_id": "Q497341",
+      "label": "咸阳·都城参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "政权中心",
+      "note": "采用现代咸阳市的城市参照坐标，不声称是秦都宫殿或统一仪式的具体位置。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-ff87618cabca27e6d6ba2405",
+          "field": "places",
+          "locator": "可读正文块 44",
+          "block_sha256": "0a50d17e398931f2e1760d3347a39582605839b6594964c0e3d86a241e09eb05"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-6e5eaedad980532ea276ab66",
+      "record_id": "REC-3cd944195430e5d3aa24b6e1",
+      "revision_id": "REV-ffe26741fb14ddeafa7b4aaa",
+      "feature_id": "Q6343",
+      "label": "迦太基·参战方",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "交战政权参照",
+      "note": "战争涉及伊比利亚、意大利和北非；以迦太基这一参战政权的相关城市作参照，不表示全场战争发生于此。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-6dbb559f9c8cfeb7e8978393",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "f90e4115dcda0ac3e9d1599a04022fe2f1f636d77f09e2a1b4866ffec826f9d9"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-e7359a4267b0e8b43d967a1c",
+      "record_id": "REC-c48b68c21e5d2153a8b6d8a4",
+      "revision_id": "REV-c7fcc6157fec8a2dc8e9ab3e",
+      "feature_id": "Q5826",
+      "label": "长安·都城参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "迁都后的政治中心",
+      "note": "以今西安市作长安的城市级参照；本条记录称帝年份，不将城市中心当作前202年称帝现场。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-28eb891c5743a3c9bc39fe4f",
+          "field": "places",
+          "locator": "可读正文块 24",
+          "block_sha256": "068258c7e26d0011769e5bf6704275b4235deeb0134bfa482e2d58471048d09b"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-a381761e64416efe68cc605d",
+      "record_id": "REC-20b96cb22d743ab516ea96a1",
+      "revision_id": "REV-6b7d54e3ce1fb26a8b27b300",
+      "feature_id": "Q220",
+      "label": "罗马",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "政治中心",
+      "note": "采用罗马城市级参照，不细化到具体授衔或仪式建筑。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-26e5754f63a63ce24c64334d",
+          "field": "places",
+          "locator": "可读正文块 2",
+          "block_sha256": "d89b58f9e5a98d7abfdc971882f2f4b19a970787a33377407e314ee430f5aec4"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-8f2bc19252c2180d3e161dae",
+      "record_id": "REC-24cf9f46374eb4a7f82ede70",
+      "revision_id": "REV-b067ef2d29fd624a026168c1",
+      "feature_id": "Q187136",
+      "label": "洛阳·朝廷参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "东汉朝廷与造纸传播参照",
+      "note": "原来源提及东京洛阳的蔡侯纸；仅以今洛阳市作城市级参照，105年朝廷献纸的具体场址未定位。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-8b58e450601b35c265d68670",
+          "field": "places",
+          "locator": "可读正文块 18",
+          "block_sha256": "653822ca9d21cf0565fdafa34dd0b03f2c26a7970c42301fe11fc38c705e795a"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-27e9efac372bd002b23d4e24",
+      "record_id": "REC-ed0061cd9d64efb22f4fc767",
+      "revision_id": "REV-c7f1649e47d69c5b9d1df1b2",
+      "feature_id": "Q99309",
+      "label": "罗马万神殿",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "重建建筑所在区域",
+      "note": "对应现存万神殿建筑位置；重建采用约118—125年的馆方时期，不把单点坐标当作起工或竣工年份的证据。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-a400829b4eba2b531992c7ce",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "c296423bd020703e8af9b052ed4315f937777e6db038fb0ae59df447e96ef04d"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-706cfd9fa87d0f6730d2125b",
+      "record_id": "REC-01065b4fc42a1205a0f08046",
+      "revision_id": "REV-eeff8aafaa967bdb91ddeb93",
+      "feature_id": "Q220",
+      "label": "罗马·帝国参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "法律适用范围的政治中心参照",
+      "note": "敕令适用于罗马帝国广大区域。罗马仅作帝国的宏观地理参照，212或213年的具体颁令地点未定位。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-5e9d2245c2bf2623b8f4cbe7",
+          "field": "places",
+          "locator": "可读正文块 62",
+          "block_sha256": "8a4617884a094be892476da24deb6fd8cbce400a66416a50fc670ade5581cff6"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-b2ee0ffa6e60b12fd7abd490",
+      "record_id": "REC-b7f2d1b0d49c1a4262f6c1ff",
+      "revision_id": "REV-52784f40240fe5c27336906f",
+      "feature_id": "Q5826",
+      "label": "长安·都城参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "隋初政治中心",
+      "note": "581年隋建立时以长安为都；582年营建大兴、583年迁入另有年代。本点用今西安市作城市参照，不定位至新都宫殿。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-fd9e07f3881434f30d434e4f",
+          "field": "places",
+          "locator": "可读正文块 26",
+          "block_sha256": "3e7491b05da3d41e39297be24b1b8ecd627a84802c3e2d68e6695d50d542dfef"
+        },
+        {
+          "kind": "supplemental",
+          "source_id": "sui-capital"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-dbd5fcbee281ccf3c09d7eaa",
+      "record_id": "REC-b7278ee1c40adff476c38cb1",
+      "revision_id": "REV-9f40c5f201669ecce298d0c4",
+      "feature_id": "Q5826",
+      "label": "长安·政权参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "统一过程的政权中心参照",
+      "note": "589年统一南北是跨地区过程；以隋当时的都城范围作城市参照，不表示灭陈战场、建康或统一完成的唯一现场。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-fd9e07f3881434f30d434e4f",
+          "field": "places",
+          "locator": "可读正文块 25",
+          "block_sha256": "ada910b358b914ccfb8f462e337c0086b3d66055852528805631999938b90561"
+        },
+        {
+          "kind": "supplemental",
+          "source_id": "sui-capital"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-a63c4892c50effe105e00a12",
+      "record_id": "REC-7af114855676128c6995d2a2",
+      "revision_id": "REV-885e8516d208ae02ab49a5b6",
+      "feature_id": "Q220",
+      "label": "罗马·任职机构",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "罗马教会任职城市",
+      "note": "对应罗马教会所在城市，不以现代梵蒂冈国家的成立时间或边界倒推590年的就任场址。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-7e0a20696c57bd9de164efad",
+          "field": "places",
+          "locator": "可读正文块 29",
+          "block_sha256": "ae2a3c9af23bd5163076d485367fbe73fe01d82a38e25463777bca5f407e258e"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-0ae2d2fcf93dec64801ff737",
+      "record_id": "REC-ff1460c9a7ac3f368c41ac87",
+      "revision_id": "REV-d7e79e304d35be1848e86041",
+      "feature_id": "Q5826",
+      "label": "长安·都城参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "唐代政治中心",
+      "note": "以今西安市作唐都长安的城市级参照，不声称是618年建国仪式的具体宫殿。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-b92daa045b6535918d549f95",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "ef37cb50e1be944c086de1e2ed0780af919c313a69ed527c63a57dfc3f67b846"
+        },
+        {
+          "kind": "supplemental",
+          "source_id": "tang-capital"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-e199179aab12ca19687077fb",
+      "record_id": "REC-1c2ec3cbfaa269641ca47b14",
+      "revision_id": "REV-08a94e639dcfe78b878bacd5",
+      "feature_id": "Q956",
+      "label": "范阳·今北京",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "起兵地区参照",
+      "note": "755年安禄山在范阳起兵；以今北京城市作粗粒度参照，不定位古范阳城内场址，也不表示755—763年的所有战区。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-b92daa045b6535918d549f95",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "ef37cb50e1be944c086de1e2ed0780af919c313a69ed527c63a57dfc3f67b846"
+        },
+        {
+          "kind": "supplemental",
+          "source_id": "fanyang"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-040f998a16887f9371576712",
+      "record_id": "REC-9ae4d16c1e5107f18032e2b5",
+      "revision_id": "REV-c99409895bd31a32d4b70ffc",
+      "feature_id": "Q208471",
+      "label": "开封·都城参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "北宋都城",
+      "note": "城市级都城参照，不定位陈桥兵变或受禅仪式的具体场址。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-795b1e9dd95e8907cc78ff8e",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "ecc23b19cee2ca949838d609adb70b716189f0366349cc0db8f58c2a1391d28d"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-ef89a49d48a06c58880874eb",
+      "record_id": "REC-89e1ac1af4bd10c8a6a75dfa",
+      "revision_id": "REV-8e447395b9a53bff21050ada",
+      "feature_id": "Q208471",
+      "label": "汴京·画面区域",
+      "kind": "depicted_area",
+      "precision": "city",
+      "role": "作品描绘区域",
+      "note": "今开封作为汴京与汴河城市生活的区域参照；不是作品现藏地，也不是整幅画对应的实测地界或确定创作地点。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-55d890b46ca2858c52a94320",
+          "field": "places",
+          "locator": "可读正文块 70",
+          "block_sha256": "62405e65c12550094bf8434cc5c4f3a56da13ffaf64310acb53b880fb55b6d72"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-a8f476540fb11ffa01e36f46",
+      "record_id": "REC-2e38f7d6dec3a4dbb2b1305f",
+      "revision_id": "REV-7b7970065b67d36653972f68",
+      "feature_id": "Q1483542",
+      "label": "兰尼米德",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "文书确认的草地区域",
+      "note": "采用英格兰Runnymede草地参照，未定位至当年加盖王玺的精确位置；已排除同名美国城镇和同名行政区。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-f11c5b1b09301cedeb002610",
+          "field": "places",
+          "locator": "可读正文块 17",
+          "block_sha256": "8062c0b2f520628d5df9003a674e4763db68dfc78982ce9da852bb4d31b9d398"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-6cbbc21aef20f9354c00397e",
+      "record_id": "REC-831ded0e79ca46a0fc3bcbcd",
+      "revision_id": "REV-88e4f8cc5a1b0b27f0488acc",
+      "feature_id": "Q956",
+      "label": "北京·统治中心",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "元代政治中心参照",
+      "note": "采用今北京城市参照。1271年定国号与1272年大都命名不同，不据此将建国日期改为1272年。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-803b93ead79a63d139b9861e",
+          "field": "places",
+          "locator": "可读正文块 9",
+          "block_sha256": "460a76d76fbec545e2972104daacf8020cd2c37bae8559a34934cb6c558e268f"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-3558a448fa43f8ea65a22b25",
+      "record_id": "REC-998f87340679fcbd219735c5",
+      "revision_id": "REV-1a4203a852cd4de6fd75e659",
+      "feature_id": "Q16666",
+      "label": "南京·建国中心",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "建国中心城市",
+      "note": "采用南京城市参照，不将现代市中心当作1368年的具体建国仪式地点。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-6b8ca335c35d7f0d31954c38",
+          "field": "places",
+          "locator": "可读正文块 12",
+          "block_sha256": "5c6c64563b84ad3c4e8d91e8ade681c91b321450c1c402e2df70bf88e97c861a"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-0f260dbb0855f985f9e5a5c1",
+      "record_id": "REC-62ec4a4098c9403d2abe7afb",
+      "revision_id": "REV-14ba133ef918f8b030fb314a",
+      "feature_id": "Q6654051",
+      "label": "浏河·出海参照",
+      "kind": "journey_reference",
+      "precision": "town",
+      "role": "首航出发地区",
+      "note": "来源记载太仓刘家港出发，经福建驶向东南亚与印度洋；采用今太仓浏河镇的镇级参照，不声称为原码头精确位置或完整航线。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-b8165b2bc47532bcb767e7c2",
+          "field": "places",
+          "locator": "可读正文块 31",
+          "block_sha256": "5c423ce9c22a1c17b1f8124d8ebb1bcbddd1cbaaac5e08ac937c169f60bc38bd"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-f51be579c4f0d4b1b444d533",
+      "record_id": "REC-2bee0d05500cc3dbd287dadb",
+      "revision_id": "REV-f6e9b3f9956ee991d4bf371b",
+      "feature_id": "Q1247",
+      "label": "加勒比海·航域",
+      "kind": "journey_reference",
+      "precision": "region",
+      "role": "航行所及区域",
+      "note": "采用加勒比海区域参照，不确定具体首次登陆岛屿，也不将海域代表坐标当作1492年的登陆点或完整航线。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-6c21d0aa435728e878d4d0d0",
+          "field": "places",
+          "locator": "可读正文块 19",
+          "block_sha256": "7cfca02c7b93b6b2d06224cf5a3dcaa78bee2580a1ca94cc0ae4d37b06ca521e"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-e54cf6754f1e6c97c9e8a112",
+      "record_id": "REC-5e65bafd3c92b6d8ef9d961c",
+      "revision_id": "REV-ce471578b9b03744f40c1d33",
+      "feature_id": "Q19675",
+      "label": "卢浮宫·现藏地",
+      "kind": "collection_reference",
+      "precision": "site_area",
+      "role": "作品现藏地",
+      "note": "这是作品现藏机构的现代坐标，不表示1503—1519年的创作地点、画中场景或创作持续发生于此。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-b3fa88028267487dd8d238f0",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "27162202d49261b04084be82010458cc481fd6484776380a06fc374888801446"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-fec061f4f798108456ab3e62",
+      "record_id": "REC-ace4eb9afaf0b9b53f6fd897",
+      "revision_id": "REV-f7eebc67e5ebd17a423406d5",
+      "feature_id": "Q6837",
+      "label": "维滕贝格",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "路德活动中心",
+      "note": "采用维滕贝格城市参照，不把长期、多中心的宗教改革压成一座教堂门口的精确坐标。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-5e919103197b88838284344e",
+          "field": "places",
+          "locator": "可读正文块 26",
+          "block_sha256": "2f5cb6604bd6912d0644673949ed4a846d86b1669def56bc72efb70dfbf7144d"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-afd97fc852fb7d8be098d887",
+      "record_id": "REC-fc8dc5862ecb4cc4ae8f2f11",
+      "revision_id": "REV-2cabd31029407386352f493f",
+      "feature_id": "Q390028",
+      "label": "费城·独立厅",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "宣言通过的建筑区域",
+      "note": "对应1776年7月4日宣言通过的独立厅建筑；签名分批发生，不把文书通过与后续誊本签名合为同一时刻。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-e1cf47e0e0249b15dfe64b39",
+          "field": "places",
+          "locator": "可读正文块 17",
+          "block_sha256": "cf8aaa9234153ba3a0baebd0087e36a881e8ce093dad83ba169cb07876c2f6d7"
+        },
+        {
+          "kind": "supplemental",
+          "source_id": "independence-hall"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-bfa6a7b92c790d5b4a4d9e4e",
+      "record_id": "REC-18e5414bf5cd8fbb048ca7d0",
+      "revision_id": "REV-9b58237f24b767f883887f57",
+      "feature_id": "Q390028",
+      "label": "费城·独立厅",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "制宪会议与签署建筑区域",
+      "note": "对应1787年宪法会议与签署所在建筑区域；不把签署、各州批准和新政府运行合为同一事件。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-b5c516a6bd37d26b48a78515",
+          "field": "places",
+          "locator": "可读正文块 17",
+          "block_sha256": "82ec8bff8e8f7a6635aef519d27ea43e7467989e3c17dd32290e1a5d61115dc3"
+        },
+        {
+          "kind": "supplemental",
+          "source_id": "independence-hall"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-35747a60e0e1f8152aef4648",
+      "record_id": "REC-64f990b283cccc516f78a9ba",
+      "revision_id": "REV-d1bf92242d553be5f541b476",
+      "feature_id": "Q1741",
+      "label": "维也纳",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "首演城市",
+      "note": "采用来源确认的首演城市坐标，不细化到原剧院的舞台或现代重建建筑。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-680c4aa7667cb6d526521553",
+          "field": "places",
+          "locator": "可读正文块 89",
+          "block_sha256": "90f9da3af2bc443fc540603d9c17eae8702db4d8fc8aab89f4d8906c539c51f2"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-f0170526d476380bc3901512",
+      "record_id": "REC-e371921f7d2f1b39953640ff",
+      "revision_id": "REV-6ea65cc667fedb7fbdccb793",
+      "feature_id": "Q11174401",
+      "label": "虎门·销烟池片区",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "相关遗址与馆区参照",
+      "note": "采用鸦片战争博物馆片区的地理参照，依据销烟池保护项目位置与国博文物说明；不是1839年海滩边界或一号销烟池的测绘坐标。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-2387483b07c794c14ddfdb85",
+          "field": "places",
+          "locator": "可读正文块 22",
+          "block_sha256": "057ad4085e28e5e8572da54f061cfafd09023b711fbf007ac81b8ca88fb1f6f7"
+        },
+        {
+          "kind": "supplemental",
+          "source_id": "humen-site"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-bfe5cac27899e8e7c711563e",
+      "record_id": "REC-7c48430e3c638fa32ee37ea1",
+      "revision_id": "REV-783b51b5cd41929448b20aca",
+      "feature_id": "Q90",
+      "label": "巴黎·学会参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "公开介绍的机构所在城市",
+      "note": "法国科学院与美术学院联席会议的城市级参照，不用市中心坐标假装具体会场。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-d56592c8f02cef2604127699",
+          "field": "places",
+          "locator": "可读正文块 3",
+          "block_sha256": "181a3cf63b8a57fd6286a639ab5502d27649cee9a8bf77ad357587b5243bfa93"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-16330d70755fd6e59ad8857c",
+      "record_id": "REC-a8fe7156b8555da0acfa2dbf",
+      "revision_id": "REV-a3d2b44223a0530bd0d421ae",
+      "feature_id": "Q16666",
+      "label": "南京·议约参照",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "战争结束时的议约城市",
+      "note": "战争发生于中国沿海等多地；南京仅对应1842年的议约与签署背景，不表示1840—1842年整个战场。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-71760908b8ca54251197d00c",
+          "field": "places",
+          "locator": "可读正文块 21",
+          "block_sha256": "74c6809c84b5aee8e77ae7a01eca096a54945d1072435cf760bec1a133b0c446"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-ee13c367e6b54eb37ca5840c",
+      "record_id": "REC-3c6bbad3d74bc4b408455c94",
+      "revision_id": "REV-e09811da4be5c71e1a0a5cb5",
+      "feature_id": "Q145",
+      "label": "英国·发行范围",
+      "kind": "region_reference",
+      "precision": "country",
+      "role": "邮票启用范围",
+      "note": "采用现代英国的国家地理代表点，仅标识全国启用范围；不是伦敦发行现场，也不复原1840年的国界。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-ba511f7f997764a867498dcd",
+          "field": "places",
+          "locator": "可读正文块 258",
+          "block_sha256": "7f80de9f7823820c3aab6a43d0e24391f6656466f12812883a791ee2a4f78cfe"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-805dded5f75c78d5a52408ba",
+      "record_id": "REC-c62039a28739471d49dd6880",
+      "revision_id": "REV-2b39e3b9faa8560be3eb6fd6",
+      "feature_id": "Q30",
+      "label": "美国·战争范围",
+      "kind": "region_reference",
+      "precision": "country",
+      "role": "多地战争范围",
+      "note": "采用现代美国的国家地理代表点，仅表示战争所涉国家；不是首战、某个战场或1861—1865年交战边界。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-8b1c3622ca7addc970be4049",
+          "field": "places",
+          "locator": "可读正文块 2",
+          "block_sha256": "3a8bed1b4de7114660c9d72184b98980e0eb0d161afb5d3ef412e81e45361f70"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-aba6e3fb515ef9aaf8815324",
+      "record_id": "REC-b27bf242a58bcd42c21723da",
+      "revision_id": "REV-51a1083c09bc9304b133fb33",
+      "feature_id": "Q2038747",
+      "label": "基尔代维尔山",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "首飞相关历史公园区域",
+      "note": "采用莱特兄弟国家纪念地的区域坐标；公园包括滑翔试验区、首飞标志和后建纪念碑，不把纪念碑位置精确等同于1903年首次离地点。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-47dcd1bfeda47e000d5a2aa5",
+          "field": "places",
+          "locator": "可读正文块 28",
+          "block_sha256": "c7d73a8cafb63369a16209a1ee3b99c256490fdde0f5a2d45f351c2a5a6fed19"
+        },
+        {
+          "kind": "supplemental",
+          "source_id": "wright-park"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-d23b0283849e2db1deefc926",
+      "record_id": "REC-748740c30efba554d7b3b24e",
+      "revision_id": "REV-be3333531013baa2f288f31b",
+      "feature_id": "Q46",
+      "label": "欧洲·主要战区",
+      "kind": "region_reference",
+      "precision": "region",
+      "role": "主要起战区域参照",
+      "note": "欧洲是本来源记录的主要起战地区；大陆代表坐标不是战场、宣战现场或战争全部地理范围。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-dfc53d10d1d7061a551e36c1",
+          "field": "places",
+          "locator": "可读正文块 76",
+          "block_sha256": "cf095dfea460e5ea40d68263904a74e348c76ce0f67d3a1633249c17abdd1508"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-cc3ab5938f6c60f15c6f0072",
+      "record_id": "REC-7230a14b530f023b5cdca0c9",
+      "revision_id": "REV-01c192c72b442dc0e0d048d6",
+      "feature_id": "Q164055",
+      "label": "天安门前·活动区",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "北京活动区域",
+      "note": "采用今天天安门广场区域坐标，指向史料所述天安门前及相关街区；不表示1919年广场的边界或后续全国运动范围。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-e5da28b24456fe95950203f3",
+          "field": "places",
+          "locator": "可读正文块 21",
+          "block_sha256": "1b788ce033b7f760afc7ab461eee94905bc9a92a9b39eb3b47fa7951896d1d8f"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-ba79e18995e87ae58b71a09a",
+      "record_id": "REC-7e260e0a979fea1adfd9f769",
+      "revision_id": "REV-b2a55e9b0afac50fca611416",
+      "feature_id": "Q36",
+      "label": "波兰·战区参照",
+      "kind": "region_reference",
+      "precision": "country",
+      "role": "欧洲起战区域参照",
+      "note": "采用现代波兰国家代表点，对应本来源的欧洲战场叙述；不是入侵起点、单一战场或战争全部范围，1939年起点仍为原记录的欧洲口径。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-6506e540d418fabfd4f55051",
+          "field": "places",
+          "locator": "可读正文块 79",
+          "block_sha256": "86bb5ad6c4831303e9b5dc46a5c53a0dd2899364dd89fdbcd0b63fe4af665b0f"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-2c0c9f3cc8b43bd883df500a",
+      "record_id": "REC-edf39dbc80e947ab7b8b6462",
+      "revision_id": "REV-4c113518b55eba5350b60bf8",
+      "feature_id": "Q62",
+      "label": "旧金山·宪章会",
+      "kind": "city_reference",
+      "precision": "city",
+      "role": "相关宪章会议城市",
+      "note": "1945年旧金山会议起草、签署联合国宪章；10月24日正式成立依宪章生效，不声称正式成立仪式在此举行。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-11cf84709f0a4c17541c46b4",
+          "field": "places",
+          "locator": "可读正文块 52",
+          "block_sha256": "b3276cb682d7779335a089821d2026c3046936ba1ada54caf16085bde476ca1c"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-296ca6e783edf86cbc98258e",
+      "record_id": "REC-170c9afe4d80d2c641d13573",
+      "revision_id": "REV-d42136161f95ec741c72395b",
+      "feature_id": "Q164055",
+      "label": "北京·天安门广场",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "成立典礼区域",
+      "note": "对应成立典礼所在的天安门广场区域，不细化到城楼讲话点或现代广场的完整边界。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-58ad18cc6fb7a283e02dcc3a",
+          "field": "places",
+          "locator": "可读正文块 27",
+          "block_sha256": "6a2839278235c707e992f75300e58096aba67ec2b47c5eca831fb55134e2b2f4"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-6f0d06d46348a1f2c4d4c2a5",
+      "record_id": "REC-db29594bce9182c8c3434003",
+      "revision_id": "REV-44c251e4cd1d54c15cf2bddd",
+      "feature_id": "Q177477",
+      "label": "拜科努尔发射场",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "卫星发射设施区域",
+      "note": "采用拜科努尔发射场整体设施的参照坐标，不声称为1957年具体发射台的测绘位置；当时属苏联哈萨克地区。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-b39d92b1c8e9740ec957bf65",
+          "field": "places",
+          "locator": "可读正文块 291",
+          "block_sha256": "dfbebc7db81c74f1ecac40a9ba5281824fd349954b948bfd85e81778f6ffe39b"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-8d0de73aa3d72419f6580a80",
+      "record_id": "REC-f6d18f2a9921da032d22e359",
+      "revision_id": "REV-929121a6938cf503fc4da55e",
+      "feature_id": "Q5112041",
+      "label": "休斯敦·地面指挥",
+      "kind": "earth_control_reference",
+      "precision": "site_area",
+      "role": "登月任务的地面指挥参照",
+      "note": "实际登月地点在月球。本地球地图仅标注休斯敦Johnson Space Center的Apollo任务控制机构，不将月面经纬度投到地球或当作登月现场。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-7b62ee2fe982f81fa53efff0",
+          "field": "places",
+          "locator": "可读正文块 335",
+          "block_sha256": "f5f462e1d15f1c69a0cc819c803323609470c87c6401a397bb368e4a995f8491"
+        },
+        {
+          "kind": "supplemental",
+          "source_id": "apollo-control"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-34de563ec776fb0b87d53cd4",
+      "record_id": "REC-cfea1bd2225bed7a1d8e1c64",
+      "revision_id": "REV-88068dcb573adbbc316c480a",
+      "feature_id": "Q42944",
+      "label": "CERN·机构参照",
+      "kind": "site_area",
+      "precision": "site_area",
+      "role": "方案提出的研究机构",
+      "note": "采用CERN机构在日内瓦地区的地理参照，不细化到1989年的具体办公室、跨国园区边界或网站服务器位置。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-f93548dcadeeac33b192235c",
+          "field": "places",
+          "locator": "可读正文块 104",
+          "block_sha256": "4c3ea18c3231d95cf1db63950805a3edc18ea3f3cdb08d487284051923bbccb3"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-9fcdf2f23db478761cebc649",
+      "record_id": "REC-f44eee18e29b44bf5e9020b5",
+      "revision_id": "REV-29e4b68df03059b83342d868",
+      "feature_id": "Q148",
+      "label": "中国·成员范围",
+      "kind": "region_reference",
+      "precision": "country",
+      "role": "国际组织成员范围",
+      "note": "采用现代中国国家地理代表点；这不是WTO批准、签署或生效仪式的场址，也不将全国性成员资格事件压成某座城市。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-1b562770130da8ced72a062d",
+          "field": "places",
+          "locator": "可读正文块 44",
+          "block_sha256": "1ccd6557d3f2540efd124e51893c96ad02243df302928fcf08cc0bb6d5125551"
+        }
+      ]
+    },
+    {
+      "event_id": "EV-a4918d315845ff1584b231c8",
+      "record_id": "REC-4165a30a34e2ce96a0dd69de",
+      "revision_id": "REV-09096c5314f208bdddc8977f",
+      "feature_id": "Q956",
+      "label": "北京·工作机构",
+      "kind": "affiliation_reference",
+      "precision": "city",
+      "role": "获奖时工作机构所在城市",
+      "note": "来源列出的获奖时工作机构在北京；采用城市参照，不是斯德哥尔摩颁奖现场，也不是青蒿素研究所有阶段的发生地点。",
+      "evidence": [
+        {
+          "kind": "canonical",
+          "source_id": "SV-4a7f864105ef8b9aa289d3dd",
+          "field": "places",
+          "locator": "可读正文块 54",
+          "block_sha256": "a0c43e50a38e6a231affe1e16aaabcd861628cbf14b44fec07a6a1ce2dc5d0b0"
+        }
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "sui-capital",
+      "title": "隋代长安与大兴城沿革",
+      "url": "https://dfz.shaanxi.gov.cn/zslm/fzzlk/xbsxsz/szdylpdf/201404/P020240923616206405975.pdf",
+      "locator": "PDF第109页：隋开皇元年至三年；区分581年建都长安、582年营建大兴与583年迁入",
+      "checked_at": "2026-10-19",
+      "document_sha256": "b58ec07ff7e5a1703cb5251ca99eb28c74ef4a9891a6b3e35b13c35a995523f5"
+    },
+    {
+      "id": "tang-capital",
+      "title": "开元通宝｜中国国家博物馆",
+      "url": "https://www.chnmuseum.cn/zp/zpml/hb/202203/t20220301_253935.shtml",
+      "locator": "说明正文：都城长安、陪都洛阳的两京记载",
+      "checked_at": "2026-10-19",
+      "document_sha256": "0ecb209f5ccbd9c8d774c6893d8e7abeb135b0b79917f9509eb5d5d4b6453101"
+    },
+    {
+      "id": "fanyang",
+      "title": "试论北京唐代墓志的地方特色｜北京市文物局",
+      "url": "https://wwj.beijing.gov.cn/bjww/resource/cms/article/bjww_362762/10831107/2020072009052967306.pdf",
+      "locator": "PDF第75页：史思明段记755年随安禄山于范阳起兵",
+      "checked_at": "2026-10-19",
+      "document_sha256": "c20abdcfe032c2dfc7483509f148317df32a6bf3ce05c551a48af31d219766a8"
+    },
+    {
+      "id": "independence-hall",
+      "title": "Assembly Room of Independence Hall｜NPS",
+      "url": "https://www.nps.gov/inde/learn/historyculture/places-independencehall-assemblyroom.htm",
+      "locator": "Declaration of Independence及U.S. Constitution段",
+      "checked_at": "2026-10-19",
+      "document_sha256": "2163a969116c96ba3bb50c83cc663f6ef487d0eed5776d4c68e058cad171405b"
+    },
+    {
+      "id": "humen-site",
+      "title": "林则徐销烟池和虎门炮台旧址保护利用｜东莞市政府",
+      "url": "https://www.dg.gov.cn/zdjsxmpzhsslyxxgkzl/bm/scjj/content/post_4537234.html",
+      "locator": "项目位置段：虎门镇鸦片战争博物馆片区、长堤路以东解放路以西",
+      "checked_at": "2026-10-19",
+      "document_sha256": "f53201702e915276ea3c9e61ed89429f245aad79f7b23e470167991c88a4e824"
+    },
+    {
+      "id": "wright-park",
+      "title": "Park Brochure｜Wright Brothers National Memorial, NPS",
+      "url": "https://www.nps.gov/wrbr/planyourvisit/park-brochure.htm",
+      "locator": "Overview及Touring the Park段；区分纪念碑与首飞地点",
+      "checked_at": "2026-10-19",
+      "document_sha256": "d923612063ab5b2a2d86b354f11caa595a17892abd237c2429ea5f10e287f30b"
+    },
+    {
+      "id": "apollo-control",
+      "title": "Apollo Mission Control Reopens in All Its Historic Glory｜NASA",
+      "url": "https://www.nasa.gov/news-release/apollo-mission-control-reopens-in-all-its-historic-glory/",
+      "locator": "正文首段：Johnson Space Center Houston的Apollo地面任务控制",
+      "checked_at": "2026-10-19",
+      "document_sha256": "bfad569b2f0294000029946021f9053a6d39e624be4faa080c303504a9f8efef"
+    }
+  ],
+  "provider": "Wikidata P625",
+  "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "features": [
+    {
+      "id": "Q497341",
+      "label": "咸陽市",
+      "revision": 2533774262,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q497341&oldid=2533774262",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q497341$3F620118-F83A-46A5-8ED1-9482F9801D30",
+      "statement_rank": "normal",
+      "statement_sha256": "b3a25cdbc28a983dfbee823b8bee30ffd1591263033834d71bf2b733f98a3070",
+      "coordinates": {
+        "latitude": 34.32972222222222,
+        "longitude": 108.70916666666666,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q6343",
+      "label": "迦太基",
+      "revision": 2544642967,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q6343&oldid=2544642967",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q6343$774B461E-6D36-442E-86BE-31D86372E265",
+      "statement_rank": "normal",
+      "statement_sha256": "3edac7beb1c2fb1e358f2c90998599bf6c4452399649d09ef8a74e34e51d3a86",
+      "coordinates": {
+        "latitude": 36.847009,
+        "longitude": 10.312944,
+        "precision": 0.000001,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q5826",
+      "label": "西安市",
+      "revision": 2541772944,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q5826&oldid=2541772944",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q5826$D1AF3628-5CC8-4BC0-81EE-5A342C86BDC2",
+      "statement_rank": "normal",
+      "statement_sha256": "c8e3044f1066924e09bc96e4e3a60953f0fcddea520379b36fbe28236c566f57",
+      "coordinates": {
+        "latitude": 34.26111111111111,
+        "longitude": 108.94222222222223,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q220",
+      "label": "罗马",
+      "revision": 2556161741,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q220&oldid=2556161741",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q220$8CA1C970-033E-4D0B-8045-168003421A8D",
+      "statement_rank": "normal",
+      "statement_sha256": "a02a542ac9e2a5cff668aa971d1d84842d37693f82948be67044ec3614f02636",
+      "coordinates": {
+        "latitude": 41.893055555556,
+        "longitude": 12.482777777778,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q187136",
+      "label": "洛陽市",
+      "revision": 2540529799,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q187136&oldid=2540529799",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q187136$3B5F0BB0-56CA-4F6A-9515-DEB8E077CD50",
+      "statement_rank": "normal",
+      "statement_sha256": "c3373d1e4c1c4dc80d51637ed0513b890c91a758ccc763cd8b4d87db72b717ef",
+      "coordinates": {
+        "latitude": 34.65867,
+        "longitude": 112.42447,
+        "precision": null,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q99309",
+      "label": "万神庙",
+      "revision": 2548629909,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q99309&oldid=2548629909",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q99309$92C3483E-E3FF-4FA1-A31F-9A4692C081C7",
+      "statement_rank": "normal",
+      "statement_sha256": "f0eb7443ea71cc4de1c93a64dd92eb95af88b323d312044db2e5254d2b459738",
+      "coordinates": {
+        "latitude": 41.89861111111111,
+        "longitude": 12.476944444444445,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q956",
+      "label": "北京市",
+      "revision": 2557988998,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q956&oldid=2557988998",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q956$4E8B7883-1595-4CD1-9590-44D9D767F7B0",
+      "statement_rank": "normal",
+      "statement_sha256": "0314af5b28c8b47a3e1bc5976d2afd44eab25764320bb3f236f411982135331a",
+      "coordinates": {
+        "latitude": 39.90403,
+        "longitude": 116.407526,
+        "precision": 0.00001,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q208471",
+      "label": "開封市",
+      "revision": 2526608843,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q208471&oldid=2526608843",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q208471$44B42206-A4CC-47D7-B4B2-40948CDE9E68",
+      "statement_rank": "normal",
+      "statement_sha256": "6d89fd469b7b9b3754361731eed68a4973bed9b37281fcca56ed4cb83fb4835f",
+      "coordinates": {
+        "latitude": 34.795,
+        "longitude": 114.345,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q1483542",
+      "label": "兰尼米德",
+      "revision": 2483512580,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q1483542&oldid=2483512580",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q1483542$32B43AAE-9861-49AA-99A2-8DBDDBD7D90C",
+      "statement_rank": "normal",
+      "statement_sha256": "5f6ea1e321e0cd6a1bb187cc82f9014f27dd9c6c38a3538dce74a60fb5abed22",
+      "coordinates": {
+        "latitude": 51.444511111111,
+        "longitude": -0.56536944444444,
+        "precision": 0.00027777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q16666",
+      "label": "南京市",
+      "revision": 2554212987,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q16666&oldid=2554212987",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q16666$322D58DD-EB60-4BCE-A73D-8A73E10C1655",
+      "statement_rank": "normal",
+      "statement_sha256": "923875d66cd46d425c85c4ae2656367de16c20588dd67a94dec356d447eb1991",
+      "coordinates": {
+        "latitude": 32.060833333333335,
+        "longitude": 118.77888888888889,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q6654051",
+      "label": "浏河镇",
+      "revision": 2523466749,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q6654051&oldid=2523466749",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q6654051$BEC19F79-773E-46FE-B4FA-5BF4E85E5425",
+      "statement_rank": "normal",
+      "statement_sha256": "fd4be6a53058bf526753d10dd1d8bbb6c5421d8373d4d484b41a6e2a7684a4f3",
+      "coordinates": {
+        "latitude": 31.50445,
+        "longitude": 121.26636,
+        "precision": null,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q1247",
+      "label": "加勒比海",
+      "revision": 2552944612,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q1247&oldid=2552944612",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q1247$7599c7f6-429e-0d10-9c2c-bd9c31b962c7",
+      "statement_rank": "normal",
+      "statement_sha256": "3ac69f7cb5c589dc2fc28090e1d251cd8e371e47879a88243ca50805a1724149",
+      "coordinates": {
+        "latitude": 15,
+        "longitude": -75,
+        "precision": 1,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q19675",
+      "label": "卢浮宫博物馆",
+      "revision": 2555868515,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q19675&oldid=2555868515",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q19675$68dfd528-4071-1634-a696-cedb1de89db3",
+      "statement_rank": "normal",
+      "statement_sha256": "2b56020efc9d3f66b978edfc40d25600be95e63bf8a69c4623f731e019f22a0b",
+      "coordinates": {
+        "latitude": 48.861111111111114,
+        "longitude": 2.3358333333333334,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q6837",
+      "label": "维滕贝格",
+      "revision": 2551875978,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q6837&oldid=2551875978",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q6837$B8AB4408-7631-41BB-A02A-ECAA8221ADE8",
+      "statement_rank": "normal",
+      "statement_sha256": "6414f95bd3439cd87852292929d707be177bfc7ed3dd79310a20e643779e453e",
+      "coordinates": {
+        "latitude": 51.8671,
+        "longitude": 12.6484,
+        "precision": 0.0001,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q390028",
+      "label": "美國獨立紀念館",
+      "revision": 2532929523,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q390028&oldid=2532929523",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q390028$6A54D2CE-82AF-4C57-A667-F8892F7CAF11",
+      "statement_rank": "normal",
+      "statement_sha256": "f9238009873bc89c9cc06512d22f9f885d4a15abef30df71be2057777bde3e5a",
+      "coordinates": {
+        "latitude": 39.948888888889,
+        "longitude": -75.15,
+        "precision": 0.000277778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q1741",
+      "label": "維也納",
+      "revision": 2553605752,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q1741&oldid=2553605752",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q1741$0E32D9D4-EF40-4A74-8120-B55A454115CC",
+      "statement_rank": "normal",
+      "statement_sha256": "cef6ac996137b283e8d34928ab8c01e0d5f7c8dfbcb7ca8338e7b4c1eb732f4b",
+      "coordinates": {
+        "latitude": 48.208333333333336,
+        "longitude": 16.3725,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q11174401",
+      "label": "鸦片战争博物馆",
+      "revision": 2515969869,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q11174401&oldid=2515969869",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q11174401$d75d8825-468b-cbcf-cc19-318908ada73f",
+      "statement_rank": "normal",
+      "statement_sha256": "05d6a803a0ac67bea7a682142608cb569cc383ad28aa36e4dea4351ae8e85af9",
+      "coordinates": {
+        "latitude": 22.828153088414847,
+        "longitude": 113.65451118225901,
+        "precision": 0.00001,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q90",
+      "label": "巴黎",
+      "revision": 2558561151,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q90&oldid=2558561151",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q90$CC8612EE-CB95-4E57-9AA0-2AFA95A214E6",
+      "statement_rank": "normal",
+      "statement_sha256": "1f15047ada7bce50c6f8c188b2ebff8a6dd918b74880bc4fabcc2d4b0a2e9238",
+      "coordinates": {
+        "latitude": 48.85666666666667,
+        "longitude": 2.352222222222222,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q145",
+      "label": "英国",
+      "revision": 2558483753,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q145&oldid=2558483753",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q145$b5d9c174-45ce-8807-5146-21a2ece72fc1",
+      "statement_rank": "normal",
+      "statement_sha256": "0ca5df98e6f998556e0aaad1ce0bf428d621798eff259447ac69312af8256e3e",
+      "coordinates": {
+        "latitude": 54.6,
+        "longitude": -2,
+        "precision": 0.1,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q30",
+      "label": "美國",
+      "revision": 2558487159,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q30&oldid=2558487159",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q30$d5083dcd-44d3-ed29-8ba4-9fca9bee6bc7",
+      "statement_rank": "normal",
+      "statement_sha256": "4fcf381bf052a96fb5807056ebaab3fa1cb3ce7d82a2c8c874aef95a44adbbda",
+      "coordinates": {
+        "latitude": 39.828175,
+        "longitude": -98.5795,
+        "precision": 0.000001,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q2038747",
+      "label": "莱特兄弟国家纪念馆",
+      "revision": 2540956276,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q2038747&oldid=2540956276",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q2038747$27476433-6B42-47E1-BE0A-D2D6FBD81EDA",
+      "statement_rank": "normal",
+      "statement_sha256": "c95faa4e922b55eeaf5921b04f01026834aa38b44f06442159edbdab80f9ec12",
+      "coordinates": {
+        "latitude": 36.0143,
+        "longitude": -75.6679,
+        "precision": 0.0001,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q46",
+      "label": "欧洲",
+      "revision": 2558492078,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q46&oldid=2558492078",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q46$4091a7ae-4878-a720-91ce-eea03b410f4e",
+      "statement_rank": "preferred",
+      "statement_sha256": "681ff45e6d7e5381493f002e8e70ba90630f5ad49249f6019f0b206a885c8086",
+      "coordinates": {
+        "latitude": 53.5,
+        "longitude": 15.5,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q164055",
+      "label": "天安門廣場",
+      "revision": 2523265957,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q164055&oldid=2523265957",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q164055$9038767B-9298-4CC8-A337-B8D1672EE6D5",
+      "statement_rank": "normal",
+      "statement_sha256": "713384ddd3889d18ccabd5e6c436236d12792d47569109acb4586e782db77a2d",
+      "coordinates": {
+        "latitude": 39.904567,
+        "longitude": 116.391392,
+        "precision": 0.00001,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q36",
+      "label": "波蘭",
+      "revision": 2558478370,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q36&oldid=2558478370",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q36$0c33eb76-44d2-08ef-5601-ff46dae6faf3",
+      "statement_rank": "normal",
+      "statement_sha256": "762749fbf11892930607c2665c2b700cf74fd8536b9775f9b9dfc0802f72906b",
+      "coordinates": {
+        "latitude": 52,
+        "longitude": 19,
+        "precision": 1,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q62",
+      "label": "舊金山",
+      "revision": 2556596404,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q62&oldid=2556596404",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q62$4d06cb86-4284-8524-9ac2-0f7528520ed5",
+      "statement_rank": "preferred",
+      "statement_sha256": "df5984cbb276271e5f0b0e92f5b67d0041ed2d8c91bd04842581cbde5295e55c",
+      "coordinates": {
+        "latitude": 37.775,
+        "longitude": -122.41944444444445,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q177477",
+      "label": "拜科努爾航天發射場",
+      "revision": 2547205398,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q177477&oldid=2547205398",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q177477$C6BA6514-7834-41D0-A1E8-99FA4B565835",
+      "statement_rank": "normal",
+      "statement_sha256": "6aa5f061d9c5f3e680f1151188405b76787a5f3161eaeb88400221f3ea16c1d9",
+      "coordinates": {
+        "latitude": 45.9648,
+        "longitude": 63.3051,
+        "precision": 0.0001,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q5112041",
+      "label": "太空任务控制中心",
+      "revision": 2540514347,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q5112041&oldid=2540514347",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "Q5112041$9953052E-3BDC-4DB2-AAA3-0BC8A155C89A",
+      "statement_rank": "normal",
+      "statement_sha256": "bdb1c7236fcae296a739441fe6bed3873eaccd7e3fb9fea48bea5dd6b1d57cd0",
+      "coordinates": {
+        "latitude": 29.558282594880783,
+        "longitude": -95.08884672337084,
+        "precision": 0.00000277778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q42944",
+      "label": "歐洲核子研究組織",
+      "revision": 2556739474,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q42944&oldid=2556739474",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q42944$3B9C7371-CED2-4B51-9CD3-A743F40D4554",
+      "statement_rank": "normal",
+      "statement_sha256": "54adae497cb1413e543172ebabb6c13ff1b5392c59b105dccd15628c6fe5176a",
+      "coordinates": {
+        "latitude": 46.234493,
+        "longitude": 6.049129,
+        "precision": 0.000001,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    },
+    {
+      "id": "Q148",
+      "label": "中华人民共和国",
+      "revision": 2558491469,
+      "revision_url": "https://www.wikidata.org/w/index.php?title=Q148&oldid=2558491469",
+      "retrieved_at": "2026-10-19",
+      "statement_id": "q148$235D1561-A9DB-4B54-A784-91B2FE20C5D3",
+      "statement_rank": "normal",
+      "statement_sha256": "3ad570532b6931cc376e2ae1a4395de877a2247233436c4cfa7456ffcc04a858",
+      "coordinates": {
+        "latitude": 35.844722222222224,
+        "longitude": 103.45194444444445,
+        "precision": 0.0002777777777777778,
+        "globe": "http://www.wikidata.org/entity/Q2"
+      }
+    }
+  ]
+}

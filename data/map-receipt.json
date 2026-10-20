@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "reviewed_at": "2026-10-19",
+  "nodes": 40,
+  "features": 29,
+  "canonical_store_written": false,
+  "content_manifest_sha256": "783a2eb2f6096855ca66ad6a1e9c9a9ced1e21a604963c67039eab87582a375e",
+  "inputs": {
+    "data/history-map-bindings.json": "d2ca3de7101daec0094422f10afcf97803e3c160e598df24819035da56d66064",
+    "data/wikidata-map-features.json": "985126510b6f1088644eb68505ec8d9cede66d9cd3371d5e43e5e2d83fdefdce",
+    "public/data/history-trial.json": "ec426016676ad4fa56a5c2c73b44233f664ce910ccb51d1a0f70a8e2743deff1"
+  },
+  "output_sha256": "c72805089c7a5a7e289335307571985dd47620d884f09df18d78e82694f81d2c"
+}

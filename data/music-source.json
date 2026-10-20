@@ -1,0 +1,19 @@
+{
+  "title": "河西走廊之梦",
+  "artist": "Yanni",
+  "file": "/audio/dream-of-hexi-corridor.mp3",
+  "source_page": "https://xulimusic.com/works/detail-hxzl.html",
+  "source_version": "作曲人官网公开播放器版本",
+  "retrieved_on": "2026-10-18",
+  "selection_requested_on": "2026-10-20",
+  "license": null,
+  "license_url": null,
+  "license_status": "No public redistribution license recorded; source availability and user selection do not establish a license grant.",
+  "modifications": "Public playback copy transcoded from the existing M4A using FFmpeg 6.0, libmp3lame VBR quality 2; original duration, stereo and 44100 Hz retained, no cuts, volume filter or speed changes. Local M4A unchanged.",
+  "encoding": "MP3 (libmp3lame VBR quality 2)",
+  "source_duration_seconds": 280.36766,
+  "source_bytes": 4572117,
+  "source_sha256": "3925e24f0c5afd0919c23eb9ad396ddfd52269112f2d92c2f13995189b43a913",
+  "bytes": 6247002,
+  "sha256": "2cd07d3833aff16dd5e87c640c7303c2f0089fb7ac8dcd3bfbd5cf815436e0fe"
+}

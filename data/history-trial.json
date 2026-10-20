@@ -1,0 +1,4139 @@
+{
+  "schema_version": "1.0.0",
+  "scope": "local_trial",
+  "batch_id": "wanguo-local-trial-v1",
+  "reviewed_at": "2026-10-19",
+  "review_method": "model_assisted_archived_source_review",
+  "review_scope": "逐条对照归档正文核验本批展示的身份、年代、简介/短文、地点范围及配图图注；重验正文定位与素材SHA256，沿用已回读的文件页许可版本。本轮另对12个机构页面联网重读。不是独立史学专家终审或公开发布。",
+  "manifest_sha256": "783a2eb2f6096855ca66ad6a1e9c9a9ced1e21a604963c67039eab87582a375e",
+  "events": [
+    {
+      "id": "EV-4a16b45c628982a3be374302",
+      "record_id": "REC-7e1cc5076af889df323ef552",
+      "revision_id": "REV-e8d50c9f98cc045f5f7c9d63",
+      "title": "秦统一六国",
+      "aliases": [
+        "秦统一六国",
+        "Qin dynasty"
+      ],
+      "summary": "公元前221年，秦结束战国时期的诸侯并立，建立统一王朝。",
+      "body": [
+        "秦始皇建立中央集权的统治体系。此节点记录统一完成之年，区别于秦朝存续时期。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "中国；咸阳为政权中心",
+          "modern_name": null,
+          "precision": "region",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": -221,
+        "end_year": -221,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "公元前221年"
+      },
+      "people": [
+        "秦始皇",
+        "嬴政"
+      ],
+      "polities": [
+        "秦"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/d7c132d4b226772a0b9e76339fd4d3383344ef4e6420c95dccbd287e784d5b41.jpg",
+          "sha256": "d7c132d4b226772a0b9e76339fd4d3383344ef4e6420c95dccbd287e784d5b41",
+          "caption": "约1850年绘制的秦始皇像，属于后世想象，非秦代肖像。",
+          "depiction_type": "后世人物画像",
+          "creator": "Unknown artist Unknown artist",
+          "credit": "Yuan, Zhongyi. China's terracotta army and the First Emperor's mausoleum: the art and culture of Qin Shihuang's underground palace . Paramus, New Jersey: Homa & Sekey Books, 2010. ISBN 978-1-931907-68-2 (p.140)",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Qinshihuang.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AQinshihuang.jpg&oldid=1268005222",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-ff87618cabca27e6d6ba2405",
+          "field": "time",
+          "locator": "可读正文块 1",
+          "block_sha256": "6863f1d99624808a87b13efbf35df4c87551bce0d1a68d8e504d0ceed48d9f1d"
+        },
+        {
+          "source_id": "SV-ff87618cabca27e6d6ba2405",
+          "field": "title",
+          "locator": "可读正文块 2",
+          "block_sha256": "1ff74a7e1cd1afe47fb5b0af0a3620fbd825eb0ea3f7749b28935bab62bcb074"
+        },
+        {
+          "source_id": "SV-ff87618cabca27e6d6ba2405",
+          "field": "places",
+          "locator": "可读正文块 44",
+          "block_sha256": "0a50d17e398931f2e1760d3347a39582605839b6594964c0e3d86a241e09eb05"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 3,
+            "max_gap_years": 3,
+            "target_id": "CORE-b6029d9a61",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-6e5eaedad980532ea276ab66",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对统一年份及建制表述；秦始皇配图为后世画像，咸阳仅作政权中心。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-6e5eaedad980532ea276ab66",
+      "record_id": "REC-3cd944195430e5d3aa24b6e1",
+      "revision_id": "REV-ffe26741fb14ddeafa7b4aaa",
+      "title": "第二次布匿战争",
+      "aliases": [
+        "第二次布匿战争",
+        "Second Punic War"
+      ],
+      "summary": "公元前218—前201年，罗马与迦太基展开第二次布匿战争。",
+      "body": [
+        "战事涉及伊比利亚、意大利及北非。汉尼拔与西庇阿是双方的重要统帅。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "地中海西部：伊比利亚、意大利和北非",
+          "modern_name": null,
+          "precision": "region",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "古希腊罗马"
+      ],
+      "history_scope": "world",
+      "record_type": "period",
+      "time": {
+        "start_year": -218,
+        "end_year": -201,
+        "kind": "duration",
+        "precision": "year_range",
+        "approximate": false,
+        "display": "公元前218年—公元前201年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/da9893fdc285b6fa046d45ffd665789c187ba2d33f923899f9a56a40225a4fde.png",
+          "sha256": "da9893fdc285b6fa046d45ffd665789c187ba2d33f923899f9a56a40225a4fde",
+          "caption": "现代西语版第二次布匿战争示意图，原文件以CC BY-SA 3.0授权；不是古代原图，具体疆界仍待专门地理审校。",
+          "depiction_type": "现代历史示意图",
+          "creator": "Map of Rome and Carthage at the start of the Second Punic War-pt.svg : Grandiose ( talk · contribs ) derivative work: Rowanwindwhistler",
+          "credit": "Map of Rome and Carthage at the start of the Second Punic War-pt.svg : Grandiose ( talk · contribs )",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Map_of_Rome_and_Carthage_at_the_start_of_the_Second_Punic_War-es.svg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AMap+of+Rome+and+Carthage+at+the+start+of+the+Second+Punic+War-es.svg&oldid=1098815362",
+          "obligations": [
+            "保留作者、来源文件页与许可链接",
+            "改编图像时遵守相同方式共享条件"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-6dbb559f9c8cfeb7e8978393",
+          "field": "time",
+          "locator": "可读正文块 1",
+          "block_sha256": "f90e4115dcda0ac3e9d1599a04022fe2f1f636d77f09e2a1b4866ffec826f9d9"
+        },
+        {
+          "source_id": "SV-6dbb559f9c8cfeb7e8978393",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "f90e4115dcda0ac3e9d1599a04022fe2f1f636d77f09e2a1b4866ffec826f9d9"
+        },
+        {
+          "source_id": "SV-6dbb559f9c8cfeb7e8978393",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "f90e4115dcda0ac3e9d1599a04022fe2f1f636d77f09e2a1b4866ffec826f9d9"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 3,
+            "max_gap_years": 3,
+            "target_id": "CORE-8c6ee21c32",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-4a16b45c628982a3be374302",
+          "type": "near_year"
+        },
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 16,
+            "max_gap_years": 16,
+            "target_id": "CORE-7da3f89ddf",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-e7359a4267b0e8b43d967a1c",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对前218–前201年、参战方及地域；现代示意地图的疆界未作专门审校。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-e7359a4267b0e8b43d967a1c",
+      "record_id": "REC-c48b68c21e5d2153a8b6d8a4",
+      "revision_id": "REV-c7fcc6157fec8a2dc8e9ab3e",
+      "title": "西汉建立",
+      "aliases": [
+        "西汉建立",
+        "Han dynasty"
+      ],
+      "summary": "公元前202年，刘邦建立汉朝，开启西汉统治。",
+      "body": [
+        "汉朝继承并调整秦朝的统治方式。此节点采用刘邦称帝的年份，不将受封汉王的前206年混作同一节点。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "中国；都城由洛阳迁至长安",
+          "modern_name": null,
+          "precision": "region",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": -202,
+        "end_year": -202,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "公元前202年"
+      },
+      "people": [
+        "刘邦"
+      ],
+      "polities": [
+        "西汉",
+        "汉"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/c28bf4026fc57dc4f62e794442215902538226eae9952d36c4f6b2f077862e90.jpg",
+          "sha256": "c28bf4026fc57dc4f62e794442215902538226eae9952d36c4f6b2f077862e90",
+          "caption": "湖南博物院所藏汉代人物俑的现代照片，用于展示汉代物质文化，并非刘邦本人。",
+          "depiction_type": "文物现状照片",
+          "creator": "Huangdan2060",
+          "credit": "File:Hatted_man_male_figurine,_Han_dynasty,_Hunan_Museum2.jpg",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Changguan_of_Hatted_man_male_figurine,_Han_dynasty,_Hunan_Museum2.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AChangguan+of+Hatted+man+male+figurine%2C+Han+dynasty%2C+Hunan+Museum2.jpg&oldid=1120348506",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-28eb891c5743a3c9bc39fe4f",
+          "field": "time",
+          "locator": "可读正文块 1",
+          "block_sha256": "d045e2e8ce342eaf33aec89a769151eeb9b93e7716e6ebd84116e0111be0c1d2"
+        },
+        {
+          "source_id": "SV-28eb891c5743a3c9bc39fe4f",
+          "field": "title",
+          "locator": "可读正文块 2",
+          "block_sha256": "11a53f43d8dc450a52ce69877d523d763e82f92708249cb0abaf9b9e5ecd2b13"
+        },
+        {
+          "source_id": "SV-28eb891c5743a3c9bc39fe4f",
+          "field": "places",
+          "locator": "可读正文块 24",
+          "block_sha256": "068258c7e26d0011769e5bf6704275b4235deeb0134bfa482e2d58471048d09b"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 16,
+            "max_gap_years": 16,
+            "target_id": "CORE-b6029d9a61",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-6e5eaedad980532ea276ab66",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "采用刘邦称帝的前202年，区别前206年受封；文物配图不是刘邦本人。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-a381761e64416efe68cc605d",
+      "record_id": "REC-20b96cb22d743ab516ea96a1",
+      "revision_id": "REV-6b7d54e3ce1fb26a8b27b300",
+      "title": "罗马帝国建立",
+      "aliases": [
+        "罗马帝国建立",
+        "Roman Empire"
+      ],
+      "summary": "公元前27年，奥古斯都成为罗马第一位皇帝，元首制时代开始。",
+      "body": [
+        "此节点采用罗马帝国的通行起点。西罗马476年的结束与东部帝国后续历史分别处理。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "罗马",
+          "modern_name": null,
+          "precision": "city",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "古希腊罗马"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": -27,
+        "end_year": -27,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "公元前27年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/1d10d51af9d512cbc7b2efb3a27719dba6df4f6d2856c518da1a764e641047cd.jpg",
+          "sha256": "1d10d51af9d512cbc7b2efb3a27719dba6df4f6d2856c518da1a764e641047cd",
+          "caption": "奥古斯都雕塑的现代照片；非公元前27年事件现场。",
+          "depiction_type": "文物现状照片",
+          "creator": "Joel Bellviure",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Augustus_of_Prima_Porta_(inv._2290).jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AAugustus+of+Prima+Porta+%28inv.+2290%29.jpg&oldid=905605997",
+          "obligations": [
+            "保留作者、来源文件页与许可链接",
+            "改编图像时遵守相同方式共享条件"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-26e5754f63a63ce24c64334d",
+          "field": "time",
+          "locator": "可读正文块 2",
+          "block_sha256": "d89b58f9e5a98d7abfdc971882f2f4b19a970787a33377407e314ee430f5aec4"
+        },
+        {
+          "source_id": "SV-26e5754f63a63ce24c64334d",
+          "field": "title",
+          "locator": "可读正文块 2",
+          "block_sha256": "d89b58f9e5a98d7abfdc971882f2f4b19a970787a33377407e314ee430f5aec4"
+        },
+        {
+          "source_id": "SV-26e5754f63a63ce24c64334d",
+          "field": "places",
+          "locator": "可读正文块 2",
+          "block_sha256": "d89b58f9e5a98d7abfdc971882f2f4b19a970787a33377407e314ee430f5aec4"
+        }
+      ],
+      "relations": [],
+      "review_note": "采用前27年奥古斯都的通行起点，区分西部与东部帝国结束。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-8f2bc19252c2180d3e161dae",
+      "record_id": "REC-24cf9f46374eb4a7f82ede70",
+      "revision_id": "REV-b067ef2d29fd624a026168c1",
+      "title": "蔡伦改进造纸术",
+      "aliases": [
+        "蔡伦改进造纸术"
+      ],
+      "summary": "105年，蔡伦向汉和帝呈献改进工艺制作的纸张。",
+      "body": [
+        "造纸技术在此之前已有发展。蔡伦的贡献是改进与推广，不能简单写成105年第一次发明纸。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "东汉（朝廷献纸与技术推广范围；具体场址未定位）",
+          "modern_name": null,
+          "precision": "country",
+          "role": "institutional_scope"
+        }
+      ],
+      "categories": [
+        "科技"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 105,
+        "end_year": 105,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "105年"
+      },
+      "people": [
+        "蔡伦",
+        "汉和帝"
+      ],
+      "polities": [
+        "东汉"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/9996bf22e4ac19cae3dcd2f1ba7dfb77d928866fac85b345df123de24333590c.jpg",
+          "sha256": "9996bf22e4ac19cae3dcd2f1ba7dfb77d928866fac85b345df123de24333590c",
+          "caption": "陕西历史博物馆汉代展厅纸张相关文物的现代照片，Gary Todd于2009年参观拍摄；不是105年蔡伦亲制原件，也不据此证明纸的首次发明年。",
+          "depiction_type": "文物今照",
+          "creator": "Gary Todd from Xinzheng, China",
+          "credit": "Han Paper",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Han_Paper_(9947868125).jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AHan+Paper+%289947868125%29.jpg&oldid=1204087321",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-8b58e450601b35c265d68670",
+          "field": "time",
+          "locator": "可读正文块 36",
+          "block_sha256": "c2f50c6c15219e7b341e5e3f5d9d3a88526f35648768c092feef6d709c26f8d6"
+        },
+        {
+          "source_id": "SV-8b58e450601b35c265d68670",
+          "field": "title",
+          "locator": "可读正文块 36",
+          "block_sha256": "c2f50c6c15219e7b341e5e3f5d9d3a88526f35648768c092feef6d709c26f8d6"
+        },
+        {
+          "source_id": "SV-8b58e450601b35c265d68670",
+          "field": "places",
+          "locator": "可读正文块 18",
+          "block_sha256": "653822ca9d21cf0565fdafa34dd0b03f2c26a7970c42301fe11fc38c705e795a"
+        },
+        {
+          "source_id": "SV-78b20bf48a034747e566eec7",
+          "field": "time",
+          "locator": "可读正文块 26",
+          "block_sha256": "187e6a36aa0a6f36cd93c3a3b81087614b2a2960c0bede3e66076e17635a73fd"
+        },
+        {
+          "source_id": "SV-78b20bf48a034747e566eec7",
+          "field": "title",
+          "locator": "可读正文块 25",
+          "block_sha256": "61dea92ff7145eba3ccf52b6480fe69c95e8f9f080b2869c686d796425ea2c9d"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 13,
+            "max_gap_years": 20,
+            "target_id": "CORE-8e590aafde",
+            "type": "约同期对照"
+          },
+          "target_event_id": "EV-27e9efac372bd002b23d4e24",
+          "type": "approximate_contemporary"
+        }
+      ],
+      "review_note": "核对105年献纸及改进工艺；不声称首次发明纸，展品不是蔡伦原件。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-27e9efac372bd002b23d4e24",
+      "record_id": "REC-ed0061cd9d64efb22f4fc767",
+      "revision_id": "REV-c7f1649e47d69c5b9d1df1b2",
+      "title": "罗马万神殿重建",
+      "aliases": [
+        "罗马万神殿重建",
+        "Pantheon"
+      ],
+      "summary": "现存罗马万神殿形成于公元2世纪前期的重建工程。",
+      "body": [
+        "意大利文化部馆方资料将现存建筑的重建列于哈德良时期的118—125年。这里采用馆方所列时期，具体起工与竣工年份仍须结合专业建筑史研究。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "罗马万神殿",
+          "modern_name": null,
+          "precision": "site",
+          "role": "construction_site"
+        }
+      ],
+      "categories": [
+        "艺术"
+      ],
+      "civilizations": [
+        "古希腊罗马"
+      ],
+      "history_scope": "world",
+      "record_type": "period",
+      "time": {
+        "start_year": 118,
+        "end_year": 125,
+        "kind": "duration",
+        "precision": "year_range",
+        "approximate": true,
+        "display": "约118—125年（馆方所列重建时期）"
+      },
+      "people": [
+        "哈德良"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/39386f585d92307d47827c303f99a62a6d6d702bb8eb94751a6b2135d877a9d5.jpg",
+          "sha256": "39386f585d92307d47827c303f99a62a6d6d702bb8eb94751a6b2135d877a9d5",
+          "caption": "John Samuel拍摄的罗马万神殿现代外观；不能将当代修缮状态当作2世纪施工现场。",
+          "depiction_type": "遗址今照",
+          "creator": "John Samuel",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Pantheon_(Rome)_-_Exterior_01.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3APantheon+%28Rome%29+-+Exterior+01.jpg&oldid=1212341973",
+          "obligations": [
+            "保留作者、来源文件页与许可链接",
+            "改编图像时遵守相同方式共享条件"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-a400829b4eba2b531992c7ce",
+          "field": "time",
+          "locator": "可读正文块 13",
+          "block_sha256": "178cd9566ad8a7a7eb3403e24891d346558bb2eeef5c8a53be8fe9480a68da80"
+        },
+        {
+          "source_id": "SV-a400829b4eba2b531992c7ce",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "c296423bd020703e8af9b052ed4315f937777e6db038fb0ae59df447e96ef04d"
+        },
+        {
+          "source_id": "SV-a400829b4eba2b531992c7ce",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "c296423bd020703e8af9b052ed4315f937777e6db038fb0ae59df447e96ef04d"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 13,
+            "max_gap_years": 20,
+            "target_id": "CORE-bbbe252bab",
+            "type": "约同期对照"
+          },
+          "target_event_id": "EV-8f2bc19252c2180d3e161dae",
+          "type": "approximate_contemporary"
+        }
+      ],
+      "review_note": "保留馆方118–125年重建时期，作为约数区间；不声称精确起工竣工年份。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-706cfd9fa87d0f6730d2125b",
+      "record_id": "REC-01065b4fc42a1205a0f08046",
+      "revision_id": "REV-eeff8aafaa967bdb91ddeb93",
+      "title": "卡拉卡拉敕令扩大罗马公民权",
+      "aliases": [
+        "卡拉卡拉敕令扩大罗马公民权"
+      ],
+      "summary": "212或213年，卡拉卡拉颁布敕令，普遍扩大罗马帝国自由居民的公民权。",
+      "body": [
+        "UNESCO世界记忆项目所列吉森纸草文献保存了敕令的重要文本。这里的212/3是定年选择，不表示颁令持续两年。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "罗马帝国（适用范围；颁令具体地点未定位）",
+          "modern_name": null,
+          "precision": "region",
+          "role": "legal_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "古希腊罗马"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 212,
+        "end_year": 213,
+        "kind": "dating_range",
+        "precision": "year_range",
+        "approximate": true,
+        "display": "212或213年（原始纸草文献目录定年）"
+      },
+      "people": [
+        "卡拉卡拉"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/000b8ff0ff9db7002be217a763da3bdc84bd83040f75b6f5ae0f6ee026940722.jpg",
+          "sha256": "000b8ff0ff9db7002be217a763da3bdc84bd83040f75b6f5ae0f6ee026940722",
+          "caption": "保存卡拉卡拉敕令文本片段的吉森纸草影像。纸草抄本与敕令颁布时间不直接等同，图示非颁令现场。",
+          "depiction_type": "古代文本影像",
+          "creator": "Unknown author Unknown author",
+          "credit": "http://bibd.uni-giessen.de/papyri/images/pgiss-inv015recto-1600kb.jpg",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Gie%C3%9Fen,_MS_Papyrus_Gissensis_40_Constitutio_Antoniniana_crop.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AGie%C3%9Fen%2C+MS+Papyrus+Gissensis+40+Constitutio+Antoniniana+crop.jpg&oldid=1109731507",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-5e9d2245c2bf2623b8f4cbe7",
+          "field": "time",
+          "locator": "可读正文块 62",
+          "block_sha256": "8a4617884a094be892476da24deb6fd8cbce400a66416a50fc670ade5581cff6"
+        },
+        {
+          "source_id": "SV-5e9d2245c2bf2623b8f4cbe7",
+          "field": "title",
+          "locator": "可读正文块 62",
+          "block_sha256": "8a4617884a094be892476da24deb6fd8cbce400a66416a50fc670ade5581cff6"
+        },
+        {
+          "source_id": "SV-5e9d2245c2bf2623b8f4cbe7",
+          "field": "places",
+          "locator": "可读正文块 62",
+          "block_sha256": "8a4617884a094be892476da24deb6fd8cbce400a66416a50fc670ade5581cff6"
+        }
+      ],
+      "relations": [],
+      "review_note": "212/3为两个定年选项，不表示颁令连续两年；配图为纸草抄本文本。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-b2ee0ffa6e60b12fd7abd490",
+      "record_id": "REC-b7f2d1b0d49c1a4262f6c1ff",
+      "revision_id": "REV-52784f40240fe5c27336906f",
+      "title": "隋朝建立",
+      "aliases": [
+        "隋朝建立",
+        "Sui dynasty"
+      ],
+      "summary": "581年，杨坚取代北周，建立隋朝。",
+      "body": [
+        "建国与589年灭陈、统一南北是两个时间节点，不能将589年当作隋朝首次出现的年份。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "中国北方（北周至隋的政权更替）",
+          "modern_name": null,
+          "precision": "region",
+          "role": "political_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 581,
+        "end_year": 581,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "581年"
+      },
+      "people": [
+        "杨坚",
+        "隋文帝"
+      ],
+      "polities": [
+        "隋"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/5de05f89d2b5a5f63750c3d7977c070a82497ca0196c2c3ba63fb697ac8a708e.jpg",
+          "sha256": "5de05f89d2b5a5f63750c3d7977c070a82497ca0196c2c3ba63fb697ac8a708e",
+          "caption": "文件页列为隋代骑马俑的洛阳博物馆展品，Gary Todd摄于2014年；仅作隋代物质文化背景，不作为581年建国现场。",
+          "depiction_type": "文物今照",
+          "creator": "Gary Todd",
+          "credit": "https://www.flickr.com/photos/101561334@N08/14068137460/",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sui_Dynasty_Blue_Glazed_Pottery_Equestrian.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ASui+Dynasty+Blue+Glazed+Pottery+Equestrian.jpg&oldid=1182651003",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-fd9e07f3881434f30d434e4f",
+          "field": "time",
+          "locator": "可读正文块 25",
+          "block_sha256": "ada910b358b914ccfb8f462e337c0086b3d66055852528805631999938b90561"
+        },
+        {
+          "source_id": "SV-fd9e07f3881434f30d434e4f",
+          "field": "title",
+          "locator": "可读正文块 25",
+          "block_sha256": "ada910b358b914ccfb8f462e337c0086b3d66055852528805631999938b90561"
+        },
+        {
+          "source_id": "SV-fd9e07f3881434f30d434e4f",
+          "field": "places",
+          "locator": "可读正文块 26",
+          "block_sha256": "3e7491b05da3d41e39297be24b1b8ecd627a84802c3e2d68e6695d50d542dfef"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 9,
+            "max_gap_years": 9,
+            "target_id": "CORE-c2470fbeeb",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-a63c4892c50effe105e00a12",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对581年建国，区别589年灭陈；只采用来源支持的区域。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-dbd5fcbee281ccf3c09d7eaa",
+      "record_id": "REC-b7278ee1c40adff476c38cb1",
+      "revision_id": "REV-9f40c5f201669ecce298d0c4",
+      "title": "隋统一南北",
+      "aliases": [
+        "隋统一南北"
+      ],
+      "summary": "589年，隋军灭陈，结束南北长期分立的主要局面。",
+      "body": [
+        "这次统一发生在隋朝建立之后，区别于581年的建国节点。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "中国南北（灭陈与统一所涉范围）",
+          "modern_name": null,
+          "precision": "region",
+          "role": "campaign_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 589,
+        "end_year": 589,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "589年"
+      },
+      "people": [
+        "杨坚",
+        "隋文帝"
+      ],
+      "polities": [
+        "隋"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/5de05f89d2b5a5f63750c3d7977c070a82497ca0196c2c3ba63fb697ac8a708e.jpg",
+          "sha256": "5de05f89d2b5a5f63750c3d7977c070a82497ca0196c2c3ba63fb697ac8a708e",
+          "caption": "文件页列为隋代骑马俑的洛阳博物馆展品，Gary Todd摄于2014年；仅作时代背景，不是589年灭陈战事的遗物归属证明。",
+          "depiction_type": "文物今照",
+          "creator": "Gary Todd",
+          "credit": "https://www.flickr.com/photos/101561334@N08/14068137460/",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sui_Dynasty_Blue_Glazed_Pottery_Equestrian.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ASui+Dynasty+Blue+Glazed+Pottery+Equestrian.jpg&oldid=1182651003",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-fd9e07f3881434f30d434e4f",
+          "field": "time",
+          "locator": "可读正文块 25",
+          "block_sha256": "ada910b358b914ccfb8f462e337c0086b3d66055852528805631999938b90561"
+        },
+        {
+          "source_id": "SV-fd9e07f3881434f30d434e4f",
+          "field": "title",
+          "locator": "可读正文块 25",
+          "block_sha256": "ada910b358b914ccfb8f462e337c0086b3d66055852528805631999938b90561"
+        },
+        {
+          "source_id": "SV-fd9e07f3881434f30d434e4f",
+          "field": "places",
+          "locator": "可读正文块 25",
+          "block_sha256": "ada910b358b914ccfb8f462e337c0086b3d66055852528805631999938b90561"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 1,
+            "max_gap_years": 1,
+            "target_id": "CORE-c2470fbeeb",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-a63c4892c50effe105e00a12",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对589年灭陈，区别581年建国；骑马俑仅为时代背景。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-a63c4892c50effe105e00a12",
+      "record_id": "REC-7af114855676128c6995d2a2",
+      "revision_id": "REV-885e8516d208ae02ab49a5b6",
+      "title": "格列高利一世出任教宗",
+      "aliases": [
+        "格列高利一世出任教宗"
+      ],
+      "summary": "590年9月3日，格列高利一世开始担任教宗。",
+      "body": [
+        "他是西欧中世纪教会史的重要人物，任期延续至604年。本节点记录任职，生卒年与教会信仰叙事另行区分。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "罗马教会（任职机构；具体就任仪式场址未定位）",
+          "modern_name": null,
+          "precision": "institution",
+          "role": "institution"
+        }
+      ],
+      "categories": [
+        "宗教"
+      ],
+      "civilizations": [
+        "欧洲（希腊罗马以外）"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 590,
+        "end_year": 590,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "590年"
+      },
+      "people": [
+        "格列高利一世",
+        "格里高利一世"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/0ff4b1cc95704992b28ffbe25ab66995a9bd3cc223deae5b7707f140c409f8b5.jpg",
+          "sha256": "0ff4b1cc95704992b28ffbe25ab66995a9bd3cc223deae5b7707f140c409f8b5",
+          "caption": "雅各布·维尼亚利所绘格列高利一世，为后世宗教绘画，非590年就任现场。",
+          "depiction_type": "后世宗教人物画",
+          "creator": "Jacopo Vignali",
+          "credit": "Walters Art Museum : Home page Info about artwork",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Jacopo_Vignali_-_Saint_Gregory_the_Great_-_Walters_372530.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AJacopo+Vignali+-+Saint+Gregory+the+Great+-+Walters+372530.jpg&oldid=997821534",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-7e0a20696c57bd9de164efad",
+          "field": "time",
+          "locator": "可读正文块 29",
+          "block_sha256": "ae2a3c9af23bd5163076d485367fbe73fe01d82a38e25463777bca5f407e258e"
+        },
+        {
+          "source_id": "SV-7e0a20696c57bd9de164efad",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "372be5828bc0cbf1e3ac4588a5763778de2c79c7e53d6d3f93cc11472b1b7394"
+        },
+        {
+          "source_id": "SV-7e0a20696c57bd9de164efad",
+          "field": "places",
+          "locator": "可读正文块 29",
+          "block_sha256": "ae2a3c9af23bd5163076d485367fbe73fe01d82a38e25463777bca5f407e258e"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 1,
+            "max_gap_years": 1,
+            "target_id": "CORE-6a23db47bd",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-dbd5fcbee281ccf3c09d7eaa",
+          "type": "near_year"
+        },
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 9,
+            "max_gap_years": 9,
+            "target_id": "CORE-98a5d72416",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-b2ee0ffa6e60b12fd7abd490",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "采用名录590年9月3日任期开始，任期与生卒、信仰叙事分开。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-0ae2d2fcf93dec64801ff737",
+      "record_id": "REC-ff1460c9a7ac3f368c41ac87",
+      "revision_id": "REV-d7e79e304d35be1848e86041",
+      "title": "唐朝建立",
+      "aliases": [
+        "唐朝建立",
+        "Tang dynasty"
+      ],
+      "summary": "618年，唐朝建立，成为中国历史上的重要王朝。",
+      "body": [
+        "唐朝延续至907年。其政治制度、文学艺术和中外文化交流对后世产生深远影响。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "中国",
+          "modern_name": null,
+          "precision": "country",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 618,
+        "end_year": 618,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "618年"
+      },
+      "people": [],
+      "polities": [
+        "唐"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/cb8a4b862e93af590ae76c64d187ec9e90d7e5bebd91548a8d776bd5e22442ef.jpg",
+          "sha256": "cb8a4b862e93af590ae76c64d187ec9e90d7e5bebd91548a8d776bd5e22442ef",
+          "caption": "明代绘制的唐高祖像，非618年现场记录。",
+          "depiction_type": "后世人物画像",
+          "creator": "Unknown author Unknown author",
+          "credit": "Digitized by NPM; image is directly from Shuge",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:TangGaozu.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ATangGaozu.jpg&oldid=1190830782",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-b92daa045b6535918d549f95",
+          "field": "time",
+          "locator": "可读正文块 1",
+          "block_sha256": "ef37cb50e1be944c086de1e2ed0780af919c313a69ed527c63a57dfc3f67b846"
+        },
+        {
+          "source_id": "SV-b92daa045b6535918d549f95",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "ef37cb50e1be944c086de1e2ed0780af919c313a69ed527c63a57dfc3f67b846"
+        },
+        {
+          "source_id": "SV-b92daa045b6535918d549f95",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "ef37cb50e1be944c086de1e2ed0780af919c313a69ed527c63a57dfc3f67b846"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对618年建国与907年终点；后世唐高祖画像不是建国现场。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-e199179aab12ca19687077fb",
+      "record_id": "REC-1c2ec3cbfaa269641ca47b14",
+      "revision_id": "REV-08a94e639dcfe78b878bacd5",
+      "title": "安史之乱",
+      "aliases": [
+        "安史之乱"
+      ],
+      "summary": "755—763年，安禄山、史思明及其继承势力与唐廷之间发生大规模战争。",
+      "body": [
+        "战争严重冲击唐朝政治与社会秩序，通常被视为唐朝由盛转衰的重要阶段。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "唐朝北方及中原等主要战区",
+          "modern_name": null,
+          "precision": "region",
+          "role": "campaign_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "period",
+      "time": {
+        "start_year": 755,
+        "end_year": 763,
+        "kind": "duration",
+        "precision": "year_range",
+        "approximate": false,
+        "display": "755年—763年"
+      },
+      "people": [
+        "安禄山",
+        "史思明",
+        "唐玄宗"
+      ],
+      "polities": [
+        "唐"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/55c713d8c8e268e901693a6e26fd108c62adab16441aaf21026a8226a00f6544.jpg",
+          "sha256": "55c713d8c8e268e901693a6e26fd108c62adab16441aaf21026a8226a00f6544",
+          "caption": "传统归于仇英的《明皇幸蜀》题材画，为后世绘画归属说，非唐代写生。玄宗入蜀属756年相关事件，不把图像当755年叛乱开始现场。",
+          "depiction_type": "后世历史题材画",
+          "creator": "Qiu Ying",
+          "credit": "Transferred from en.wikipedia to Commons. Freer Gallery of Art and Arthur M. Sackler Gallery, the Smithsonian’s National Museum of Asian Art",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Emperor_Minghuang%27s_Journey_to_Sichuan,_Freer_Gallery_of_Art.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AEmperor+Minghuang%27s+Journey+to+Sichuan%2C+Freer+Gallery+of+Art.jpg&oldid=1228887137",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-b92daa045b6535918d549f95",
+          "field": "time",
+          "locator": "可读正文块 46",
+          "block_sha256": "a3d16e052864c976bc6feae40546a0fbcd618141fe31b4078046c0c8bfe36087"
+        },
+        {
+          "source_id": "SV-b92daa045b6535918d549f95",
+          "field": "title",
+          "locator": "可读正文块 37",
+          "block_sha256": "12a2dda55b9895a4cc96eea91c132cf1afbde6ced7f017e4e2b8e51f83f5c68d"
+        },
+        {
+          "source_id": "SV-b92daa045b6535918d549f95",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "ef37cb50e1be944c086de1e2ed0780af919c313a69ed527c63a57dfc3f67b846"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对755–763年区间；不采用原来源中的争议性死亡总数与动机推断。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-040f998a16887f9371576712",
+      "record_id": "REC-9ae4d16c1e5107f18032e2b5",
+      "revision_id": "REV-c99409895bd31a32d4b70ffc",
+      "title": "北宋建立",
+      "aliases": [
+        "北宋建立",
+        "Song dynasty"
+      ],
+      "summary": "960年，赵匡胤建立宋朝，开始北宋时期。",
+      "body": [
+        "北宋以开封为都城。赵匡胤即宋太祖，宋朝在这一时期形成重视文官的政治格局。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "开封（都城）",
+          "modern_name": null,
+          "precision": "city",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 960,
+        "end_year": 960,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "960年"
+      },
+      "people": [
+        "赵匡胤"
+      ],
+      "polities": [
+        "北宋",
+        "宋"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/a18adbf60ac868583dbc974c6a041af26ba53c7465674d4d7b5c2dfeff6f6bf7.jpg",
+          "sha256": "a18adbf60ac868583dbc974c6a041af26ba53c7465674d4d7b5c2dfeff6f6bf7",
+          "caption": "宋太祖赵匡胤传世画像；绘制时间按文件页标注为宋代，不等同于960年建国现场。",
+          "depiction_type": "传世人物画像",
+          "creator": "Anonymous Unknown author",
+          "credit": "Digitized by NPM; image is directly from Shuge",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Song_Taizu.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ASong+Taizu.jpg&oldid=1182527179",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-795b1e9dd95e8907cc78ff8e",
+          "field": "time",
+          "locator": "可读正文块 3",
+          "block_sha256": "4f59d977fa3d6c23f2a8547d21333d503cfd6652e0c08d582d31bd34f13481cf"
+        },
+        {
+          "source_id": "SV-795b1e9dd95e8907cc78ff8e",
+          "field": "title",
+          "locator": "可读正文块 3",
+          "block_sha256": "4f59d977fa3d6c23f2a8547d21333d503cfd6652e0c08d582d31bd34f13481cf"
+        },
+        {
+          "source_id": "SV-795b1e9dd95e8907cc78ff8e",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "ecc23b19cee2ca949838d609adb70b716189f0366349cc0db8f58c2a1391d28d"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对960年起点与开封都城；不沿用来源中不适用于本节点的南北宋分界值。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-ef89a49d48a06c58880874eb",
+      "record_id": "REC-89e1ac1af4bd10c8a6a75dfa",
+      "revision_id": "REV-8e447395b9a53bff21050ada",
+      "title": "张择端《清明上河图》",
+      "aliases": [
+        "张择端《清明上河图》"
+      ],
+      "summary": "张择端的《清明上河图》描绘北宋都城汴京的城市生活。",
+      "body": [
+        "馆方将作品归于北宋，图中表现汴河、虹桥与商业街区。具体创作年仍有不同研究意见，不能把艺术构图等同于整座城市的实测地图。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "汴京（画面表现区域，今开封）；北京故宫（现藏地）",
+          "modern_name": null,
+          "precision": "region",
+          "role": "depicted_area"
+        }
+      ],
+      "categories": [
+        "艺术"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "work",
+      "time": {
+        "start_year": 960,
+        "end_year": 1127,
+        "kind": "dating_range",
+        "precision": "year_range",
+        "approximate": true,
+        "display": "北宋（创作具体纪年未定）"
+      },
+      "people": [
+        "张择端"
+      ],
+      "polities": [
+        "北宋"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/f5dd806f206e9c6627620f0ec8758c1fceecb4c7f2f9c283b87320b76c94b112.jpg",
+          "sha256": "f5dd806f206e9c6627620f0ec8758c1fceecb4c7f2f9c283b87320b76c94b112",
+          "caption": "张择端本《清明上河图》的长卷影像；与1736年清院本分别记录。画面很长，需展开查看，不以清院本冒充北宋原作。",
+          "depiction_type": "古代画作全卷影像",
+          "creator": "Zhang Zeduan",
+          "credit": "Baidu Tieba",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Alongtheriver_QingMing.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AAlongtheriver+QingMing.jpg&oldid=1147664081",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-55d890b46ca2858c52a94320",
+          "field": "time",
+          "locator": "可读正文块 69",
+          "block_sha256": "adfdf53c5a0e7dccd0e3f92dd145cd503457d249361406edf19dc46b9836518f"
+        },
+        {
+          "source_id": "SV-55d890b46ca2858c52a94320",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "628a5111157db0dc127dbda67a4909b08b8667acb0b74488dde521a087caafe4"
+        },
+        {
+          "source_id": "SV-55d890b46ca2858c52a94320",
+          "field": "places",
+          "locator": "可读正文块 70",
+          "block_sha256": "62405e65c12550094bf8434cc5c4f3a56da13ffaf64310acb53b880fb55b6d72"
+        }
+      ],
+      "relations": [],
+      "review_note": "馆方只定为北宋，960–1127仅为定年检索范围，不表示创作持续167年。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-a8f476540fb11ffa01e36f46",
+      "record_id": "REC-2e38f7d6dec3a4dbb2b1305f",
+      "revision_id": "REV-7b7970065b67d36653972f68",
+      "title": "《大宪章》签订",
+      "aliases": [
+        "《大宪章》签订",
+        "Magna Carta"
+      ],
+      "summary": "1215年，英王约翰在兰尼米德接受《大宪章》，王权受到书面条款约束。",
+      "body": [
+        "条款涉及征税、司法与自由人的权利。文书经加盖王玺确认，不能把它简单等同于现代普选宪法。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "英格兰兰尼米德",
+          "modern_name": null,
+          "precision": "site",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "欧洲（希腊罗马以外）"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1215,
+        "end_year": 1215,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1215年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/d18df549f403f09b12352f6192f2178b070c832762260c50a91534fdb0988569.jpg",
+          "sha256": "d18df549f403f09b12352f6192f2178b070c832762260c50a91534fdb0988569",
+          "caption": "大英图书馆所藏1215年《大宪章》传世文本影像。",
+          "depiction_type": "历史文书影像",
+          "creator": "Original authors were the barons and King John of England . Uploaded by Earthsound .",
+          "credit": "This file has been provided by the British Library from its digital collections. Links to the British Library's website may be broken as the library recovers from a October 2023 cyber attack, and will be updated once material becomes accessible online. For more information on the attack see: https://www.bl.uk/about/cyber-attack It is also made available on a British Library website . Catalogue entry: Cotton MS Augustus II 106",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Magna_Carta_(British_Library_Cotton_MS_Augustus_II.106).jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AMagna+Carta+%28British+Library+Cotton+MS+Augustus+II.106%29.jpg&oldid=1288471182",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-f11c5b1b09301cedeb002610",
+          "field": "time",
+          "locator": "可读正文块 1",
+          "block_sha256": "cba40235e266c126364fd36510bf4fbeb6cab2002e44925f174b46301834bd0c"
+        },
+        {
+          "source_id": "SV-f11c5b1b09301cedeb002610",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "cba40235e266c126364fd36510bf4fbeb6cab2002e44925f174b46301834bd0c"
+        },
+        {
+          "source_id": "SV-f11c5b1b09301cedeb002610",
+          "field": "places",
+          "locator": "可读正文块 17",
+          "block_sha256": "8062c0b2f520628d5df9003a674e4763db68dfc78982ce9da852bb4d31b9d398"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1215年与兰尼米德；采用加盖王玺的表述，不称现代普选宪法。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-6cbbc21aef20f9354c00397e",
+      "record_id": "REC-831ded0e79ca46a0fc3bcbcd",
+      "revision_id": "REV-88e4f8cc5a1b0b27f0488acc",
+      "title": "元朝建立",
+      "aliases": [
+        "元朝建立",
+        "Yuan dynasty"
+      ],
+      "summary": "1271年，忽必烈采用“大元”国号。",
+      "body": [
+        "元朝定国号与1279年灭南宋是两个不同节点，不能以完成统一之年代替王朝建立年份。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "中国；北京为统治中心",
+          "modern_name": null,
+          "precision": "region",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 1271,
+        "end_year": 1271,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "1271年"
+      },
+      "people": [
+        "忽必烈"
+      ],
+      "polities": [
+        "元"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/145a54486509633bef5da890708bc87d22bbabadf51a52278729236f36f59b1f.jpg",
+          "sha256": "145a54486509633bef5da890708bc87d22bbabadf51a52278729236f36f59b1f",
+          "caption": "约1294年绘制的忽必烈身后像，非1271年定国号现场。",
+          "depiction_type": "身后人物画像",
+          "creator": "Araniko",
+          "credit": "This image has been extracted from another file",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:YuanEmperorAlbumKhubilaiPortrait.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AYuanEmperorAlbumKhubilaiPortrait.jpg&oldid=1070089010",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-803b93ead79a63d139b9861e",
+          "field": "time",
+          "locator": "可读正文块 13",
+          "block_sha256": "cda70bc17a0e913830c6f8b58fafdfd0e1a0e88a64ee2eb98ab694b73ddfc703"
+        },
+        {
+          "source_id": "SV-803b93ead79a63d139b9861e",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "d4173fa1ce291d84bac203ff9762e9b33eefa6cf0a9480b0e3bd6729cbc69a38"
+        },
+        {
+          "source_id": "SV-803b93ead79a63d139b9861e",
+          "field": "places",
+          "locator": "可读正文块 9",
+          "block_sha256": "460a76d76fbec545e2972104daacf8020cd2c37bae8559a34934cb6c558e268f"
+        }
+      ],
+      "relations": [],
+      "review_note": "限定1271年采用大元国号，区别1260年即位及1279年灭宋。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-3558a448fa43f8ea65a22b25",
+      "record_id": "REC-998f87340679fcbd219735c5",
+      "revision_id": "REV-1a4203a852cd4de6fd75e659",
+      "title": "明朝建立",
+      "aliases": [
+        "明朝建立",
+        "Ming dynasty"
+      ],
+      "summary": "1368年，朱元璋称帝，建立明朝。",
+      "body": [
+        "朱元璋此前以南京为重要根据地。新王朝取代元朝在中国的统治。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "南京（建国中心）",
+          "modern_name": null,
+          "precision": "city",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 1368,
+        "end_year": 1368,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "1368年"
+      },
+      "people": [
+        "朱元璋"
+      ],
+      "polities": [
+        "明"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/10a0543ed91452dabab571b0e71a9a1f0f2d7b94ae3412309a30f5c7952a6090.jpg",
+          "sha256": "10a0543ed91452dabab571b0e71a9a1f0f2d7b94ae3412309a30f5c7952a6090",
+          "caption": "明太祖朱元璋传世画像；具体绘制时间按文件页保留，非1368年建国现场。",
+          "depiction_type": "传世人物画像",
+          "creator": "Unknown author Unknown author",
+          "credit": "Digitized by NPM; image is directly from Shuge",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Portrait_assis_de_l%27empereur_Ming_Taizu.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3APortrait+assis+de+l%27empereur+Ming+Taizu.jpg&oldid=1244441504",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-6b8ca335c35d7f0d31954c38",
+          "field": "time",
+          "locator": "可读正文块 13",
+          "block_sha256": "ba2a30ef2b0e80ae0cf4023e0e072f010e7622539eec911495fb21e66d62562f"
+        },
+        {
+          "source_id": "SV-6b8ca335c35d7f0d31954c38",
+          "field": "title",
+          "locator": "可读正文块 9",
+          "block_sha256": "e33699da9aad4912548725bc3903a7d4a10888616b2e253e5232489bdfb754b2"
+        },
+        {
+          "source_id": "SV-6b8ca335c35d7f0d31954c38",
+          "field": "places",
+          "locator": "可读正文块 12",
+          "block_sha256": "5c6c64563b84ad3c4e8d91e8ade681c91b321450c1c402e2df70bf88e97c861a"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1368年称帝及南京背景；传世画像不作为现场记录。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-0f260dbb0855f985f9e5a5c1",
+      "record_id": "REC-62ec4a4098c9403d2abe7afb",
+      "revision_id": "REV-14ba133ef918f8b030fb314a",
+      "title": "郑和首次下西洋",
+      "aliases": [
+        "郑和首次下西洋"
+      ],
+      "summary": "1405—1407年，郑和、王景弘率领船队完成首次下西洋航行。",
+      "body": [
+        "航路由太仓、福建出海，通向东南亚和印度洋。首次航行与1405—1433年七次远航的整体时期区别处理。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "太仓、福建出海至东南亚及印度洋",
+          "modern_name": null,
+          "precision": "multisite",
+          "role": "journey_scope"
+        }
+      ],
+      "categories": [
+        "文化"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "period",
+      "time": {
+        "start_year": 1405,
+        "end_year": 1407,
+        "kind": "duration",
+        "precision": "year_range",
+        "approximate": false,
+        "display": "1405年—1407年"
+      },
+      "people": [
+        "郑和",
+        "王景弘"
+      ],
+      "polities": [
+        "明"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/a99d84e4fe6d8e5ad4dfe11c22a539d653cca42bb97cf5098c048b063e3188af.png",
+          "sha256": "a99d84e4fe6d8e5ad4dfe11c22a539d653cca42bb97cf5098c048b063e3188af",
+          "caption": "17世纪《武备志》所收茅坤图相关部分，基于较早航海材料；不把它当1405年首航船上的原图，也不据此将图示全部地点归入首次航程。",
+          "depiction_type": "后世古代航海图影像",
+          "creator": "Mao Yuanyi and an unknown cartographer",
+          "credit": "Wubei Zhi, a 17th century work with maps dated to Zheng He voyages of early 15th century",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Mao_Kun_map_-_Langkawi,_Kedah,_Penang_with_Sumatra.png",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AMao+Kun+map+-+Langkawi%2C+Kedah%2C+Penang+with+Sumatra.png&oldid=1276775425",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-b8165b2bc47532bcb767e7c2",
+          "field": "time",
+          "locator": "可读正文块 31",
+          "block_sha256": "5c423ce9c22a1c17b1f8124d8ebb1bcbddd1cbaaac5e08ac937c169f60bc38bd"
+        },
+        {
+          "source_id": "SV-b8165b2bc47532bcb767e7c2",
+          "field": "title",
+          "locator": "可读正文块 31",
+          "block_sha256": "5c423ce9c22a1c17b1f8124d8ebb1bcbddd1cbaaac5e08ac937c169f60bc38bd"
+        },
+        {
+          "source_id": "SV-b8165b2bc47532bcb767e7c2",
+          "field": "places",
+          "locator": "可读正文块 31",
+          "block_sha256": "5c423ce9c22a1c17b1f8124d8ebb1bcbddd1cbaaac5e08ac937c169f60bc38bd"
+        }
+      ],
+      "relations": [],
+      "review_note": "限定1405–1407年首次航行；17世纪航海图不代表首航全部地点。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-f51be579c4f0d4b1b444d533",
+      "record_id": "REC-2bee0d05500cc3dbd287dadb",
+      "revision_id": "REV-f6e9b3f9956ee991d4bf371b",
+      "title": "哥伦布首次横渡大西洋",
+      "aliases": [
+        "哥伦布首次横渡大西洋"
+      ],
+      "summary": "1492年，哥伦布率船队横渡大西洋，抵达加勒比地区。",
+      "body": [
+        "此次航行加强了欧洲与美洲之间持续联系，也成为殖民扩张的前奏。它不是人类首次来到美洲。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "西班牙至加勒比海（航行范围）",
+          "modern_name": null,
+          "precision": "multisite",
+          "role": "journey_scope"
+        }
+      ],
+      "categories": [
+        "文化"
+      ],
+      "civilizations": [
+        "美洲"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1492,
+        "end_year": 1492,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "1492年"
+      },
+      "people": [
+        "哥伦布"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/2c87acafbd8cb65ac50c72982a684b2245ab924fc677ba68b7b51dee91fa7537.jpg",
+          "sha256": "2c87acafbd8cb65ac50c72982a684b2245ab924fc677ba68b7b51dee91fa7537",
+          "caption": "约翰·范德林1847年《哥伦布登陆》历史画，晚于1492年三个多世纪；构图不能当作登陆场面的一手记录。",
+          "depiction_type": "后世历史画",
+          "creator": "John Vanderlyn",
+          "credit": "Architect of the Capitol",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Landing_of_Columbus_(2).jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ALanding+of+Columbus+%282%29.jpg&oldid=1106505688",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-6c21d0aa435728e878d4d0d0",
+          "field": "time",
+          "locator": "可读正文块 19",
+          "block_sha256": "7cfca02c7b93b6b2d06224cf5a3dcaa78bee2580a1ca94cc0ae4d37b06ca521e"
+        },
+        {
+          "source_id": "SV-6c21d0aa435728e878d4d0d0",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "1863944e88b202b8a7ecc35557462b6976aac221c90869622fccf068ea594ec2"
+        },
+        {
+          "source_id": "SV-6c21d0aa435728e878d4d0d0",
+          "field": "places",
+          "locator": "可读正文块 19",
+          "block_sha256": "7cfca02c7b93b6b2d06224cf5a3dcaa78bee2580a1ca94cc0ae4d37b06ca521e"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1492年航行及加勒比；不声称人类首次到美洲，配图为1847年历史画。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-e54cf6754f1e6c97c9e8a112",
+      "record_id": "REC-5e65bafd3c92b6d8ef9d961c",
+      "revision_id": "REV-ce471578b9b03744f40c1d33",
+      "title": "达芬奇《蒙娜丽莎》",
+      "aliases": [
+        "达芬奇《蒙娜丽莎》"
+      ],
+      "summary": "达芬奇的《蒙娜丽莎》是文艺复兴时期广为熟知的肖像画。",
+      "body": [
+        "卢浮宫将作品定年为1503—1519年，并说明画家约1503年开始、此后长期保留与修改。画面人物的身份与委托背景须按馆方研究范围叙述。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "巴黎卢浮宫（现藏地；不当作1503年创作场址）",
+          "modern_name": null,
+          "precision": "institution",
+          "role": "collection_site"
+        }
+      ],
+      "categories": [
+        "艺术"
+      ],
+      "civilizations": [
+        "欧洲（希腊罗马以外）"
+      ],
+      "history_scope": "world",
+      "record_type": "work",
+      "time": {
+        "start_year": 1503,
+        "end_year": 1519,
+        "kind": "dating_range",
+        "precision": "year_range",
+        "approximate": true,
+        "display": "约1503—1519年（馆方作品定年）"
+      },
+      "people": [
+        "达芬奇",
+        "列奥纳多·达·芬奇"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/6cdf101762e6c1ad5168ee64707e926a7d16796f5abc2131dbc70ff292b874b6.jpg",
+          "sha256": "6cdf101762e6c1ad5168ee64707e926a7d16796f5abc2131dbc70ff292b874b6",
+          "caption": "达芬奇《蒙娜丽莎》画作影像。文件页1503—1506的常见定年不替代卢浮宫当前1503—1519的作品记录；不是历史人物的摄影肖像。",
+          "depiction_type": "古代画作影像",
+          "creator": "Leonardo da Vinci",
+          "credit": "Musée du Louvre",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Mona_Lisa.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AMona+Lisa.jpg&oldid=1178043264",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-b3fa88028267487dd8d238f0",
+          "field": "time",
+          "locator": "可读正文块 17",
+          "block_sha256": "2fc30da01d6c505fe64b1547927f0d18d4f5b16bf8487ed9d5fd92eb157636bc"
+        },
+        {
+          "source_id": "SV-b3fa88028267487dd8d238f0",
+          "field": "title",
+          "locator": "可读正文块 17",
+          "block_sha256": "2fc30da01d6c505fe64b1547927f0d18d4f5b16bf8487ed9d5fd92eb157636bc"
+        },
+        {
+          "source_id": "SV-b3fa88028267487dd8d238f0",
+          "field": "places",
+          "locator": "可读正文块 1",
+          "block_sha256": "27162202d49261b04084be82010458cc481fd6484776380a06fc374888801446"
+        }
+      ],
+      "relations": [],
+      "review_note": "采用卢浮宫1503–1519作品定年；不以图片页的1503–1506覆盖馆方记录。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-fec061f4f798108456ab3e62",
+      "record_id": "REC-ace4eb9afaf0b9b53f6fd897",
+      "revision_id": "REV-f7eebc67e5ebd17a423406d5",
+      "title": "宗教改革开始",
+      "aliases": [
+        "宗教改革开始",
+        "Protestant Reformation"
+      ],
+      "summary": "1517年，马丁·路德关于赎罪券的论纲引起争论，成为宗教改革的常用起点。",
+      "body": [
+        "宗教改革是一个长期而多中心的过程。1517年的路德事件与整个改革运动的起止范围需要区分。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "德意志地区（路德活动中心维滕贝格）",
+          "modern_name": null,
+          "precision": "region",
+          "role": "movement_center"
+        }
+      ],
+      "categories": [
+        "宗教"
+      ],
+      "civilizations": [
+        "欧洲（希腊罗马以外）"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1517,
+        "end_year": 1517,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "1517年"
+      },
+      "people": [
+        "马丁·路德"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/655af7e10cc8eab5a6fb9a81b2d36fb8e463d564a8fbb824831b8a11ee950a53.jpg",
+          "sha256": "655af7e10cc8eab5a6fb9a81b2d36fb8e463d564a8fbb824831b8a11ee950a53",
+          "caption": "《九十五条论纲》相关印本文本影像。文件页书目信息列1522年印本，不能把它当作已证实的1517年张贴原件。",
+          "depiction_type": "古代文本影像",
+          "creator": "Wittenberg: Melchior Lotter d.J., 1522",
+          "credit": "Martin Luther",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:95Thesen.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3A95Thesen.jpg&oldid=1190716384",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-5e919103197b88838284344e",
+          "field": "time",
+          "locator": "可读正文块 2",
+          "block_sha256": "06eb9e63335226cac292d6be6c3dd4a0b9602252faa4af5a58da97450fba1196"
+        },
+        {
+          "source_id": "SV-5e919103197b88838284344e",
+          "field": "title",
+          "locator": "可读正文块 2",
+          "block_sha256": "06eb9e63335226cac292d6be6c3dd4a0b9602252faa4af5a58da97450fba1196"
+        },
+        {
+          "source_id": "SV-5e919103197b88838284344e",
+          "field": "places",
+          "locator": "可读正文块 26",
+          "block_sha256": "2f5cb6604bd6912d0644673949ed4a846d86b1669def56bc72efb70dfbf7144d"
+        }
+      ],
+      "relations": [],
+      "review_note": "1517为路德事件的常用起点；长期多中心改革与单年事件分开，配图为1522年印本。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-afd97fc852fb7d8be098d887",
+      "record_id": "REC-fc8dc5862ecb4cc4ae8f2f11",
+      "revision_id": "REV-2cabd31029407386352f493f",
+      "title": "美国《独立宣言》发表",
+      "aliases": [
+        "美国《独立宣言》发表",
+        "The Declaration of Independence, 1776"
+      ],
+      "summary": "1776年7月4日，大陆会议通过《独立宣言》。",
+      "body": [
+        "美国国家档案馆明确区分7月通过文书与8月开始在羊皮纸誊本上签名，不能合并为同一天。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "北美十三殖民地（事件所涉区域）",
+          "modern_name": null,
+          "precision": "region",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "美洲"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1776,
+        "end_year": 1776,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1776年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/3b67b61b352a6fb128d5c9546c7a6ea609a34e7dad731fffd1fe3ff7d313b74d.jpg",
+          "sha256": "3b67b61b352a6fb128d5c9546c7a6ea609a34e7dad731fffd1fe3ff7d313b74d",
+          "caption": "约翰·特朗布尔1819年完成的历史画，表现起草委员会提交文稿，并非1776年拍摄的现场或集体签字记录。",
+          "depiction_type": "后世历史画",
+          "creator": "John Trumbull",
+          "credit": "US Capitol",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Declaration_of_Independence_(1819),_by_John_Trumbull.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ADeclaration+of+Independence+%281819%29%2C+by+John+Trumbull.jpg&oldid=1220244851",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-e1cf47e0e0249b15dfe64b39",
+          "field": "time",
+          "locator": "可读正文块 16",
+          "block_sha256": "bd1d5c6818bfb260049c46c522884d6d252c8fb327dc3df8295e18d05138b6cb"
+        },
+        {
+          "source_id": "SV-e1cf47e0e0249b15dfe64b39",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "3c0b14039ab8e89ea52ccde2300b05cd6aa2f74aae374ab8e905db0ede08de8e"
+        },
+        {
+          "source_id": "SV-e1cf47e0e0249b15dfe64b39",
+          "field": "places",
+          "locator": "可读正文块 17",
+          "block_sha256": "cf8aaa9234153ba3a0baebd0087e36a881e8ce093dad83ba169cb07876c2f6d7"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1776年7月4日通过、8月开始签署；1819年画作并非集体签字现场。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-bfa6a7b92c790d5b4a4d9e4e",
+      "record_id": "REC-18e5414bf5cd8fbb048ca7d0",
+      "revision_id": "REV-9b58237f24b767f883887f57",
+      "title": "美国1787年宪法签署",
+      "aliases": [
+        "美国1787年宪法签署",
+        "Constitutional Convention and Ratification, 1787–1789"
+      ],
+      "summary": "1787年9月17日，制宪会议代表签署美国宪法。",
+      "body": [
+        "会议在费城举行。宪法文本的签署、各州批准和新政府运行属于不同时间节点。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "美国费城独立厅",
+          "modern_name": null,
+          "precision": "site",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "美洲"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1787,
+        "end_year": 1787,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1787年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/a3830c00a338e742c7c1479e255b4a87d28a559743687eafaaf51119bcb7e95a.jpg",
+          "sha256": "a3830c00a338e742c7c1479e255b4a87d28a559743687eafaaf51119bcb7e95a",
+          "caption": "1787年美国宪法第一页的文书影像。",
+          "depiction_type": "历史文书影像",
+          "creator": "Constitutional Convention",
+          "credit": "",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Constitution_of_the_United_States_-_DPLA_-_9ca804144bd5965e992ae3528bc3c6a3_(page_1).jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AConstitution+of+the+United+States+-+DPLA+-+9ca804144bd5965e992ae3528bc3c6a3+%28page+1%29.jpg&oldid=1250433642",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-b5c516a6bd37d26b48a78515",
+          "field": "time",
+          "locator": "可读正文块 16",
+          "block_sha256": "31254ba92162970851bb2bc964a5da5488eb1d62946802974247128f35db378b"
+        },
+        {
+          "source_id": "SV-b5c516a6bd37d26b48a78515",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "1e2ae812e055b3ba9a2a068dc9d4ca89c1287d8c8542c2e27fcf88e5491d4879"
+        },
+        {
+          "source_id": "SV-b5c516a6bd37d26b48a78515",
+          "field": "places",
+          "locator": "可读正文块 17",
+          "block_sha256": "82ec8bff8e8f7a6635aef519d27ea43e7467989e3c17dd32290e1a5d61115dc3"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1787年9月17日与费城；签署、批准和新政府运行分开。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-35747a60e0e1f8152aef4648",
+      "record_id": "REC-64f990b283cccc516f78a9ba",
+      "revision_id": "REV-d1bf92242d553be5f541b476",
+      "title": "贝多芬《第九交响曲》首演",
+      "aliases": [
+        "贝多芬《第九交响曲》首演"
+      ],
+      "summary": "1824年5月7日，贝多芬《第九交响曲》在维也纳首演。",
+      "body": [
+        "贝多芬故居馆方以首演相关手稿和文件纪念这部作品。首演地点为维也纳，1824年的首演与后来的演出、录音分别记录。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "维也纳",
+          "modern_name": null,
+          "precision": "city",
+          "role": "event_area"
+        }
+      ],
+      "categories": [
+        "艺术"
+      ],
+      "civilizations": [
+        "欧洲（希腊罗马以外）"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1824,
+        "end_year": 1824,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1824年"
+      },
+      "people": [
+        "贝多芬"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/2e6e31a0f63b69dede7f89e644a7f6e2b29c1a55538fc6177e2f5c482513aeb3.jpg",
+          "sha256": "2e6e31a0f63b69dede7f89e644a7f6e2b29c1a55538fc6177e2f5c482513aeb3",
+          "caption": "施蒂勒1820年贝多芬肖像，画中手稿为《庄严弥撒》，不是《第九交响曲》首演照片或该曲手稿。",
+          "depiction_type": "人物油画",
+          "creator": "Joseph Karl Stieler",
+          "credit": "Google Arts & Culture , rotated and cropped to remove the potentially copyrighted photo of the frame.",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Joseph_Karl_Stieler%27s_Beethoven_mit_dem_Manuskript_der_Missa_solemnis.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AJoseph+Karl+Stieler%27s+Beethoven+mit+dem+Manuskript+der+Missa+solemnis.jpg&oldid=1183631736",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-680c4aa7667cb6d526521553",
+          "field": "time",
+          "locator": "可读正文块 87",
+          "block_sha256": "824e35f86373b4082a5e6a6d553242d1e47ad2eed01436ee5fa9166cd17de8df"
+        },
+        {
+          "source_id": "SV-680c4aa7667cb6d526521553",
+          "field": "title",
+          "locator": "可读正文块 87",
+          "block_sha256": "824e35f86373b4082a5e6a6d553242d1e47ad2eed01436ee5fa9166cd17de8df"
+        },
+        {
+          "source_id": "SV-680c4aa7667cb6d526521553",
+          "field": "places",
+          "locator": "可读正文块 89",
+          "block_sha256": "90f9da3af2bc443fc540603d9c17eae8702db4d8fc8aab89f4d8906c539c51f2"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1824年5月7日与维也纳；1820年肖像手稿是庄严弥撒。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-f0170526d476380bc3901512",
+      "record_id": "REC-e371921f7d2f1b39953640ff",
+      "revision_id": "REV-6ea65cc667fedb7fbdccb793",
+      "title": "虎门销烟",
+      "aliases": [
+        "虎门销烟"
+      ],
+      "summary": "1839年6月，林则徐主持在广东虎门公开销毁收缴的鸦片。",
+      "body": [
+        "销烟于6月3日至23日进行。国博所藏销烟池铺地石是相关物证。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "广东虎门海滩",
+          "modern_name": null,
+          "precision": "site",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 1839,
+        "end_year": 1839,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1839年"
+      },
+      "people": [
+        "林则徐"
+      ],
+      "polities": [
+        "清"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/821e00c31631bfb0645877477437001e187fe7591820982a6d1439de162ec55c.jpg",
+          "sha256": "821e00c31631bfb0645877477437001e187fe7591820982a6d1439de162ec55c",
+          "caption": "虎门销烟池遗址2002年的照片；非1839年现场影像。",
+          "depiction_type": "遗址现状照片",
+          "creator": "Simon Lo",
+          "credit": "Own work",
+          "license": "CC BY 2.0",
+          "license_url": "https://creativecommons.org/licenses/by/2.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Opium_Destruction_Pool.JPG",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AOpium+Destruction+Pool.JPG&oldid=1178975005",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-2387483b07c794c14ddfdb85",
+          "field": "time",
+          "locator": "可读正文块 21",
+          "block_sha256": "e2b8f44bf80add7090ee5181d131a2e0f33ef56571c07020f5e879f54fc8c1dd"
+        },
+        {
+          "source_id": "SV-2387483b07c794c14ddfdb85",
+          "field": "time",
+          "locator": "可读正文块 22",
+          "block_sha256": "057ad4085e28e5e8572da54f061cfafd09023b711fbf007ac81b8ca88fb1f6f7"
+        },
+        {
+          "source_id": "SV-2387483b07c794c14ddfdb85",
+          "field": "title",
+          "locator": "可读正文块 21",
+          "block_sha256": "e2b8f44bf80add7090ee5181d131a2e0f33ef56571c07020f5e879f54fc8c1dd"
+        },
+        {
+          "source_id": "SV-2387483b07c794c14ddfdb85",
+          "field": "places",
+          "locator": "可读正文块 22",
+          "block_sha256": "057ad4085e28e5e8572da54f061cfafd09023b711fbf007ac81b8ca88fb1f6f7"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 0,
+            "max_gap_years": 0,
+            "target_id": "CORE-9b69ff78fb",
+            "type": "同年对照"
+          },
+          "target_event_id": "EV-bfe5cac27899e8e7c711563e",
+          "type": "same_year"
+        },
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 1,
+            "max_gap_years": 1,
+            "target_id": "CORE-ae86fc4863",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-ee13c367e6b54eb37ca5840c",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对1839年6月3–23日与虎门；现代遗址照片不是当年现场。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-bfe5cac27899e8e7c711563e",
+      "record_id": "REC-7c48430e3c638fa32ee37ea1",
+      "revision_id": "REV-783b51b5cd41929448b20aca",
+      "title": "达盖尔摄影法公开",
+      "aliases": [
+        "达盖尔摄影法公开"
+      ],
+      "summary": "1839年8月19日，达盖尔摄影法的操作过程向公众披露。",
+      "body": [
+        "这次公开介绍与同年1月向法国科学院展示图像是两个阶段，目录采用8月的工艺公开作为节点。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "法国科学院与美术学院联席会议",
+          "modern_name": null,
+          "precision": "institution",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "艺术"
+      ],
+      "civilizations": [
+        "欧洲（希腊罗马以外）"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1839,
+        "end_year": 1839,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1839年"
+      },
+      "people": [
+        "达盖尔"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/d48d0a2dc510f875acb572812732500436f079da5a545939e717490fa990f25f.jpg",
+          "sha256": "d48d0a2dc510f875acb572812732500436f079da5a545939e717490fa990f25f",
+          "caption": "达盖尔拍摄的巴黎圣殿大道银版照片，通常定为1838年，文件页也保留可能1837年的意见；展示工艺，不是1839年工艺公开现场。",
+          "depiction_type": "作者作品影像",
+          "creator": "Louis Daguerre",
+          "credit": "Scanned from The Photography Book, Phaidon Press, London, 1997.",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Boulevard_du_Temple_by_Daguerre.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ABoulevard+du+Temple+by+Daguerre.jpg&oldid=1212935679",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-d56592c8f02cef2604127699",
+          "field": "time",
+          "locator": "可读正文块 3",
+          "block_sha256": "181a3cf63b8a57fd6286a639ab5502d27649cee9a8bf77ad357587b5243bfa93"
+        },
+        {
+          "source_id": "SV-d56592c8f02cef2604127699",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "91024f398543c198a012a489f5d780164c9751937aa4a4c6371958054ed7b121"
+        },
+        {
+          "source_id": "SV-d56592c8f02cef2604127699",
+          "field": "places",
+          "locator": "可读正文块 3",
+          "block_sha256": "181a3cf63b8a57fd6286a639ab5502d27649cee9a8bf77ad357587b5243bfa93"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 0,
+            "max_gap_years": 0,
+            "target_id": "CORE-79df2d351e",
+            "type": "同年对照"
+          },
+          "target_event_id": "EV-f0170526d476380bc3901512",
+          "type": "same_year"
+        },
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 1,
+            "max_gap_years": 1,
+            "target_id": "CORE-662176348d",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-16330d70755fd6e59ad8857c",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对1839年8月19日工艺公开及1月展示；配图定年约1838，保留1837意见。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-16330d70755fd6e59ad8857c",
+      "record_id": "REC-a8fe7156b8555da0acfa2dbf",
+      "revision_id": "REV-a3d2b44223a0530bd0d421ae",
+      "title": "第一次鸦片战争",
+      "aliases": [
+        "第一次鸦片战争",
+        "The Opening to China Part I: the First Opium War, the United States, and the Treaty of Wangxia, 1839–1844"
+      ],
+      "summary": "1840—1842年，英国对华发动战争，战后清政府签订《南京条约》。",
+      "body": [
+        "国博馆藏“鸦片烟具”的说明记载，英国于1840年6月出兵，1842年8月双方在南京签约。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "中国沿海；南京为议约地点",
+          "modern_name": null,
+          "precision": "region",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "period",
+      "time": {
+        "start_year": 1840,
+        "end_year": 1842,
+        "kind": "duration",
+        "precision": "year_range",
+        "approximate": false,
+        "display": "1840年—1842年"
+      },
+      "people": [],
+      "polities": [
+        "清"
+      ],
+      "images": [
+        {
+          "src": "/assets/history-trial/aeb7fb9e390d8818179d7647214e5de4b2068cebc3db02f5f2f46a273d10afd6.jpg",
+          "sha256": "aeb7fb9e390d8818179d7647214e5de4b2068cebc3db02f5f2f46a273d10afd6",
+          "caption": "Edward Duncan于1843年制作的海战版画，表现第一次鸦片战争中的战斗；并非1840年开战现场摄影。",
+          "depiction_type": "战后历史版画",
+          "creator": "Edward Duncan",
+          "credit": "http://ocw.mit.edu/ans7870/21f/21f.027/opium_wars_01/ow1_gallery/pages/1841_0792_nemesis_jm_nmm.htm",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Destroying_Chinese_war_junks,_by_E._Duncan_(1843).jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ADestroying+Chinese+war+junks%2C+by+E.+Duncan+%281843%29.jpg&oldid=1254197772",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-71760908b8ca54251197d00c",
+          "field": "time",
+          "locator": "可读正文块 21",
+          "block_sha256": "74c6809c84b5aee8e77ae7a01eca096a54945d1072435cf760bec1a133b0c446"
+        },
+        {
+          "source_id": "SV-71760908b8ca54251197d00c",
+          "field": "time",
+          "locator": "可读正文块 21",
+          "block_sha256": "74c6809c84b5aee8e77ae7a01eca096a54945d1072435cf760bec1a133b0c446"
+        },
+        {
+          "source_id": "SV-71760908b8ca54251197d00c",
+          "field": "title",
+          "locator": "可读正文块 21",
+          "block_sha256": "74c6809c84b5aee8e77ae7a01eca096a54945d1072435cf760bec1a133b0c446"
+        },
+        {
+          "source_id": "SV-71760908b8ca54251197d00c",
+          "field": "places",
+          "locator": "可读正文块 21",
+          "block_sha256": "74c6809c84b5aee8e77ae7a01eca096a54945d1072435cf760bec1a133b0c446"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 0,
+            "max_gap_years": 0,
+            "target_id": "CORE-ae86fc4863",
+            "type": "同年对照"
+          },
+          "target_event_id": "EV-ee13c367e6b54eb37ca5840c",
+          "type": "same_year"
+        },
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 1,
+            "max_gap_years": 1,
+            "target_id": "CORE-9b69ff78fb",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-bfe5cac27899e8e7c711563e",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对1840–1842年区间及南京议约；1843年版画与开战日期分开。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-ee13c367e6b54eb37ca5840c",
+      "record_id": "REC-3c6bbad3d74bc4b408455c94",
+      "revision_id": "REV-e09811da4be5c71e1a0a5cb5",
+      "title": "黑便士邮票启用",
+      "aliases": [
+        "黑便士邮票启用"
+      ],
+      "summary": "1840年5月6日，黑便士邮票在英国开始用于邮资支付。",
+      "body": [
+        "票面为维多利亚女王头像、面值一便士。此节点采用正式使用日，区别于提前发售的日期。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "英国",
+          "modern_name": null,
+          "precision": "country",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "文化"
+      ],
+      "civilizations": [
+        "欧洲（希腊罗马以外）"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1840,
+        "end_year": 1840,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1840年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/c7772b3e160dfff7d22325f885524705f444446d39fb1629804e9b51d5d6e10a.jpg",
+          "sha256": "c7772b3e160dfff7d22325f885524705f444446d39fb1629804e9b51d5d6e10a",
+          "caption": "1840年英国黑便士邮票的实物图像。",
+          "depiction_type": "历史实物影像",
+          "creator": "General Post Office of the United Kingdom of Great Britain and Ireland",
+          "credit": "http://www.uno.edu/~asoble/main.htm --> Dead link, 404 error Archived source : https://web.archive.org/web/20031005130408/www.uno.edu/~asoble/images/pblack2.jpg",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Penny_black.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3APenny+black.jpg&oldid=1180449762",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-ba511f7f997764a867498dcd",
+          "field": "time",
+          "locator": "可读正文块 258",
+          "block_sha256": "7f80de9f7823820c3aab6a43d0e24391f6656466f12812883a791ee2a4f78cfe"
+        },
+        {
+          "source_id": "SV-ba511f7f997764a867498dcd",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "7646b4e6bc1a7a4062ee05d72357ac5927a4bfea884b47d6438a2e54c33019bc"
+        },
+        {
+          "source_id": "SV-ba511f7f997764a867498dcd",
+          "field": "places",
+          "locator": "可读正文块 258",
+          "block_sha256": "7f80de9f7823820c3aab6a43d0e24391f6656466f12812883a791ee2a4f78cfe"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 0,
+            "max_gap_years": 0,
+            "target_id": "CORE-662176348d",
+            "type": "同年对照"
+          },
+          "target_event_id": "EV-16330d70755fd6e59ad8857c",
+          "type": "same_year"
+        },
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 1,
+            "max_gap_years": 1,
+            "target_id": "CORE-79df2d351e",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-f0170526d476380bc3901512",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对1840年5月6日使用、面值及图案；不将提前发售日期混入。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-805dded5f75c78d5a52408ba",
+      "record_id": "REC-c62039a28739471d49dd6880",
+      "revision_id": "REV-2b39e3b9faa8560be3eb6fd6",
+      "title": "美国南北战争",
+      "aliases": [
+        "美国南北战争",
+        "American Civil War"
+      ],
+      "summary": "1861—1865年，美国内战在联邦与南方邦联之间展开。",
+      "body": [
+        "战争以联邦获胜告终，持续约四年。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "美国",
+          "modern_name": null,
+          "precision": "country",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "美洲"
+      ],
+      "history_scope": "world",
+      "record_type": "period",
+      "time": {
+        "start_year": 1861,
+        "end_year": 1865,
+        "kind": "duration",
+        "precision": "year_range",
+        "approximate": false,
+        "display": "1861年—1865年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/9608f9a49736b38aa4609ef702c3686bdbf0e023e465863febe5634432c8cec5.png",
+          "sha256": "9608f9a49736b38aa4609ef702c3686bdbf0e023e465863febe5634432c8cec5",
+          "caption": "Currier与Ives表现1863年葛底斯堡战役的版画，说明战争中的一个战役；并非1861年开战现场。",
+          "depiction_type": "同时期历史版画",
+          "creator": "Nathaniel Currier and James Merritt Ives",
+          "credit": "This image is available from the United States Library of Congress 's Prints and Photographs division under the digital ID cph.3g02088 . This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing .",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Battle_of_Gettysburg,_by_Currier_and_Ives.png",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ABattle+of+Gettysburg%2C+by+Currier+and+Ives.png&oldid=1202641984",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-8b1c3622ca7addc970be4049",
+          "field": "time",
+          "locator": "可读正文块 18",
+          "block_sha256": "9becfb2a3a926219f8ebe0f30b92c90e146aa9498021f4b9851f3e784adf68ef"
+        },
+        {
+          "source_id": "SV-8b1c3622ca7addc970be4049",
+          "field": "time",
+          "locator": "可读正文块 22",
+          "block_sha256": "4b2cefb1eb3265d0a1c98c6d9d2737a4dafa7f36396e063016696e60850ebc07"
+        },
+        {
+          "source_id": "SV-8b1c3622ca7addc970be4049",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "7f0386e969669c30672596c57cd65f607882a792d8b414661b9599721db0089b"
+        },
+        {
+          "source_id": "SV-8b1c3622ca7addc970be4049",
+          "field": "places",
+          "locator": "可读正文块 2",
+          "block_sha256": "3a8bed1b4de7114660c9d72184b98980e0eb0d161afb5d3ef412e81e45361f70"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1861–1865年区间与联邦获胜；配图为1863年战役版画。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-aba6e3fb515ef9aaf8815324",
+      "record_id": "REC-b27bf242a58bcd42c21723da",
+      "revision_id": "REV-51a1083c09bc9304b133fb33",
+      "title": "莱特兄弟首次可控动力飞行",
+      "aliases": [
+        "莱特兄弟首次可控动力飞行"
+      ],
+      "summary": "1903年12月17日，莱特兄弟在北卡罗来纳州外滩地区试飞动力飞机。",
+      "body": [
+        "飞行者一号的试飞是航空史的重要节点。两兄弟此前已进行了多次滑翔试验，原机、发动机复制品和后世飞行演示分别处理。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "美国北卡罗来纳州基蒂霍克附近的基尔代维尔山地区",
+          "modern_name": null,
+          "precision": "site",
+          "role": "event_area"
+        }
+      ],
+      "categories": [
+        "科技"
+      ],
+      "civilizations": [
+        "美洲"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1903,
+        "end_year": 1903,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1903年"
+      },
+      "people": [
+        "威尔伯·莱特",
+        "奥维尔·莱特",
+        "莱特兄弟"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/88ca80ed340a973de8d24b4c8931bc9e98ce49f2ff17533ed95bde990d2aebd6.jpg",
+          "sha256": "88ca80ed340a973de8d24b4c8931bc9e98ce49f2ff17533ed95bde990d2aebd6",
+          "caption": "约翰·丹尼尔斯1903年12月17日拍摄的飞行者一号首次飞行照片；与后世飞机复制品和试飞演示区分。",
+          "depiction_type": "事件照片",
+          "creator": "John T. Daniels",
+          "credit": "This image is available from the United States Library of Congress 's Prints and Photographs division under the digital ID ppprs.00626 . This tag does not indicate the copyright status of the attached work. A normal copyright tag is still required. See Commons:Licensing .",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:First_flight2.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AFirst+flight2.jpg&oldid=1253551014",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-47dcd1bfeda47e000d5a2aa5",
+          "field": "time",
+          "locator": "可读正文块 33",
+          "block_sha256": "f67417101b76dd6bbe9d480d098dbd37417419fccc1bcbc8eba925d869936d32"
+        },
+        {
+          "source_id": "SV-47dcd1bfeda47e000d5a2aa5",
+          "field": "title",
+          "locator": "可读正文块 28",
+          "block_sha256": "c7d73a8cafb63369a16209a1ee3b99c256490fdde0f5a2d45f351c2a5a6fed19"
+        },
+        {
+          "source_id": "SV-47dcd1bfeda47e000d5a2aa5",
+          "field": "places",
+          "locator": "可读正文块 28",
+          "block_sha256": "c7d73a8cafb63369a16209a1ee3b99c256490fdde0f5a2d45f351c2a5a6fed19"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1903年12月17日试飞与既往滑翔实验；配图是当日飞行照片。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-d23b0283849e2db1deefc926",
+      "record_id": "REC-748740c30efba554d7b3b24e",
+      "revision_id": "REV-be3333531013baa2f288f31b",
+      "title": "第一次世界大战",
+      "aliases": [
+        "第一次世界大战",
+        "World War I"
+      ],
+      "summary": "1914—1918年，第一次世界大战从欧洲危机发展为大规模国际战争。",
+      "body": [
+        "列强在1914年相继参战，战争造成重大伤亡；1918年停战后，欧洲政治秩序发生变化。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "欧洲为主要起战区域",
+          "modern_name": null,
+          "precision": "region",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "跨文明"
+      ],
+      "history_scope": "world",
+      "record_type": "period",
+      "time": {
+        "start_year": 1914,
+        "end_year": 1918,
+        "kind": "duration",
+        "precision": "year_range",
+        "approximate": false,
+        "display": "1914年—1918年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/9715992457875d08978622835cdde339fc5a4dbba6c6f96ceb1d2f5696f967a3.jpg",
+          "sha256": "9715992457875d08978622835cdde339fc5a4dbba6c6f96ceb1d2f5696f967a3",
+          "caption": "1915年英国征兵海报，是战争期间的宣传品，并非前线照片。",
+          "depiction_type": "同时期宣传品",
+          "creator": "Savile Lumley / Johnson, Riddle & Co. Ltd. / Adam Cuerden",
+          "credit": "https://aptlyrandom.files.wordpress.com/2013/11/posters-5.jpeg",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Daddy,_what_did_You_do_in_the_Great_War%3F.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ADaddy%2C+what+did+You+do+in+the+Great+War%3F.jpg&oldid=1276924022",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-dfc53d10d1d7061a551e36c1",
+          "field": "time",
+          "locator": "可读正文块 76",
+          "block_sha256": "cf095dfea460e5ea40d68263904a74e348c76ce0f67d3a1633249c17abdd1508"
+        },
+        {
+          "source_id": "SV-dfc53d10d1d7061a551e36c1",
+          "field": "time",
+          "locator": "可读正文块 150",
+          "block_sha256": "e958089d803c0064fccd0cd3b0b301fb3b5f936bb26729f33f0a623185e25bbf"
+        },
+        {
+          "source_id": "SV-dfc53d10d1d7061a551e36c1",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "cccc98bf2bb88d8cb0616f5774621af99ed6e6f184758abe75ad39c6a4053500"
+        },
+        {
+          "source_id": "SV-dfc53d10d1d7061a551e36c1",
+          "field": "places",
+          "locator": "可读正文块 76",
+          "block_sha256": "cf095dfea460e5ea40d68263904a74e348c76ce0f67d3a1633249c17abdd1508"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 5,
+            "max_gap_years": 5,
+            "target_id": "CORE-aa486f8413",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-cc3ab5938f6c60f15c6f0072",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对1914–1918年区间与1918年停战；配图为1915年征兵海报。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-cc3ab5938f6c60f15c6f0072",
+      "record_id": "REC-7230a14b530f023b5cdca0c9",
+      "revision_id": "REV-01c192c72b442dc0e0d048d6",
+      "title": "五四运动",
+      "aliases": [
+        "五四运动"
+      ],
+      "summary": "1919年5月4日，北京学生举行集会和游行。",
+      "body": [
+        "国博所藏学生克书的家信记述了当日天安门前的活动及随后发生的事件，可作为亲历者材料。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "北京天安门广场及相关街区",
+          "modern_name": null,
+          "precision": "city",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "文化"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 1919,
+        "end_year": 1919,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1919年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/584e6c25dc7dd5cbb16d163572f0e733f48f2bdfab09319614adc642dbce155b.jpg",
+          "sha256": "584e6c25dc7dd5cbb16d163572f0e733f48f2bdfab09319614adc642dbce155b",
+          "caption": "天安门广场现代照片；仅说明1919年学生集会相关地点，不作为五四运动现场或当年空间格局的复原。",
+          "depiction_type": "相关场所现代照片",
+          "creator": "Kikolipu",
+          "credit": "Own work",
+          "license": "CC0",
+          "license_url": "https://creativecommons.org/publicdomain/zero/1.0/deed.en",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tiananmen_Square.pic.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ATiananmen+Square.pic.jpg&oldid=1212344649",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-e5da28b24456fe95950203f3",
+          "field": "time",
+          "locator": "可读正文块 21",
+          "block_sha256": "1b788ce033b7f760afc7ab461eee94905bc9a92a9b39eb3b47fa7951896d1d8f"
+        },
+        {
+          "source_id": "SV-e5da28b24456fe95950203f3",
+          "field": "title",
+          "locator": "可读正文块 21",
+          "block_sha256": "1b788ce033b7f760afc7ab461eee94905bc9a92a9b39eb3b47fa7951896d1d8f"
+        },
+        {
+          "source_id": "SV-e5da28b24456fe95950203f3",
+          "field": "places",
+          "locator": "可读正文块 21",
+          "block_sha256": "1b788ce033b7f760afc7ab461eee94905bc9a92a9b39eb3b47fa7951896d1d8f"
+        }
+      ],
+      "relations": [
+        {
+          "basis": {
+            "basis": "双方原文支持的事件起点或显式标注的约数、范围并置；不代表因果；各节点仍待独立终审",
+            "gap_years": 5,
+            "max_gap_years": 5,
+            "target_id": "CORE-4400f91456",
+            "type": "近年对照"
+          },
+          "target_event_id": "EV-d23b0283849e2db1deefc926",
+          "type": "near_year"
+        }
+      ],
+      "review_note": "核对1919年5月4日学生集会及亲历者家信；现代地点照片不作复原。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-ba79e18995e87ae58b71a09a",
+      "record_id": "REC-7e260e0a979fea1adfd9f769",
+      "revision_id": "REV-b2a55e9b0afac50fca611416",
+      "title": "第二次世界大战",
+      "aliases": [
+        "第二次世界大战",
+        "World War II"
+      ],
+      "summary": "1939年德国入侵波兰后，欧洲战争迅速扩大，成为第二次世界大战的重要起点。",
+      "body": [
+        "战争涉及欧洲、亚洲等多个战场。德国于1945年投降，欧洲战事结束。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "欧洲；本来源重点为波兰及德国等战区",
+          "modern_name": null,
+          "precision": "region",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "跨文明"
+      ],
+      "history_scope": "world",
+      "record_type": "period",
+      "time": {
+        "start_year": 1939,
+        "end_year": 1945,
+        "kind": "duration",
+        "precision": "year_range",
+        "approximate": false,
+        "display": "1939年—1945年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/edd5167f9c82c38d0d795b873a8764a7e4b39b2ea198c5e2892a1fe41b0509f0.jpg",
+          "sha256": "edd5167f9c82c38d0d795b873a8764a7e4b39b2ea198c5e2892a1fe41b0509f0",
+          "caption": "1945年9月2日，日本代表在密苏里号上签署投降书；图片记录战争结局，并非1939年战争爆发。",
+          "depiction_type": "历史照片",
+          "creator": "Army Signal Corps photographer LT. Stephen E. Korpanty; restored by Adam Cuerden",
+          "credit": "Naval Historical Center Photo # SC 213700",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Mamoru_Shigemitsu_signs_the_Instrument_of_Surrender,_officially_ending_the_Second_World_War.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AMamoru+Shigemitsu+signs+the+Instrument+of+Surrender%2C+officially+ending+the+Second+World+War.jpg&oldid=996221712",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-6506e540d418fabfd4f55051",
+          "field": "time",
+          "locator": "可读正文块 79",
+          "block_sha256": "86bb5ad6c4831303e9b5dc46a5c53a0dd2899364dd89fdbcd0b63fe4af665b0f"
+        },
+        {
+          "source_id": "SV-6506e540d418fabfd4f55051",
+          "field": "time",
+          "locator": "可读正文块 123",
+          "block_sha256": "46a56fb09b96b4ce04b7825cb65ef6aa1705db48212534449cee7f350753ee18"
+        },
+        {
+          "source_id": "SV-6506e540d418fabfd4f55051",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "3c5f0ffc3816bbc45e6155f7003891085c8e825d7e67b27b78dee62b6f880bfd"
+        },
+        {
+          "source_id": "SV-6506e540d418fabfd4f55051",
+          "field": "places",
+          "locator": "可读正文块 79",
+          "block_sha256": "86bb5ad6c4831303e9b5dc46a5c53a0dd2899364dd89fdbcd0b63fe4af665b0f"
+        }
+      ],
+      "relations": [],
+      "review_note": "本条以欧洲1939年开战为时间锚点，正文明确欧洲战事结束；不覆盖亚洲战争完整分期。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-2c0c9f3cc8b43bd883df500a",
+      "record_id": "REC-edf39dbc80e947ab7b8b6462",
+      "revision_id": "REV-4c113518b55eba5350b60bf8",
+      "title": "联合国正式成立",
+      "aliases": [
+        "联合国正式成立"
+      ],
+      "summary": "1945年10月24日，《联合国宪章》生效，联合国正式成立。",
+      "body": [
+        "50个国家的代表于同年在旧金山会议上起草并签署宪章，随后由各国完成批准。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "国际组织；旧金山为宪章会议地点",
+          "modern_name": null,
+          "precision": "international",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "跨文明"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1945,
+        "end_year": 1945,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1945年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/ed195b5f7790af81c05649a520edec8f10b50eb083c5bb75e1e2c8f60f4ba20f.jpg",
+          "sha256": "ed195b5f7790af81c05649a520edec8f10b50eb083c5bb75e1e2c8f60f4ba20f",
+          "caption": "联合国宪章序言的档案图像；不把文书影像当作10月24日成立现场。",
+          "depiction_type": "同时期文书图像",
+          "creator": "Unknown author Unknown author or not provided",
+          "credit": "U.S. National Archives and Records Administration",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:UNITED_NATIONS_-_PREAMBLE_TO_THE_CHARTER_OF_THE_UNITED_NATIONS_-_NARA_-_515901.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AUNITED+NATIONS+-+PREAMBLE+TO+THE+CHARTER+OF+THE+UNITED+NATIONS+-+NARA+-+515901.jpg&oldid=981985845",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-11cf84709f0a4c17541c46b4",
+          "field": "time",
+          "locator": "可读正文块 53",
+          "block_sha256": "5a00e028083dde63f2da1d1ac6522d9b772f7e46927134d1239241bce8f1c2d8"
+        },
+        {
+          "source_id": "SV-11cf84709f0a4c17541c46b4",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "cb82cfdf92525d94849f22b16f9fbf754ebd3705cb10ea1ae0da27eec78ab542"
+        },
+        {
+          "source_id": "SV-11cf84709f0a4c17541c46b4",
+          "field": "places",
+          "locator": "可读正文块 52",
+          "block_sha256": "b3276cb682d7779335a089821d2026c3046936ba1ada54caf16085bde476ca1c"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1945年10月24日宪章生效，区分旧金山起草签署与正式成立。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-296ca6e783edf86cbc98258e",
+      "record_id": "REC-170c9afe4d80d2c641d13573",
+      "revision_id": "REV-d42136161f95ec741c72395b",
+      "title": "中华人民共和国成立",
+      "aliases": [
+        "中华人民共和国成立"
+      ],
+      "summary": "1949年10月1日，中华人民共和国中央人民政府成立。",
+      "body": [
+        "当天下午在北京天安门广场举行成立典礼。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "北京天安门广场",
+          "modern_name": null,
+          "precision": "site",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 1949,
+        "end_year": 1949,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1949年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/c1058d759e17559e00c580b7f3530ac95be79f365b6a295d09c9292c038c1418.jpg",
+          "sha256": "c1058d759e17559e00c580b7f3530ac95be79f365b6a295d09c9292c038c1418",
+          "caption": "1984年9月从广场东侧拍摄的天安门城楼照片；仅说明1949年成立典礼相关地点，不作当日原貌复原。",
+          "depiction_type": "相关地标后期照片",
+          "creator": "BabelStone",
+          "credit": "Own work",
+          "license": "CC BY-SA 4.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Tiananmen_from_the_southeast,_September_1984.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ATiananmen+from+the+southeast%2C+September+1984.jpg&oldid=1212357297",
+          "obligations": [
+            "保留作者、来源文件页与许可链接",
+            "改编图像时遵守相同方式共享条件"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-58ad18cc6fb7a283e02dcc3a",
+          "field": "time",
+          "locator": "可读正文块 27",
+          "block_sha256": "6a2839278235c707e992f75300e58096aba67ec2b47c5eca831fb55134e2b2f4"
+        },
+        {
+          "source_id": "SV-58ad18cc6fb7a283e02dcc3a",
+          "field": "title",
+          "locator": "可读正文块 27",
+          "block_sha256": "6a2839278235c707e992f75300e58096aba67ec2b47c5eca831fb55134e2b2f4"
+        },
+        {
+          "source_id": "SV-58ad18cc6fb7a283e02dcc3a",
+          "field": "places",
+          "locator": "可读正文块 27",
+          "block_sha256": "6a2839278235c707e992f75300e58096aba67ec2b47c5eca831fb55134e2b2f4"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1949年10月1日及北京典礼；1984年照片仅作相关地点背景。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-6f0d06d46348a1f2c4d4c2a5",
+      "record_id": "REC-db29594bce9182c8c3434003",
+      "revision_id": "REV-44c251e4cd1d54c15cf2bddd",
+      "title": "人类第一颗人造卫星发射",
+      "aliases": [
+        "人类第一颗人造卫星发射",
+        "Sputnik, 1957"
+      ],
+      "summary": "1957年10月4日，苏联成功发射斯普特尼克一号。",
+      "body": [
+        "这是第一颗进入地球轨道的人造卫星，标志着航天时代开启。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "拜科努尔发射场（当时属苏联哈萨克地区）",
+          "modern_name": null,
+          "precision": "site",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "科技"
+      ],
+      "civilizations": [
+        "欧洲（希腊罗马以外）"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1957,
+        "end_year": 1957,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1957年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/452e9133d42825294a6af5cf91e492db4ab870e0dfd002c9a8a4378778a8497d.png",
+          "sha256": "452e9133d42825294a6af5cf91e492db4ab870e0dfd002c9a8a4378778a8497d",
+          "caption": "斯普特尼克一号复制品2023年的照片，非1957年发射现场。",
+          "depiction_type": "复制品照片",
+          "creator": "Soyuz235",
+          "credit": "Own work",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Sputnik_1_satellite_model.png",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ASputnik+1+satellite+model.png&oldid=1093776441",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-b39d92b1c8e9740ec957bf65",
+          "field": "time",
+          "locator": "可读正文块 285",
+          "block_sha256": "7dba8ed4c173b4f74c569ad9c1ce122c8eb559806803c2c5a8a7e9ff87f918a0"
+        },
+        {
+          "source_id": "SV-b39d92b1c8e9740ec957bf65",
+          "field": "title",
+          "locator": "可读正文块 285",
+          "block_sha256": "7dba8ed4c173b4f74c569ad9c1ce122c8eb559806803c2c5a8a7e9ff87f918a0"
+        },
+        {
+          "source_id": "SV-b39d92b1c8e9740ec957bf65",
+          "field": "places",
+          "locator": "可读正文块 291",
+          "block_sha256": "dfbebc7db81c74f1ecac40a9ba5281824fd349954b948bfd85e81778f6ffe39b"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1957年10月4日、苏联及斯普特尼克；2023年复制品照片不是发射现场。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-8d0de73aa3d72419f6580a80",
+      "record_id": "REC-f6d18f2a9921da032d22e359",
+      "revision_id": "REV-929121a6938cf503fc4da55e",
+      "title": "阿波罗11号登月",
+      "aliases": [
+        "阿波罗11号登月",
+        "Apollo 11"
+      ],
+      "summary": "1969年7月20日，阿波罗11号实现人类首次载人月球着陆。",
+      "body": [
+        "阿姆斯特朗和奥尔德林在月面活动，科林斯留在指令舱。此节点采用登月日，区别于发射与返航日期。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "月球表面",
+          "modern_name": null,
+          "precision": "celestial_body",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "科技"
+      ],
+      "civilizations": [
+        "跨文明"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1969,
+        "end_year": 1969,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "1969年"
+      },
+      "people": [
+        "尼尔·阿姆斯特朗",
+        "巴兹·奥尔德林",
+        "迈克尔·科林斯"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/deecff91f88e8b66ad282d16a2cbbe0dcb0c71585109cf8d15ac52c74b9c3dc2.jpg",
+          "sha256": "deecff91f88e8b66ad282d16a2cbbe0dcb0c71585109cf8d15ac52c74b9c3dc2",
+          "caption": "1969年7月20日，奥尔德林在月面向美国国旗致意，照片由阿姆斯特朗拍摄。",
+          "depiction_type": "历史照片",
+          "creator": "NASA / Neil A. Armstrong",
+          "credit": "Apollo 11 Image Library ( image link )",
+          "license": "Public domain",
+          "license_url": null,
+          "source_url": "https://commons.wikimedia.org/wiki/File:Buzz_salutes_the_U.S._Flag.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ABuzz+salutes+the+U.S.+Flag.jpg&oldid=1202084977",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-7b62ee2fe982f81fa53efff0",
+          "field": "time",
+          "locator": "可读正文块 335",
+          "block_sha256": "f5f462e1d15f1c69a0cc819c803323609470c87c6401a397bb368e4a995f8491"
+        },
+        {
+          "source_id": "SV-7b62ee2fe982f81fa53efff0",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "09155e86044d020648c885c26b2fb3769ff79b320475235051a26423e1c383b3"
+        },
+        {
+          "source_id": "SV-7b62ee2fe982f81fa53efff0",
+          "field": "places",
+          "locator": "可读正文块 335",
+          "block_sha256": "f5f462e1d15f1c69a0cc819c803323609470c87c6401a397bb368e4a995f8491"
+        }
+      ],
+      "relations": [],
+      "review_note": "采用1969年7月20日着陆日期；不与UTC首步日期或返航日混同。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-34de563ec776fb0b87d53cd4",
+      "record_id": "REC-cfea1bd2225bed7a1d8e1c64",
+      "revision_id": "REV-88068dcb573adbbc316c480a",
+      "title": "万维网初始方案提出",
+      "aliases": [
+        "万维网初始方案提出",
+        "The birth of the Web"
+      ],
+      "summary": "1989年，蒂姆·伯纳斯－李在CERN提出万维网构想。",
+      "body": [
+        "万维网最初为科研信息共享服务。1989年的构想、后续网站上线和1993年开放技术分别处理，万维网也不等同于互联网。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "欧洲核子研究组织（CERN，日内瓦地区）",
+          "modern_name": null,
+          "precision": "institution",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "科技"
+      ],
+      "civilizations": [
+        "欧洲（希腊罗马以外）"
+      ],
+      "history_scope": "world",
+      "record_type": "event",
+      "time": {
+        "start_year": 1989,
+        "end_year": 1989,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "1989年"
+      },
+      "people": [
+        "蒂姆·伯纳斯－李"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/ba17caa15228cd1ba160a97427acba959c066a9d40f70ba9b6682e7e5c619273.jpg",
+          "sha256": "ba17caa15228cd1ba160a97427acba959c066a9d40f70ba9b6682e7e5c619273",
+          "caption": "曾作为第一台万维网服务器的NeXT工作站的现代展陈照片；不能将设备展照日期当作1989年提案日期。",
+          "depiction_type": "历史设备现代照片",
+          "creator": "User:Coolcaesar at en.wikipedia",
+          "credit": "Own work",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source_url": "https://commons.wikimedia.org/wiki/File:First_Web_Server.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AFirst+Web+Server.jpg&oldid=1248319429",
+          "obligations": [
+            "保留作者、来源文件页与许可链接",
+            "改编图像时遵守相同方式共享条件"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-f93548dcadeeac33b192235c",
+          "field": "time",
+          "locator": "可读正文块 65",
+          "block_sha256": "aba0390c4d769e75dd65eb7cccc1262000eb7a95f31d8a15194e1b7bf34263f7"
+        },
+        {
+          "source_id": "SV-f93548dcadeeac33b192235c",
+          "field": "title",
+          "locator": "可读正文块 65",
+          "block_sha256": "aba0390c4d769e75dd65eb7cccc1262000eb7a95f31d8a15194e1b7bf34263f7"
+        },
+        {
+          "source_id": "SV-f93548dcadeeac33b192235c",
+          "field": "places",
+          "locator": "可读正文块 104",
+          "block_sha256": "4c3ea18c3231d95cf1db63950805a3edc18ea3f3cdb08d487284051923bbccb3"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对1989年CERN方案；与互联网、网站上线及1993年开放技术区分。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-9fcdf2f23db478761cebc649",
+      "record_id": "REC-f44eee18e29b44bf5e9020b5",
+      "revision_id": "REV-29e4b68df03059b83342d868",
+      "title": "中国正式加入世界贸易组织",
+      "aliases": [
+        "中国正式加入世界贸易组织"
+      ],
+      "summary": "2001年12月11日，中国正式成为世界贸易组织第143个成员。",
+      "body": [
+        "11月批准加入方案与12月正式成为成员是两个节点，不能以审批日替代正式加入日。"
+      ],
+      "places": [
+        {
+          "basis": "来源支持的粗粒度位置；精确地图落点待补",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "中国加入全球贸易组织（非单一现场事件）",
+          "modern_name": null,
+          "precision": "international",
+          "role": "source_location_scope"
+        }
+      ],
+      "categories": [
+        "政治"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 2001,
+        "end_year": 2001,
+        "kind": "point",
+        "precision": "day",
+        "approximate": false,
+        "display": "2001年"
+      },
+      "people": [],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/14bdbd262ec3be53efc682a0d6169558934e04dc6ae88f682a87e0ae32745945.jpg",
+          "sha256": "14bdbd262ec3be53efc682a0d6169558934e04dc6ae88f682a87e0ae32745945",
+          "caption": "2001年的日内瓦威廉·拉巴中心（WTO总部）航拍；并非中国入世批准或签署现场。",
+          "depiction_type": "机构场所照片",
+          "creator": "Photo Lightmotif / Blatt.",
+          "credit": "Centre William Rappard",
+          "license": "CC BY-SA 3.0",
+          "license_url": "https://creativecommons.org/licenses/by-sa/3.0/",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Cwr_aerial_2001.jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3ACwr+aerial+2001.jpg&oldid=872296705",
+          "obligations": [
+            "保留作者、来源文件页与许可链接",
+            "改编图像时遵守相同方式共享条件"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-1b562770130da8ced72a062d",
+          "field": "time",
+          "locator": "可读正文块 44",
+          "block_sha256": "1ccd6557d3f2540efd124e51893c96ad02243df302928fcf08cc0bb6d5125551"
+        },
+        {
+          "source_id": "SV-1b562770130da8ced72a062d",
+          "field": "title",
+          "locator": "可读正文块 44",
+          "block_sha256": "1ccd6557d3f2540efd124e51893c96ad02243df302928fcf08cc0bb6d5125551"
+        },
+        {
+          "source_id": "SV-1b562770130da8ced72a062d",
+          "field": "places",
+          "locator": "可读正文块 44",
+          "block_sha256": "1ccd6557d3f2540efd124e51893c96ad02243df302928fcf08cc0bb6d5125551"
+        }
+      ],
+      "relations": [],
+      "review_note": "采用2001年12月11日正式入世，区别11月批准；总部航拍不是签署现场。",
+      "review_method": "model_assisted_archived_source_review"
+    },
+    {
+      "id": "EV-a4918d315845ff1584b231c8",
+      "record_id": "REC-4165a30a34e2ce96a0dd69de",
+      "revision_id": "REV-09096c5314f208bdddc8977f",
+      "title": "屠呦呦获诺贝尔生理学或医学奖",
+      "aliases": [
+        "屠呦呦获诺贝尔生理学或医学奖"
+      ],
+      "summary": "2015年，屠呦呦因抗疟疗法相关发现获诺贝尔生理学或医学奖。",
+      "body": [
+        "她与坎贝尔、大村智分享该年奖项，获奖份额为一半。获奖年份与青蒿素研究的发生年份分别记录。"
+      ],
+      "places": [
+        {
+          "basis": "地点名称有原文定位；坐标尚未采集",
+          "coordinates": null,
+          "historical_name": null,
+          "label": "中国中医科学院、北京（获奖时工作机构；非颁奖现场）",
+          "modern_name": null,
+          "precision": "institution",
+          "role": "affiliation"
+        }
+      ],
+      "categories": [
+        "科技"
+      ],
+      "civilizations": [
+        "中华文明"
+      ],
+      "history_scope": "china",
+      "record_type": "event",
+      "time": {
+        "start_year": 2015,
+        "end_year": 2015,
+        "kind": "point",
+        "precision": "year",
+        "approximate": false,
+        "display": "2015年"
+      },
+      "people": [
+        "屠呦呦"
+      ],
+      "polities": [],
+      "images": [
+        {
+          "src": "/assets/history-trial/b399660ae4eeb11d4ae200ddc0fbfd3a8fa9dbac90ece763195d6053648116a8.jpg",
+          "sha256": "b399660ae4eeb11d4ae200ddc0fbfd3a8fa9dbac90ece763195d6053648116a8",
+          "caption": "黄花蒿（Artemisia annua）的现代植物照片，Asya Petrosyan摄于2021年；仅作研究对象背景，不是屠呦呦肖像、实验材料或2015年颁奖现场。",
+          "depiction_type": "研究对象背景照片",
+          "creator": "Asya Petrosyan",
+          "credit": "https://www.inaturalist.org/photos/166472223",
+          "license": "CC BY 4.0",
+          "license_url": "https://creativecommons.org/licenses/by/4.0",
+          "source_url": "https://commons.wikimedia.org/wiki/File:Artemisia_annua_(%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0,_%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0).jpg",
+          "rights_revision_url": "https://commons.wikimedia.org/w/index.php?title=File%3AArtemisia+annua+%28%D0%9E%D0%B4%D0%B5%D1%81%D1%81%D0%B0%2C+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%B0%29.jpg&oldid=1042927006",
+          "obligations": [
+            "保留作者、来源文件页与许可链接"
+          ]
+        }
+      ],
+      "citations": [
+        {
+          "source_id": "SV-4a7f864105ef8b9aa289d3dd",
+          "field": "time",
+          "locator": "可读正文块 23",
+          "block_sha256": "961da944b4653b77d9b3bc350d2354b4ffc5bb28cb273959405b29bc8f8cdc0e"
+        },
+        {
+          "source_id": "SV-4a7f864105ef8b9aa289d3dd",
+          "field": "title",
+          "locator": "可读正文块 1",
+          "block_sha256": "106c9d4052ec4beb943c92241776b11ac7fedd5cb1775e12689d44af90c48afa"
+        },
+        {
+          "source_id": "SV-4a7f864105ef8b9aa289d3dd",
+          "field": "places",
+          "locator": "可读正文块 54",
+          "block_sha256": "a0c43e50a38e6a231affe1e16aaabcd861628cbf14b44fec07a6a1ce2dc5d0b0"
+        },
+        {
+          "source_id": "SV-53ce7aeb92653bb35693c3d0",
+          "field": "time",
+          "locator": "可读正文块 1",
+          "block_sha256": "39998b5604dcdab9ea775d91d763ae928ca44afbc4bc676dc87bc8b25c7059ce"
+        },
+        {
+          "source_id": "SV-53ce7aeb92653bb35693c3d0",
+          "field": "title",
+          "locator": "可读正文块 28",
+          "block_sha256": "b00e336340c34e04b0f0f95f7e913968033bfc591adaed0626f3493dbfd054af"
+        }
+      ],
+      "relations": [],
+      "review_note": "核对2015年奖项、分享者及一半份额；黄花蒿照片仅是研究对象背景。",
+      "review_method": "model_assisted_archived_source_review"
+    }
+  ],
+  "sources": [
+    {
+      "id": "SV-ff87618cabca27e6d6ba2405",
+      "title": "Qin Dynasty - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Joshua J. Mark",
+      "url": "https://www.worldhistory.org/Qin_Dynasty/",
+      "read_at": "2026-10-18T11:25:06.756328+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-28eb891c5743a3c9bc39fe4f",
+      "title": "Han Dynasty - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Joshua J. Mark",
+      "url": "https://www.worldhistory.org/Han_Dynasty/",
+      "read_at": "2026-10-18T11:25:07.055322+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-8b58e450601b35c265d68670",
+      "title": "造纸匠的文明演绎--湖北省文化和旅游厅",
+      "publisher": "湖北省文化和旅游厅",
+      "author": "",
+      "url": "https://wlt.hubei.gov.cn/bmdt/ztzl/zshb/201912/t20191226_1799602.shtml",
+      "read_at": "2026-10-18T12:38:49.762233+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-78b20bf48a034747e566eec7",
+      "title": "贵州省政协文史研究",
+      "publisher": "贵州省政协文史研究",
+      "author": "",
+      "url": "https://www.gzszx.gov.cn/wstd/wsmb/37008.shtml",
+      "read_at": "2026-10-18T12:55:16.550196+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-fd9e07f3881434f30d434e4f",
+      "title": "铁甲征衣_中国国家博物馆官方网站",
+      "publisher": "中国国家博物馆",
+      "author": "",
+      "url": "https://www.chnmuseum.cn/yj/xscg/xslw/201812/t20181224_33154.shtml",
+      "read_at": "2026-10-18T12:38:50.579609+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-b92daa045b6535918d549f95",
+      "title": "Tang Dynasty - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Emily Mark",
+      "url": "https://www.worldhistory.org/Tang_Dynasty/",
+      "read_at": "2026-10-18T11:25:07.030762+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-795b1e9dd95e8907cc78ff8e",
+      "title": "Song Dynasty - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Mark Cartwright",
+      "url": "https://www.worldhistory.org/Song_Dynasty/",
+      "read_at": "2026-10-18T11:25:08.744624+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-803b93ead79a63d139b9861e",
+      "title": "Yuan Dynasty - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Mark Cartwright",
+      "url": "https://www.worldhistory.org/Yuan_Dynasty/",
+      "read_at": "2026-10-18T11:25:09.170298+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-6b8ca335c35d7f0d31954c38",
+      "title": "Ming Dynasty - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Mark Cartwright",
+      "url": "https://www.worldhistory.org/Ming_Dynasty/",
+      "read_at": "2026-10-18T11:25:09.236227+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-b8165b2bc47532bcb767e7c2",
+      "title": "郑和研究会",
+      "publisher": "交通运输部水运科学研究院／郑和研究会",
+      "author": "",
+      "url": "https://www.wti.ac.cn/wti/zhls/7351.jhtml",
+      "read_at": "2026-10-18T12:38:52.726961+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-2387483b07c794c14ddfdb85",
+      "title": "虎门一号销烟池出土的铺地石_中国国家博物馆官方网站",
+      "publisher": "中国国家博物馆",
+      "author": "",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202104/t20210402_249493.shtml",
+      "read_at": "2026-10-18T11:25:11.910182+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-71760908b8ca54251197d00c",
+      "title": "鸦片烟具_中国国家博物馆官方网站",
+      "publisher": "中国国家博物馆",
+      "author": "",
+      "url": "https://www.chnmuseum.cn/zp/zpml/201812/t20181218_25802.shtml",
+      "read_at": "2026-10-18T11:27:51.290168+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-e5da28b24456fe95950203f3",
+      "title": "克书关于五四运动情况的家信_中国国家博物馆官方网站",
+      "publisher": "中国国家博物馆",
+      "author": "",
+      "url": "https://www.chnmuseum.cn/zp/zpml/gmww/202112/t20211208_252798.shtml",
+      "read_at": "2026-10-18T11:25:17.914910+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-58ad18cc6fb7a283e02dcc3a",
+      "title": "中华人民共和国大事记（1949年10月－2019年9月）_滚动新闻_中国政府网",
+      "publisher": "中共中央党史和文献研究院／中国政府网",
+      "author": "",
+      "url": "https://www.gov.cn/xinwen/2019-09/27/content_5434223.htm?allContent=",
+      "read_at": "2026-10-18T11:25:24.672445+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-1b562770130da8ced72a062d",
+      "title": "WTO | News - 2001 News items",
+      "publisher": "世界贸易组织",
+      "author": "",
+      "url": "https://www.wto.org/English/news_e/news01_e/news01_e.htm",
+      "read_at": "2026-10-18T11:28:33.241278+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-4a7f864105ef8b9aa289d3dd",
+      "title": "Tu Youyou – Facts - NobelPrize.org",
+      "publisher": "诺贝尔奖官方网站",
+      "author": "",
+      "url": "https://www.nobelprize.org/prizes/medicine/2015/tu/facts/",
+      "read_at": "2026-10-18T12:38:49.238400+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-53ce7aeb92653bb35693c3d0",
+      "title": "诺贝尔奖奖项总页",
+      "publisher": "诺贝尔奖奖项总页",
+      "author": "",
+      "url": "https://www.nobelprize.org/prizes/medicine/2015/summary/",
+      "read_at": "2026-10-18T12:55:14.151122+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-55d890b46ca2858c52a94320",
+      "title": "张择端清明上河图卷 - 故宫博物院",
+      "publisher": "故宫博物院",
+      "author": "",
+      "url": "https://www.dpm.org.cn/collection/paint/228226.html",
+      "read_at": "2026-10-18T12:51:11.972130+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-6dbb559f9c8cfeb7e8978393",
+      "title": "Second Punic War - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Mark Cartwright",
+      "url": "https://www.worldhistory.org/Second_Punic_War/",
+      "read_at": "2026-10-18T11:25:10.939512+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-26e5754f63a63ce24c64334d",
+      "title": "Roman Empire - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Joshua J. Mark",
+      "url": "https://www.worldhistory.org/Roman_Empire/",
+      "read_at": "2026-10-18T11:25:11.110787+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-f11c5b1b09301cedeb002610",
+      "title": "Magna Carta - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Mark Cartwright",
+      "url": "https://www.worldhistory.org/Magna_Carta/",
+      "read_at": "2026-10-18T11:25:11.336283+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-6c21d0aa435728e878d4d0d0",
+      "title": "Christopher Columbus: Man and Myth - 1492: An Ongoing Voyage | Exhibitions - Library of Congress",
+      "publisher": "美国国会图书馆",
+      "author": "",
+      "url": "https://www.loc.gov/exhibits/1492/columbus.html",
+      "read_at": "2026-10-18T12:38:52.745352+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-5e919103197b88838284344e",
+      "title": "Protestant Reformation - World History Encyclopedia",
+      "publisher": "World History Encyclopedia",
+      "author": "Joshua J. Mark",
+      "url": "https://www.worldhistory.org/Protestant_Reformation/",
+      "read_at": "2026-10-18T12:38:52.553266+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-e1cf47e0e0249b15dfe64b39",
+      "title": "Declaration of Independence (1776) | National Archives",
+      "publisher": "美国国家档案馆",
+      "author": "",
+      "url": "https://www.archives.gov/milestone-documents/declaration-of-independence",
+      "read_at": "2026-10-18T11:25:15.172385+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-b5c516a6bd37d26b48a78515",
+      "title": "Constitution of the United States (1787) | National Archives",
+      "publisher": "美国国家档案馆",
+      "author": "",
+      "url": "https://www.archives.gov/milestone-documents/constitution",
+      "read_at": "2026-10-18T11:25:15.529490+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-d56592c8f02cef2604127699",
+      "title": "Daguerre (1787–1851) and the Invention of Photography — The Metropolitan Museum of Art",
+      "publisher": "大都会艺术博物馆",
+      "author": "",
+      "url": "https://www.metmuseum.org/essays/daguerre-1787-1851-and-the-invention-of-photography",
+      "read_at": "2026-10-18",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-ba511f7f997764a867498dcd",
+      "title": "The Penny Black finally at the UPU",
+      "publisher": "万国邮政联盟",
+      "author": "",
+      "url": "https://www.upu.int/en/News/2012/2/The-Penny-Black-finally-at-the-UPU",
+      "read_at": "2026-10-18T11:25:19.450799+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-8b1c3622ca7addc970be4049",
+      "title": "Facts - The Civil War (U.S. National Park Service)",
+      "publisher": "美国国家公园管理局",
+      "author": "",
+      "url": "https://www.nps.gov/civilwar/facts.htm",
+      "read_at": "2026-10-18T11:25:17.637359+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-dfc53d10d1d7061a551e36c1",
+      "title": "World War I and its Aftermath: Key Dates | Holocaust Encyclopedia",
+      "publisher": "美国大屠杀纪念馆",
+      "author": "",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/world-war-i-and-its-aftermath-key-dates?series=20",
+      "read_at": "2026-10-18T11:27:55.326473+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-6506e540d418fabfd4f55051",
+      "title": "World War II in Europe | Holocaust Encyclopedia",
+      "publisher": "美国大屠杀纪念馆",
+      "author": "",
+      "url": "https://encyclopedia.ushmm.org/content/en/article/world-war-ii-in-europe",
+      "read_at": "2026-10-18T11:25:21.861000+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-11cf84709f0a4c17541c46b4",
+      "title": "History of the United Nations | United Nations",
+      "publisher": "联合国",
+      "author": "",
+      "url": "https://www.un.org/en/about-us/history-of-the-un",
+      "read_at": "2026-10-18T11:25:21.784125+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-b39d92b1c8e9740ec957bf65",
+      "title": "65 Years Ago: Sputnik Ushers in the Space Age - NASA",
+      "publisher": "NASA",
+      "author": "",
+      "url": "https://www.nasa.gov/history/65-years-ago-sputnik-ushers-in-the-space-age/",
+      "read_at": "2026-10-18T11:25:24.768749+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-7b62ee2fe982f81fa53efff0",
+      "title": "Apollo 11 - NASA",
+      "publisher": "NASA",
+      "author": "",
+      "url": "https://www.nasa.gov/mission/apollo-11/",
+      "read_at": "2026-10-18T11:25:24.167376+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-f93548dcadeeac33b192235c",
+      "title": "The birth of the Web – Home | CERN",
+      "publisher": "CERN",
+      "author": "",
+      "url": "https://home.cern/science/computing/the-birth-of-the-web/",
+      "read_at": "2026-10-18T11:25:27.004479+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-a400829b4eba2b531992c7ce",
+      "title": "Pantheon - Pantheon e Castel Sant'Angelo - Direzione Musei nazionali della città di Roma",
+      "publisher": "意大利文化部罗马国家博物馆管理机构",
+      "author": "",
+      "url": "https://direzionemuseiroma.cultura.gov.it/en/pantheon/",
+      "read_at": "2026-10-18T12:38:39.833576+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-5e9d2245c2bf2623b8f4cbe7",
+      "title": "Constitutio Antoniniana - Memory of the World",
+      "publisher": "联合国教科文组织世界记忆项目",
+      "author": "",
+      "url": "https://www.unesco.org/en/memory-world/constitutio-antoniniana",
+      "read_at": "2026-10-18T12:38:39.545746+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-7e0a20696c57bd9de164efad",
+      "title": "Gregory I",
+      "publisher": "梵蒂冈教宗名录",
+      "author": "",
+      "url": "https://www.vatican.va/content/vatican/en/holy-father/gregorio-i--magno.html",
+      "read_at": "2026-10-18T12:38:40.140529+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-b3fa88028267487dd8d238f0",
+      "title": "Portrait de Lisa Gherardini, épouse de Francesco del Giocondo, dit La Joconde ou Monna Lisa - Louvre site des collections",
+      "publisher": "卢浮宫博物馆",
+      "author": "",
+      "url": "https://collections.louvre.fr/ark:/53355/cl010062370",
+      "read_at": "2026-10-18T12:51:13.989652+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    },
+    {
+      "id": "SV-680c4aa7667cb6d526521553",
+      "title": "Beethoven-Haus Bonn - Aktuelles",
+      "publisher": "波恩贝多芬故居",
+      "author": "",
+      "url": "https://www.beethoven.de/en/news/view/5689797058232320/Besondere%2BSch%C3%A4tze",
+      "read_at": "2026-10-18T12:59:13.148839+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": false
+    },
+    {
+      "id": "SV-47dcd1bfeda47e000d5a2aa5",
+      "title": "1903-The First Flight - Wright Brothers National Memorial (U.S. National Park Service)",
+      "publisher": "美国国家公园管理局",
+      "author": "",
+      "url": "https://www.nps.gov/wrbr/learn/historyculture/thefirstflight.htm",
+      "read_at": "2026-10-18T12:51:16.088056+00:00",
+      "snapshot_id": "IN-d03d287b4bf6627e74892bec",
+      "archive_rechecked_at": "2026-10-19",
+      "live_rechecked": true
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+[
+  {
+    "file": "/assets/events/daguerreotype-concept.jpg",
+    "kind": "generated concept illustration; not historic evidence",
+    "sha256": "7a65f622791bdea34bf02ed94df0a631852c35522e1d93be859e873760b2e322"
+  },
+  {
+    "file": "/assets/events/humen-document-concept.jpg",
+    "kind": "generated concept illustration; not historic evidence",
+    "sha256": "9ea128000216790bca5174e6ec5b74401424af257b567ebecc0cc4fc6b620e87"
+  },
+  {
+    "file": "/assets/events/penny-postage-concept.jpg",
+    "kind": "generated concept illustration; not historic evidence",
+    "sha256": "7578152124f355f6616a7c362415780a0170f16af9c538be5638454f427b102d"
+  },
+  {
+    "file": "/assets/map/earth-day.jpg",
+    "kind": "modern geographic texture; not historical borders",
+    "source": "https://threejs.org/examples/textures/planets/earth_atmos_2048.jpg",
+    "upstream": "https://github.com/mrdoob/three.js",
+    "sha256": "2faa400d1eade3bc44caf6750d1b772bd9bbb6d87362c02bc7c3304e78fa0a9d"
+  },
+  {
+    "file": "/assets/map/earth-night.png",
+    "kind": "modern satellite night-lights texture; geographic illustration, not a reconstruction of the selected historical year",
+    "source": "https://svs.gsfc.nasa.gov/2916/",
+    "download": "https://svs.gsfc.nasa.gov/vis/a000000/a002900/a002916/earthatnight-2048.png",
+    "credit": "Data courtesy Marc Imhoff (NASA/GSFC) and Christopher Elvidge (NOAA/NGDC). Image by Craig Mayhew (NASA/GSFC) and Robert Simmon (NASA/GSFC).",
+    "usageGuidelines": "https://www.nasa.gov/nasa-brand-center/images-and-media/",
+    "sha256": "28407a1a802868852b3c232dbeaf16b5165e8200898cc7df6a2fec70708556cd"
+  },
+  {
+    "file": "/assets/map/earth-day-4k.jpg",
+    "kind": "modern geographic day colour; not historical conditions or borders",
+    "source": "https://www.solarsystemscope.com/textures/",
+    "download": "https://threejs.org/examples/textures/planets/earth_day_4096.jpg",
+    "credit": "Solar System Scope / INOVE",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "upstreamProcessing": "Three.js Earth example: resized; surface data merged as elevation R, land roughness G, cloud coverage B.",
+    "applicationChanges": "Local source unchanged; runtime resamples to 2K on phone-size canvases, adjusts colour/lighting, masks night lights with the sun direction.",
+    "sha256": "cd7712d3e891425d9948ea5ac18d3bb1e7e834ea038188587897e689a7b35d0f",
+    "bytes": 473093,
+    "verifiedDate": "2026-10-18",
+    "matchesDownload": true
+  },
+  {
+    "file": "/assets/map/earth-night-4k.jpg",
+    "kind": "modern geographic night lights; not historical conditions or borders",
+    "source": "https://www.solarsystemscope.com/textures/",
+    "download": "https://threejs.org/examples/textures/planets/earth_night_4096.jpg",
+    "credit": "Solar System Scope / INOVE",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "upstreamProcessing": "Three.js Earth example: resized; surface data merged as elevation R, land roughness G, cloud coverage B.",
+    "applicationChanges": "Local source unchanged; runtime resamples to 2K on phone-size canvases, adjusts colour/lighting, masks night lights with the sun direction.",
+    "sha256": "17a868f79c7be40fa1f557e6114d7889d907f18f7a3fce51f33b0b830ef50242",
+    "bytes": 267061,
+    "verifiedDate": "2026-10-18",
+    "matchesDownload": true
+  },
+  {
+    "file": "/assets/map/earth-surface-4k.jpg",
+    "kind": "modern geographic RGB elevation/roughness/cloud data; not historical conditions or borders",
+    "source": "https://www.solarsystemscope.com/textures/",
+    "download": "https://threejs.org/examples/textures/planets/earth_bump_roughness_clouds_4096.jpg",
+    "credit": "Solar System Scope / INOVE",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "upstreamProcessing": "Three.js Earth example: resized; surface data merged as elevation R, land roughness G, cloud coverage B.",
+    "applicationChanges": "Local source unchanged; runtime resamples to 2K on phone-size canvases, adjusts colour/lighting, masks night lights with the sun direction.",
+    "sha256": "0796f4211c209d1afe9e26a06a283cdc21434430a780a25457b2417568a8591e",
+    "bytes": 1508389,
+    "verifiedDate": "2026-10-18",
+    "matchesDownload": true
+  }
+]
