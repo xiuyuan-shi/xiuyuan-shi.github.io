@@ -47,6 +47,12 @@ def package(source, output):
     for name, digest in release['files'].items():
         if not eligible(name) or hashlib.sha256((source / name).read_bytes()).hexdigest() != digest:
             raise ValueError('Application file hash mismatch')
+    pages = json.loads((source / 'github-pages-release.json').read_text())
+    aliases = pages.get('aliases', {})
+    for name, digest in aliases.items():
+        if not eligible(name) or hashlib.sha256((source / name).read_bytes()).hexdigest() != digest:
+            raise ValueError('Application alias hash mismatch')
+    approved_app = set(release['files']) | set(aliases) | {'public-release.json', 'github-pages-release.json', '.nojekyll'}
     chosen = []
     for path in source.rglob('*'):
         if path.is_symlink():
@@ -54,7 +60,7 @@ def package(source, output):
         if not path.is_file() or output in path.parents:
             continue
         name = path.relative_to(source).as_posix()
-        if not eligible(name):
+        if not eligible(name) or (not API_FILE.fullmatch(name) and name not in approved_app):
             continue
         if path.suffix in ('.json', '.html', '.js', '.css', '.svg', '.txt') and PRIVATE.search(path.read_text()):
             raise ValueError('Private material in site artifact')
