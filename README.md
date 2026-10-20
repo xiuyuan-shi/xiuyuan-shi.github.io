@@ -1,7 +1,7 @@
 # 万国同卷
 
-全球历史探索试用版。该仓库只包含已审核的静态发布产物，不包含原项目、研究资料或数据库。
+全球历史探索试用版，仅含审核后的静态发布产物，不含源项目、主库或研究资料。
 
-应用来源版本：fd3846469774eeb71b6ff276085d32b9f780c537。页面、40条内容、地图和音乐来自同一公开构建。
+本次应用版本：33617dafaecad2abd4cfbe10f0386edc295e4c19。地球渐进首绘、手机紧凑投递与按需渲染；详情原图、40节点与音乐保持。保留上一版本指纹JS/CSS供短期缓存兼容。
 
-图片、纹理、字体和音乐各自保留来源与权利状态，见data/music-source.json、assets/provenance.json、data/history-trial.json和licenses/。本仓库不为第三方素材新增许可。
+各第三方素材保留其来源与权利状态，见assets/provenance.json、assets/earth-optimized.json、data/music-source.json和licenses/；本仓库不为第三方素材新增许可。

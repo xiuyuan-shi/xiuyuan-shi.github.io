@@ -1,0 +1,39 @@
+{
+  "schema_version": "1.0.0",
+  "tool": "sharp 0.35.5",
+  "records": [
+    {
+      "file": "/assets/events/daguerreotype-concept-card.webp",
+      "source_file": "/assets/events/daguerreotype-concept.jpg",
+      "source_sha256": "7a65f622791bdea34bf02ed94df0a631852c35522e1d93be859e873760b2e322",
+      "sha256": "f9720b04866d7c07a391fea9e2e2fbf9484a1f9183b9af0ba3e48ffbc0cc3dc3",
+      "bytes": 39482,
+      "width": 1024,
+      "height": 512,
+      "kind": "delivery derivative of the existing concept illustration; not historical evidence",
+      "transformation": "Resize to at most 1024px wide (Lanczos3); WebP quality 82; no composition or colour edits"
+    },
+    {
+      "file": "/assets/events/humen-document-concept-card.webp",
+      "source_file": "/assets/events/humen-document-concept.jpg",
+      "source_sha256": "9ea128000216790bca5174e6ec5b74401424af257b567ebecc0cc4fc6b620e87",
+      "sha256": "60171734f57497f8cb90da26351537e81af0a995609cbbd273935b6bd0b15db6",
+      "bytes": 36804,
+      "width": 1024,
+      "height": 512,
+      "kind": "delivery derivative of the existing concept illustration; not historical evidence",
+      "transformation": "Resize to at most 1024px wide (Lanczos3); WebP quality 82; no composition or colour edits"
+    },
+    {
+      "file": "/assets/events/penny-postage-concept-card.webp",
+      "source_file": "/assets/events/penny-postage-concept.jpg",
+      "source_sha256": "7578152124f355f6616a7c362415780a0170f16af9c538be5638454f427b102d",
+      "sha256": "5c8e32e45023a4ff37bcb2c6cd6ca119941af454364fc0aeac2eecaeea9915c3",
+      "bytes": 44304,
+      "width": 1024,
+      "height": 512,
+      "kind": "delivery derivative of the existing concept illustration; not historical evidence",
+      "transformation": "Resize to at most 1024px wide (Lanczos3); WebP quality 82; no composition or colour edits"
+    }
+  ]
+}

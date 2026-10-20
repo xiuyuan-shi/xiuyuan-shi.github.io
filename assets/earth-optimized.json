@@ -1,0 +1,71 @@
+{
+  "schema_version": "1.0.0",
+  "tool": "sharp 0.35.5",
+  "records": [
+    {
+      "file": "/assets/map/earth-day-2k.webp",
+      "source_file": "/assets/map/earth-day-4k.jpg",
+      "source_sha256": "cd7712d3e891425d9948ea5ac18d3bb1e7e834ea038188587897e689a7b35d0f",
+      "sha256": "ddd7814ff33606247dec391983d560c4e5bb8aa6529f5ab2294257669c2b848a",
+      "bytes": 206730,
+      "width": 2048,
+      "height": 1024,
+      "transformation": "Resize to 2048px wide (Lanczos3); WebP quality 88; no geographic or colour edits",
+      "credit": "Solar System Scope / INOVE",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "file": "/assets/map/earth-night-2k.webp",
+      "source_file": "/assets/map/earth-night-4k.jpg",
+      "source_sha256": "17a868f79c7be40fa1f557e6114d7889d907f18f7a3fce51f33b0b830ef50242",
+      "sha256": "6a51c1566f77676a47481b41a11918f4d54a7db878baa53372498b629e2589df",
+      "bytes": 83622,
+      "width": 2048,
+      "height": 1024,
+      "transformation": "Resize to 2048px wide (Lanczos3); WebP quality 85; no geographic or colour edits",
+      "credit": "Solar System Scope / INOVE",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "file": "/assets/map/earth-surface-1k.webp",
+      "source_file": "/assets/map/earth-surface-4k.jpg",
+      "source_sha256": "0796f4211c209d1afe9e26a06a283cdc21434430a780a25457b2417568a8591e",
+      "sha256": "8ac5a3176d83adf53e66e5d7b662d6454ca7b71742a4dbfc8a7082cbad465764",
+      "bytes": 724218,
+      "width": 1024,
+      "height": 512,
+      "transformation": "Resize to 1024px wide (Lanczos3); WebP lossless RGB data; no geographic or colour edits",
+      "credit": "Solar System Scope / INOVE",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "file": "/assets/map/earth-flat-1k.webp",
+      "source_file": "/assets/map/earth-day-4k.jpg",
+      "source_sha256": "cd7712d3e891425d9948ea5ac18d3bb1e7e834ea038188587897e689a7b35d0f",
+      "sha256": "016d634c573575fb08eb71a9989c57b43f0348be6bda3ac3994ab6b9b858c860",
+      "bytes": 51134,
+      "width": 1024,
+      "height": 512,
+      "transformation": "Resize to 1024px wide (Lanczos3); WebP quality 85; no geographic or colour edits",
+      "credit": "Solar System Scope / INOVE",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    {
+      "file": "/assets/map/earth-day-1k.webp",
+      "source_file": "/assets/map/earth-day-4k.jpg",
+      "source_sha256": "cd7712d3e891425d9948ea5ac18d3bb1e7e834ea038188587897e689a7b35d0f",
+      "sha256": "016d634c573575fb08eb71a9989c57b43f0348be6bda3ac3994ab6b9b858c860",
+      "bytes": 51134,
+      "width": 1024,
+      "height": 512,
+      "transformation": "Resize to 1024px wide (Lanczos3); WebP quality 85; no geographic or colour edits",
+      "credit": "Solar System Scope / INOVE",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}
