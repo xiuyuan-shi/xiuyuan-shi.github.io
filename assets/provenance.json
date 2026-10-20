@@ -192,5 +192,18 @@
     "height": 512,
     "kind": "delivery derivative of the existing concept illustration; not historical evidence",
     "transformation": "Resize to at most 1024px wide (Lanczos3); WebP quality 82; no composition or colour edits"
+  },
+  {
+    "file": "/assets/map/earth-surface-1k-q90.webp",
+    "source_file": "/assets/map/earth-surface-4k.jpg",
+    "source_sha256": "0796f4211c209d1afe9e26a06a283cdc21434430a780a25457b2417568a8591e",
+    "sha256": "e63733805c3c55a6475daa7ce854109cf30386322b16f2d4439260d3ab64bed8",
+    "bytes": 161194,
+    "width": 1024,
+    "height": 512,
+    "transformation": "Resize to 1024px wide (Lanczos3); WebP quality 90 with smart chroma subsampling; compact surface data from the unchanged geographic source",
+    "credit": "Solar System Scope / INOVE",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/"
   }
 ]
