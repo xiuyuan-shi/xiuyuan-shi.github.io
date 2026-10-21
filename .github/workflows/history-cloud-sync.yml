@@ -1,17 +1,34 @@
 name: Mirror cloud history data
+run-name: ${{ inputs.automatic && format('Cloud history after {0}', inputs.parent_run) || inputs.arm_only && 'Cloud history timer initialization' || format('Cloud history {0}', github.event_name) }}
 on:
   schedule:
     - cron: '3/5 * * * *'
   workflow_dispatch:
+    inputs:
+      arm_only:
+        description: Initialize the cloud timer without mirroring data
+        type: boolean
+        default: false
+      automatic:
+        description: Started by the preceding cloud run
+        type: boolean
+        default: false
+      parent_run:
+        description: Previous cloud run ID for audit
+        type: string
+        default: ''
 permissions:
   contents: read
 concurrency:
-  group: history-pages
+  group: history-cloud-sync
   cancel-in-progress: false
 jobs:
   synchronize:
+    if: ${{ !inputs.arm_only }}
     runs-on: ubuntu-latest
     timeout-minutes: 20
+    environment:
+      name: cloud-history-timer
     permissions:
       contents: write
     outputs:
@@ -40,6 +57,9 @@ jobs:
     if: needs.synchronize.outputs.data_changed == 'true'
     needs: synchronize
     runs-on: ubuntu-latest
+    concurrency:
+      group: history-pages
+      cancel-in-progress: false
     permissions:
       contents: read
       pages: write
@@ -64,3 +84,16 @@ jobs:
       - name: Deploy data update without building the frontend
         id: deployment
         uses: actions/deploy-pages@d6db90164ac5ed86f2b6aed7e0febac5b3c0c03e
+  arm-next:
+    if: ${{ always() && !cancelled() }}
+    needs: [synchronize, deploy]
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write
+      contents: read
+    steps:
+      - name: Schedule the next cloud run with this job's temporary token
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh workflow run history-cloud-sync.yml --repo "$GITHUB_REPOSITORY" --ref main -f automatic=true -f parent_run="$GITHUB_RUN_ID"
