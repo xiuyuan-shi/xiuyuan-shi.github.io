@@ -96,4 +96,8 @@ jobs:
       - name: Schedule the next cloud run with this job's temporary token
         env:
           GH_TOKEN: ${{ github.token }}
-        run: gh workflow run history-cloud-sync.yml --repo "$GITHUB_REPOSITORY" --ref main -f automatic=true -f parent_run="$GITHUB_RUN_ID"
+        run: |
+          python3 - <<'PY' | gh api --method POST "repos/$GITHUB_REPOSITORY/actions/workflows/history-cloud-sync.yml/dispatches" --input -
+          import json, os
+          print(json.dumps({'ref': 'main', 'inputs': {'automatic': True, 'parent_run': os.environ['GITHUB_RUN_ID']}}))
+          PY
