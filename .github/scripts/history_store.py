@@ -145,6 +145,10 @@ class Store:
             self.db = sqlite3.connect((self.directory / 'history.sqlite3').as_uri() + '?mode=ro', uri=True, timeout=60)
             self.db.row_factory = sqlite3.Row
             self.db.execute('PRAGMA query_only=ON')
+            version=self.db.execute("SELECT value FROM metadata WHERE key='schema_version'").fetchone()
+            if not version or version[0]!=VERSION:
+                self.db.close()
+                raise ValueError('Unsupported archived history store version')
             return
         self.directory.mkdir(parents=True, exist_ok=True)
         self.db = sqlite3.connect(self.directory / 'history.sqlite3', timeout=60)

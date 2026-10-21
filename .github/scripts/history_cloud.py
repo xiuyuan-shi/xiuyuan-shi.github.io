@@ -55,7 +55,8 @@ class CloudClient:
     path=pathlib.Path(temporary)/'rows.jsonl'
     self.request('/table-export?'+urlencode({'table':table,'after':after}),output=path)
     footer=None
-    with path.open() as source:
+    with path.open('rb') as probe:compressed=probe.read(2)==b'\x1f\x8b'
+    with (gzip.open(path,'rt',encoding='utf-8') if compressed else path.open(encoding='utf-8')) as source:
      for line in source:
       row=json.loads(line)
       if set(row)=={'_history_export'}:footer=row['_history_export']
@@ -147,13 +148,22 @@ def main():
 if __name__=='__main__':main()
 
 
-def freeze_local_store(directory):
+def freeze_local_store(directory, expected=None):
  """Make the retired archive reject writes even from already-open connections."""
  directory=pathlib.Path(directory).resolve()
  db=sqlite3.connect(directory/'history.sqlite3',timeout=60)
+ db.row_factory=sqlite3.Row
  try:
   db.execute('BEGIN IMMEDIATE')
   names=[r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'")]
+  if expected is not None:
+   if set(names)!=set(expected):raise ValueError('Local schema changed; refresh the cloud migration before cutover')
+   for name in names:
+    info=list(db.execute('PRAGMA table_info("'+name.replace('"','""')+'")'))
+    keys=[r['name'] for r in sorted(info,key=lambda r:r['pk']) if r['pk']]
+    rows=[dict(r) for r in db.execute('SELECT * FROM "'+name+'" ORDER BY '+','.join('"'+k+'"' for k in keys))]
+    raw=json.dumps(rows,ensure_ascii=False,sort_keys=True,separators=(',',':'),allow_nan=False).encode()
+    if {'count':len(rows),'sha256':hashlib.sha256(raw).hexdigest()}!=expected[name]:raise ValueError('Local data changed after the migration snapshot; refresh the cloud before cutover')
   for name in names:
    quoted='"'+name.replace('"','""')+'"'
    for operation in ('INSERT','UPDATE','DELETE'):
