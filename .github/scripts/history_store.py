@@ -134,9 +134,18 @@ def blank_record(title, record_type='event'):
 
 
 class Store:
-    def __init__(self, root=ROOT, directory=None):
+    def __init__(self, root=ROOT, directory=None, read_only=False):
         self.root = Path(root).resolve()
         self.directory = Path(directory or self.root / 'content/store').resolve()
+        marker = self.directory / 'cloud-primary.json'
+        authority = json.loads(marker.read_text()) if marker.is_file() else {}
+        if authority.get('primary') == 'cloud' and not read_only:
+            raise RuntimeError('The primary history database is in the cloud; this SQLite is a read-only archive. Use ' + authority['origin'])
+        if read_only:
+            self.db = sqlite3.connect((self.directory / 'history.sqlite3').as_uri() + '?mode=ro', uri=True, timeout=60)
+            self.db.row_factory = sqlite3.Row
+            self.db.execute('PRAGMA query_only=ON')
+            return
         self.directory.mkdir(parents=True, exist_ok=True)
         self.db = sqlite3.connect(self.directory / 'history.sqlite3', timeout=60)
         self.db.row_factory = sqlite3.Row
@@ -552,7 +561,7 @@ def main():
     merge = sub.add_parser('merge')
     merge.add_argument('winner'); merge.add_argument('loser'); merge.add_argument('--reason', required=True)
     args = parser.parse_args()
-    store = Store(args.root)
+    store = Store(args.root, read_only=args.action in ('validate', 'status', 'export'))
     try:
         if args.action == 'sync':
             from history_ingest import sync

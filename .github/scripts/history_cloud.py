@@ -8,7 +8,7 @@ ORIGIN='https://wanguo-history-data-20261021.lucas865260.chatgpt.site'
 
 class CloudError(RuntimeError):
  def __init__(self,status,message='Cloud request failed'):
-  super().__init__(message+' (HTTP '+str(status)+')');self.status=status
+  super().__init__(message+' (HTTP '+str(status)+')');self.status=status;self.private_detail=None
 
 class CloudClient:
  def __init__(self,access_token,sync_token=None,admin_token=None,origin=ORIGIN):
@@ -34,7 +34,13 @@ class CloudClient:
    result=subprocess.run(args,input=('\n'.join(config)+'\n').encode(),capture_output=True,timeout=250)
    if result.returncode:raise CloudError(0,'Cloud HTTPS request did not complete; reconcile before retrying a write')
    status=int(result.stdout.decode() or 0)
-   if not 200<=status<300:raise CloudError(status)
+   if not 200<=status<300:
+    error=CloudError(status)
+    try:
+     detail=json.loads(target.read_text()).get('error')
+     if isinstance(detail,str):error.private_detail=detail[:1000]
+    except (ValueError,AttributeError):pass
+    raise error
    if output:return target
    if method=='HEAD':
     headers={line.split(':',1)[0].lower():line.split(':',1)[1].strip() for line in target.read_text().splitlines() if ':' in line}
@@ -130,3 +136,20 @@ def main():
   data=json.loads(args.input.read_text());result=c.transaction(data['operations'],data.get('version'))
  print(json.dumps(result,ensure_ascii=False,indent=2))
 if __name__=='__main__':main()
+
+
+def freeze_local_store(directory):
+ """Make the retired archive reject writes even from already-open connections."""
+ directory=pathlib.Path(directory).resolve()
+ db=sqlite3.connect(directory/'history.sqlite3',timeout=60)
+ try:
+  db.execute('BEGIN IMMEDIATE')
+  names=[r[0] for r in db.execute("SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%'")]
+  for name in names:
+   quoted='"'+name.replace('"','""')+'"'
+   for operation in ('INSERT','UPDATE','DELETE'):
+    trigger='"cloud_readonly_'+name.replace('"','""')+'_'+operation.lower()+'"'
+    db.execute('CREATE TRIGGER IF NOT EXISTS '+trigger+' BEFORE '+operation+' ON '+quoted+" BEGIN SELECT RAISE(ABORT,'Primary history database moved to the cloud; local archive is read-only'); END")
+  db.commit()
+ finally:db.close()
+ return {'protected_tables':len(names),'local_write_authority':False}

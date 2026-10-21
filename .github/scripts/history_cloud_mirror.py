@@ -52,6 +52,18 @@ def apply_release(root,release,prior):
   if path.relative_to(root).as_posix() not in keep:path.unlink()
  return keep
 
+def decide_sync(cloud_version,prior,repo_revision,live_revision,today):
+ return {'export':prior.get('cloud_version')!=cloud_version or bool(prior.get('public_revision') and repo_revision!=prior['public_revision']),
+         'deploy':bool(repo_revision and repo_revision!=live_revision),
+         'health':prior.get('last_checked_at','')[:10]!=today}
+
+def read_live_revision():
+ response=subprocess.run(['/usr/bin/curl','--fail','--silent','--show-error','--compressed','--max-time','30','https://xiuyuan-shi.github.io/api/history/version.json?cloud_verify='+str(time.time_ns())],capture_output=True,check=True)
+ manifest=json.loads(response.stdout)
+ revision=manifest.get('revision','')
+ if not re.fullmatch('[a-f0-9]{64}',revision):raise ValueError('Invalid current public data revision')
+ return revision
+
 def write_outputs(values):
  print(json.dumps(values,ensure_ascii=False),flush=True)
  if os.environ.get('GITHUB_OUTPUT'):
@@ -70,7 +82,9 @@ def main():
  # This is a disposable Actions checkout, never the user's working tree.
  git(root,'fetch','origin','main');git(root,'checkout','-B','cloud-history-sync','origin/main')
  prior=load(root/STATE);release=None
- if prior.get('cloud_version')!=initial['version']:
+ live_revision=read_live_revision()
+ decision=decide_sync(initial['version'],prior,load(root/VERSION_PATH).get('revision'),live_revision,utc()[:10])
+ if decision['export']:
   git(root,'sparse-checkout','disable')
   with tempfile.TemporaryDirectory(prefix='private-history-cloud-') as directory:
    store=pathlib.Path(directory)/'store'
@@ -82,8 +96,8 @@ def main():
  else:version=initial['version']
  old_public=load(root/VERSION_PATH)
  data_changed=bool(release and old_public.get('revision')!=release.data['revision'])
- if not data_changed and prior.get('cloud_version')==version and prior.get('last_checked_at','')[:10]==utc()[:10]:
-  write_outputs({'data_changed':False,'status':'unchanged'});return
+ if not release and not decision['health']:
+  write_outputs({'data_changed':decision['deploy'],'status':'deployment_retry' if decision['deploy'] else 'unchanged','data_commit':git(root,'rev-parse','HEAD')});return
  public_revision=release.data['revision'] if release else prior.get('public_revision')
  files=release.files if release else None
  for attempt in range(3):
@@ -91,14 +105,17 @@ def main():
   current=load(root/STATE)
   app=load(root/'public-release.json')
   if app.get('data_mode')!='live' or app.get('data_endpoint')!='/api/history/version.json':raise RuntimeError('Current frontend is not compatible with the versioned data API')
+  if not release and load(root/VERSION_PATH).get('revision')!=current.get('public_revision'):raise RuntimeError('Repository data changed during health update; reconcile on next cloud run')
   snapshots=apply_release(root,release,current) if release else current.get('snapshots',[])
   state={'schema_version':'1.0.0','cloud_version':version,'public_revision':public_revision,'snapshots':snapshots,'last_checked_at':utc(),'source':'private-cloud-d1','frontend_app_commit':app['app_commit']}
   path=root/STATE;path.parent.mkdir(parents=True,exist_ok=True);path.write_text(json.dumps(state,indent=2)+'\n')
   git(root,'add','--','api/history',STATE)
   changes=git(root,'diff','--cached','--name-only').splitlines()
-  if not changes:write_outputs({'data_changed':False,'status':'unchanged'});return
+  if not changes:
+   pending=load(root/VERSION_PATH).get('revision')!=live_revision
+   write_outputs({'data_changed':pending,'status':'deployment_retry' if pending else 'unchanged','data_commit':git(root,'rev-parse','HEAD')});return
   if any(not (n.startswith('api/history/') or n==STATE) for n in changes):raise RuntimeError('Cloud data publisher cannot change frontend files')
-  data_changed=any(n.startswith('api/history/') for n in changes)
+  data_changed=any(n.startswith('api/history/') for n in changes) or public_revision!=live_revision
   git(root,'config','user.name','github-actions[bot]');git(root,'config','user.email','41898282+github-actions[bot]@users.noreply.github.com')
   message=('data: mirror cloud history '+str(public_revision)[:12]) if data_changed else 'chore: record cloud history sync health'
   git(root,'commit','-m',message)
