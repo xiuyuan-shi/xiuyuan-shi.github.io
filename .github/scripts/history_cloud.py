@@ -49,12 +49,21 @@ class CloudClient:
  def status(self):return self.request('/status')
  def schema(self):return self.request('/schema')['tables']
  def rows(self,table,limit=100):
-  offset=0
+  after=0
   while True:
-   result=self.request('/rows?'+urlencode({'table':table,'offset':offset,'limit':limit}))
-   rows=result['rows']
-   if not rows:return
-   yield from rows;offset+=len(rows)
+   with tempfile.TemporaryDirectory(prefix='private-history-table-') as temporary:
+    path=pathlib.Path(temporary)/'rows.jsonl'
+    self.request('/table-export?'+urlencode({'table':table,'after':after}),output=path)
+    footer=None
+    with path.open() as source:
+     for line in source:
+      row=json.loads(line)
+      if set(row)=={'_history_export'}:footer=row['_history_export']
+      else:yield row
+    if footer is None:raise ValueError('Cloud table export was incomplete')
+    if footer['after'] is None:return
+    if footer['after']<=after:raise ValueError('Cloud export cursor did not advance')
+    after=footer['after']
  def upload(self,key,sha,path,check_existing=True):
   if file_hash(path)!=sha:raise ValueError('Local asset checksum mismatch')
   path=pathlib.Path(path)
