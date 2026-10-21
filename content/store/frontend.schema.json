@@ -1,0 +1,624 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:wanguo:history-http:1.0.0",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "scope",
+    "revision",
+    "counts",
+    "time_bounds",
+    "events",
+    "sources"
+  ],
+  "properties": {
+    "schema_version": {
+      "enum": [
+        "1.0.0"
+      ]
+    },
+    "scope": {
+      "enum": [
+        "local_database",
+        "public_database"
+      ]
+    },
+    "revision": {
+      "type": "string",
+      "pattern": "^[a-f0-9]{64}$"
+    },
+    "counts": {
+      "$ref": "#/$defs/Counts"
+    },
+    "time_bounds": {
+      "$ref": "#/$defs/TimeBounds"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/HistoryEntry"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/HistorySource"
+      }
+    }
+  },
+  "$defs": {
+    "Counts": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "canonical",
+        "unlinked",
+        "context",
+        "total",
+        "unknown_date"
+      ],
+      "properties": {
+        "canonical": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unlinked": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "context": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "total": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "unknown_date": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "TimeBounds": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "min_year",
+        "max_year"
+      ],
+      "properties": {
+        "min_year": {
+          "type": "integer"
+        },
+        "max_year": {
+          "type": "integer"
+        }
+      }
+    },
+    "HistoryTime": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "start_year",
+        "end_year",
+        "kind",
+        "precision",
+        "approximate",
+        "display"
+      ],
+      "properties": {
+        "start_year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "end_year": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "kind": {
+          "enum": [
+            "point",
+            "duration",
+            "dating_range",
+            "unknown"
+          ]
+        },
+        "precision": {
+          "type": "string"
+        },
+        "approximate": {
+          "type": "boolean"
+        },
+        "display": {
+          "type": "string"
+        }
+      }
+    },
+    "Coordinates": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "latitude",
+        "longitude",
+        "evidence_locator"
+      ],
+      "properties": {
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "evidence_locator": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "HistoryPlace": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "precision",
+        "role",
+        "coordinates"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "precision": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "coordinates": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/Coordinates"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        }
+      }
+    },
+    "HistoryImage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "src",
+        "sha256",
+        "caption",
+        "depiction_type",
+        "creator",
+        "credit",
+        "license",
+        "license_url",
+        "source_url",
+        "rights_revision_url",
+        "obligations"
+      ],
+      "properties": {
+        "src": {
+          "type": "string",
+          "pattern": "^/api/history/assets/AS-[a-f0-9]{64}(?:\\.(?:jpg|png|webp))?$"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "caption": {
+          "type": "string"
+        },
+        "depiction_type": {
+          "type": "string"
+        },
+        "creator": {
+          "type": "string"
+        },
+        "credit": {
+          "type": "string"
+        },
+        "license": {
+          "type": "string"
+        },
+        "license_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^https?://[^/@\\s]+(?:[/:?#]|$)"
+        },
+        "source_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^https?://[^/@\\s]+(?:[/:?#]|$)"
+        },
+        "rights_revision_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^https?://[^/@\\s]+(?:[/:?#]|$)"
+        },
+        "obligations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "HistoryCitation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "source_id",
+        "field",
+        "locator",
+        "block_sha256",
+        "status"
+      ],
+      "properties": {
+        "source_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "field": {
+          "type": "string"
+        },
+        "locator": {
+          "type": "string"
+        },
+        "block_sha256": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[a-f0-9]{64}$"
+        },
+        "status": {
+          "enum": [
+            "located",
+            "ocr_needs_review",
+            "context_only",
+            "link_only"
+          ]
+        }
+      }
+    },
+    "HistoryRelation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "target_event_id",
+        "type"
+      ],
+      "properties": {
+        "target_event_id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string"
+        }
+      }
+    },
+    "HistorySource": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "publisher",
+        "author",
+        "url",
+        "read_at",
+        "access_status",
+        "license",
+        "license_url",
+        "attribution"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "title": {
+          "type": "string"
+        },
+        "publisher": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^https?://[^/@\\s]+(?:[/:?#]|$)"
+        },
+        "read_at": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "access_status": {
+          "type": "string"
+        },
+        "license": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "license_url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^https?://[^/@\\s]+(?:[/:?#]|$)"
+        },
+        "attribution": {
+          "type": "string"
+        }
+      }
+    },
+    "HistoryEntry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "record_id",
+        "revision_id",
+        "entry_kind",
+        "review_status",
+        "content_status",
+        "title",
+        "summary",
+        "body",
+        "civilizations",
+        "categories",
+        "history_scope",
+        "record_type",
+        "notes",
+        "aliases",
+        "time",
+        "places",
+        "people",
+        "polities",
+        "images",
+        "citations",
+        "relations",
+        "map_reference",
+        "content_notice"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "record_id": {
+          "type": "string"
+        },
+        "revision_id": {
+          "type": "string"
+        },
+        "entry_kind": {
+          "enum": [
+            "canonical",
+            "unlinked",
+            "context"
+          ]
+        },
+        "review_status": {
+          "enum": [
+            "pending",
+            "reviewed",
+            "published"
+          ]
+        },
+        "content_status": {
+          "enum": [
+            "candidate",
+            "source_backed_draft",
+            "video_derived_draft",
+            "ocr_needs_review",
+            "context_only",
+            "blocked",
+            "evidence_missing"
+          ]
+        },
+        "title": {
+          "type": "string",
+          "minLength": 1
+        },
+        "summary": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "body": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "civilizations": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "categories": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "政治",
+              "科技",
+              "文化",
+              "艺术",
+              "宗教",
+              "人物"
+            ]
+          }
+        },
+        "history_scope": {
+          "enum": [
+            "china",
+            "world",
+            "multiple",
+            "unknown"
+          ]
+        },
+        "record_type": {
+          "type": "string"
+        },
+        "notes": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "time": {
+          "$ref": "#/$defs/HistoryTime"
+        },
+        "places": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/HistoryPlace"
+          }
+        },
+        "people": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "polities": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/HistoryImage"
+          }
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/HistoryCitation"
+          }
+        },
+        "relations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/HistoryRelation"
+          }
+        },
+        "map_reference": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/HistoryMap"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "content_notice": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      }
+    },
+    "HistoryMap": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "label",
+        "kind",
+        "precision",
+        "role",
+        "note",
+        "latitude",
+        "longitude",
+        "source_title",
+        "source_url",
+        "license_url",
+        "checked_at"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "kind": {
+          "type": "string"
+        },
+        "precision": {
+          "type": "string"
+        },
+        "role": {
+          "type": "string"
+        },
+        "note": {
+          "type": "string"
+        },
+        "latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "source_title": {
+          "type": "string"
+        },
+        "source_url": {
+          "type": "string",
+          "pattern": "^https?://[^/@\\s]+(?:[/:?#]|$)"
+        },
+        "license_url": {
+          "type": "string",
+          "pattern": "^https?://[^/@\\s]+(?:[/:?#]|$)"
+        },
+        "checked_at": {
+          "type": "string"
+        }
+      }
+    }
+  }
+}
