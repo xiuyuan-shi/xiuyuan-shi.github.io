@@ -1,0 +1,1 @@
+import{i as e,n as t,r as n,t as r,u as i}from"./DatabaseExplorer-zB-cFLPw.js";var a=i(e(),1),o=n();(0,a.createRoot)(document.getElementById(`root`)).render((0,o.jsx)(t,{children:(0,o.jsx)(r,{})}));
