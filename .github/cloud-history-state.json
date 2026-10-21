@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0.0",
+  "cloud_version": "608bb801-44e0-4726-b0bc-adae6624c3dc:57218",
+  "public_revision": "de9a7cef2529a8181be0c63331814e060b35411c15e0a9607c285cb93f1e57e1",
+  "snapshots": [
+    "api/history/snapshots/de9a7cef2529a8181be0c63331814e060b35411c15e0a9607c285cb93f1e57e1.json",
+    "api/history/snapshots/0c802998bd3560e3985f1256f4aa9409960ddc44dc02e9717797ddac860e9205.json",
+    "api/history/snapshots/a9e6cc040ded03f569262d4d7e21dbafd3b8b28883d0f845e6fd2f351c02034b.json"
+  ],
+  "last_checked_at": "2026-10-21T14:35:43+00:00",
+  "source": "private-cloud-d1",
+  "frontend_app_commit": "033c3a54db74f3fad35e5ef72f971b6f4f8cc3a0"
+}
