@@ -12,6 +12,7 @@ from history_api import connect, default_store, image_type, project
 from history_store import ROOT, dump, validate_contract
 
 PRIVATE = re.compile(r'/Users/|/home/|/workspace/|BEGIN (?:RSA |EC )?PRIVATE KEY|(?:access_token|refresh_token|appSecret)"\s*:\s*"[^"\s]+', re.I)
+PUBLIC_URL = re.compile(r'https?://[A-Za-z0-9._~:/?#\[\]@!$&\x27()*+,;=%-]+')
 EXTENSIONS = {'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp'}
 VERSION_PATH = 'api/history/version.json'
 
@@ -34,7 +35,28 @@ def body_permitted(record, metadata):
 
 def media_permitted(media):
     rights = media['rights']
-    return rights.get('public_use') is not False and rights.get('status') not in ('local_research_only', 'reuse_permission_unverified') and open_license(rights.get('license'))
+    usage = rights.get('usage_basis') or {}
+    nasa_information = (usage.get('kind') == 'nasa_educational_information' and
+        usage.get('guidelines_url') == 'https://www.nasa.gov/nasa-brand-center/images-and-media/' and
+        str(usage.get('source_page', '')).startswith('https://www.nasa.gov/image-article/') and
+        usage.get('image_credit') == 'NASA' and usage.get('third_party_credit') is False and
+        usage.get('reviewed_on') and rights.get('public_use') is True)
+    return rights.get('public_use') is not False and rights.get('status') not in ('local_research_only', 'reuse_permission_unverified') and (open_license(rights.get('license')) or bool(nasa_information))
+
+
+def private_material(value):
+    # A public HTTPS route such as /home/journal is not a local home folder.
+    # Check every remaining character, including credentials and local paths in
+    # URL query parameters, rather than weakening the publication gate.
+    def redact_url(match):
+        from urllib.parse import urlsplit
+        url = match.group()
+        parts = urlsplit(url)
+        if parts.username or parts.password or PRIVATE.search(parts.query):
+            return url
+        return '[public-url]'
+    return PRIVATE.search(PUBLIC_URL.sub(redact_url, value)) or re.search(
+        r'BEGIN (?:RSA |EC )?PRIVATE KEY|(?:access_token|refresh_token|appSecret)"\s*:\s*"[^"\s]+', value, re.I)
 
 
 def public_locator(value):
@@ -119,7 +141,7 @@ def build_public(directory, retain_images=True):
     data.pop('revision')
     data['revision'] = hashlib.sha256(dump(data).encode()).hexdigest()
     raw = dump(data).encode()
-    if PRIVATE.search(raw.decode()):
+    if private_material(raw.decode()):
         raise ValueError('Private path or credential material in public response')
     validate_contract(data, json.loads((ROOT / 'content/store/frontend.schema.json').read_text()))
     snapshot = 'api/history/snapshots/' + data['revision'] + '.json'
