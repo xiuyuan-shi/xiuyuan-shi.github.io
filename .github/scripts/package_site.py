@@ -7,6 +7,21 @@ import shutil
 
 API_FILE = re.compile(r'api/history/(?:version\.json|snapshots/[a-f0-9]{64}\.json|assets/AS-[a-f0-9]{64}\.(?:jpg|png|webp))$')
 PRIVATE = re.compile(r'/Users/|/home/|/workspace/|BEGIN (?:RSA |EC )?PRIVATE KEY|(?:access_token|refresh_token|appSecret)"\s*:\s*"[^"\s]+', re.I)
+PUBLIC_URL = re.compile(r'https?://[A-Za-z0-9._~:/?#\[\]@!$&()*+,;=%-]+')
+
+
+def private_material(value):
+    # Public web routes are not local folders; credential text and local paths
+    # outside a URL (or inside its query) still prevent publication.
+    def redact_url(match):
+        from urllib.parse import urlsplit
+        url = match.group()
+        parts = urlsplit(url)
+        if parts.username or parts.password or PRIVATE.search(parts.query):
+            return url
+        return '[public-url]'
+    return PRIVATE.search(PUBLIC_URL.sub(redact_url, value)) or re.search(
+        r'BEGIN (?:RSA |EC )?PRIVATE KEY|(?:access_token|refresh_token|appSecret)"\s*:\s*"[^"\s]+', value.replace('\\"', '"'), re.I)
 
 
 def eligible(name):
@@ -62,7 +77,7 @@ def package(source, output):
         name = path.relative_to(source).as_posix()
         if not eligible(name) or (not API_FILE.fullmatch(name) and name not in approved_app):
             continue
-        if path.suffix in ('.json', '.html', '.js', '.css', '.svg', '.txt') and PRIVATE.search(path.read_text()):
+        if path.suffix in ('.json', '.html', '.js', '.css', '.svg', '.txt') and private_material(path.read_text()):
             raise ValueError('Private material in site artifact')
         chosen.append((path, name))
     if output.exists():

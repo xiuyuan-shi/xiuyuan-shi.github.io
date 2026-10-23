@@ -12,7 +12,7 @@ from history_api import connect, default_store, image_type, project
 from history_store import ROOT, dump, validate_contract
 
 PRIVATE = re.compile(r'/Users/|/home/|/workspace/|BEGIN (?:RSA |EC )?PRIVATE KEY|(?:access_token|refresh_token|appSecret)"\s*:\s*"[^"\s]+', re.I)
-PUBLIC_URL = re.compile(r'https?://[A-Za-z0-9._~:/?#\[\]@!$&\x27()*+,;=%-]+')
+PUBLIC_URL = re.compile(r'https?://[A-Za-z0-9._~:/?#\[\]@!$&()*+,;=%-]+')
 EXTENSIONS = {'image/jpeg': 'jpg', 'image/png': 'png', 'image/webp': 'webp'}
 VERSION_PATH = 'api/history/version.json'
 
@@ -56,7 +56,7 @@ def private_material(value):
             return url
         return '[public-url]'
     return PRIVATE.search(PUBLIC_URL.sub(redact_url, value)) or re.search(
-        r'BEGIN (?:RSA |EC )?PRIVATE KEY|(?:access_token|refresh_token|appSecret)"\s*:\s*"[^"\s]+', value, re.I)
+        r'BEGIN (?:RSA |EC )?PRIVATE KEY|(?:access_token|refresh_token|appSecret)"\s*:\s*"[^"\s]+', value.replace('\\"', '"'), re.I)
 
 
 def public_locator(value):
