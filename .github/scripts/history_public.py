@@ -10,6 +10,7 @@ import re
 
 from history_api import connect, default_store, image_type, project
 from history_store import ROOT, dump, validate_contract
+from history_reader import build_reader
 
 PRIVATE = re.compile(r'/Users/|/home/|/workspace/|BEGIN (?:RSA |EC )?PRIVATE KEY|(?:access_token|refresh_token|appSecret)"\s*:\s*"[^"\s]+', re.I)
 PUBLIC_URL = re.compile(r'https?://[A-Za-z0-9._~:/?#\[\]@!$&()*+,;=%-]+')
@@ -148,9 +149,11 @@ def build_public(directory, retain_images=True):
     files[snapshot] = raw
     manifest = {'schema_version': '1.0.0', 'revision': data['revision'], 'url': '/' + snapshot,
                 'sha256': hashlib.sha256(raw).hexdigest(), 'bytes': len(raw)}
+    reader_files, manifest['reader'], reader = build_reader(data)
+    files.update(reader_files)
     files[VERSION_PATH] = dump(manifest).encode()
     report.update(counts=data['counts'], public_images=len({i['src'] for e in data['events'] for i in e['images']}),
-                  snapshot_bytes=len(raw), revision=data['revision'])
+                  snapshot_bytes=len(raw), revision=data['revision'], reader_catalog_bytes=reader['catalog']['bytes'], reader_windows=len(reader['windows']))
     return PublicRelease(data, files, manifest, report)
 
 

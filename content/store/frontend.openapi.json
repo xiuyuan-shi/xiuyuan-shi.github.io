@@ -1,0 +1,260 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "万国同卷本地只读历史接口",
+    "version": "1.1.0",
+    "description": "云端主库的公开只读投影，保留兼容的完整快照；读者按时段优先、搜索目录随后、详情按需读取。"
+  },
+  "paths": {
+    "/api/history": {
+      "get": {
+        "operationId": "getHistory",
+        "description": "单个SQLite只读事务中的全部当前节点与活跃未对齐来源；ETag随数据变化。",
+        "parameters": [
+          {
+            "in": "header",
+            "name": "If-None-Match",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "当前内容",
+            "headers": {
+              "ETag": {
+                "schema": {
+                  "type": "string"
+                }
+              }
+            },
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./frontend.schema.json"
+                }
+              }
+            }
+          },
+          "304": {
+            "description": "内容未变化"
+          },
+          "503": {
+            "description": "库不可读；不回退旧试用清单"
+          }
+        }
+      }
+    },
+    "/api/history/assets/{asset_id}": {
+      "get": {
+        "operationId": "getHistoryImage",
+        "description": "只返回当前活跃记录引用、哈希正确的JPEG/PNG/WebP。",
+        "parameters": [
+          {
+            "name": "asset_id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^AS-[a-f0-9]{64}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "图片二进制"
+          },
+          "404": {
+            "description": "未引用、缺失、非图片或哈希不符"
+          }
+        }
+      }
+    },
+    "/api/history/version.json": {
+      "get": {
+        "operationId": "getPublicHistoryVersion",
+        "description": "每15秒轮询轻量版本；可选reader指向不可变渐进加载清单，带url、sha256、bytes。缺少reader时使用兼容完整快照。",
+        "responses": {
+          "200": {
+            "description": "revision、url、sha256与bytes"
+          }
+        }
+      }
+    },
+    "/api/history/snapshots/{revision}.json": {
+      "get": {
+        "operationId": "getPublicHistorySnapshot",
+        "parameters": [
+          {
+            "name": "revision",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "不可变公开投影",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./frontend.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/history/reader/{revision}/manifest.json": {
+      "get": {
+        "operationId": "getReaderManifest",
+        "description": "不可变目录：50年窗口与SHA256(id)前两位详情分桶的资源描述符；只含非candidate记录。",
+        "parameters": [
+          {
+            "name": "revision",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Immutable verified resource",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./reader.schema.json"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "版本或分片不存在"
+          }
+        }
+      }
+    },
+    "/api/history/reader/{revision}/catalog.json": {
+      "get": {
+        "operationId": "getReaderCatalog",
+        "description": "全部可见身份、搜索字段、时间、简介与公开配图；正文、证据和来源元数据按需取。",
+        "parameters": [
+          {
+            "name": "revision",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Immutable verified resource",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./frontend.schema.json"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "版本或分片不存在"
+          }
+        }
+      }
+    },
+    "/api/history/reader/{revision}/windows/{window}.json": {
+      "get": {
+        "operationId": "getReaderWindow",
+        "description": "与50年窗口相交的全部已定年记录（持续过程保留区间），使用全局时间边界。",
+        "parameters": [
+          {
+            "name": "revision",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          {
+            "name": "window",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "multipleOf": 50
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Immutable verified resource",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./frontend.schema.json"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "版本或分片不存在"
+          }
+        }
+      }
+    },
+    "/api/history/reader/{revision}/details/{bucket}.json": {
+      "get": {
+        "operationId": "getReaderDetails",
+        "description": "按SHA256(UTF8(id))前两位分桶的完整许可正文、字段证据与来源；只含本桶关系，跨桶关系由全目录保留。",
+        "parameters": [
+          {
+            "name": "revision",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{64}$"
+            }
+          },
+          {
+            "name": "bucket",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "pattern": "^[a-f0-9]{2}$"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Immutable verified resource",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "./frontend.schema.json"
+                }
+              }
+            }
+          },
+          "404": {
+            "description": "版本或分片不存在"
+          }
+        }
+      }
+    }
+  }
+}

@@ -5,7 +5,7 @@ from pathlib import Path
 import re
 import shutil
 
-API_FILE = re.compile(r'api/history/(?:version\.json|snapshots/[a-f0-9]{64}\.json|assets/AS-[a-f0-9]{64}\.(?:jpg|png|webp))$')
+API_FILE = re.compile(r'api/history/(?:version\.json|snapshots/[a-f0-9]{64}\.json|assets/AS-[a-f0-9]{64}\.(?:jpg|png|webp)|reader/[a-f0-9]{64}/(?:manifest\.json|catalog\.json|windows/-?\d+\.json|details/[a-f0-9]{2}\.json))$')
 PRIVATE = re.compile(r'/Users/|/home/|/workspace/|BEGIN (?:RSA |EC )?PRIVATE KEY|(?:access_token|refresh_token|appSecret)"\s*:\s*"[^"\s]+', re.I)
 PUBLIC_URL = re.compile(r'https?://[A-Za-z0-9._~:/?#\[\]@!$&()*+,;=%-]+')
 
@@ -58,6 +58,26 @@ def package(source, output):
             name = image['src'].lstrip('/')
             if not API_FILE.fullmatch(name) or hashlib.sha256((source / name).read_bytes()).hexdigest() != image['sha256']:
                 raise ValueError('Public image hash mismatch')
+    if version.get('reader'):
+        prefix = '/api/history/reader/' + version['revision'] + '/'
+        def checked_ref(ref, expected):
+            if ref.get('url') != prefix + expected or not API_FILE.fullmatch(ref['url'].lstrip('/')):
+                raise ValueError('Invalid reader resource path')
+            raw = (source / ref['url'].lstrip('/')).read_bytes()
+            if len(raw) != ref['bytes'] or hashlib.sha256(raw).hexdigest() != ref['sha256']:
+                raise ValueError('Reader resource hash mismatch')
+            return json.loads(raw)
+        reader = checked_ref(version['reader'], 'manifest.json')
+        if reader['schema_version'] != '1.0.0' or reader['revision'] != version['revision'] or reader['window_years'] != 50:
+            raise ValueError('Invalid reader manifest')
+        catalog = checked_ref(reader['catalog'], 'catalog.json')
+        if catalog['counts']['total'] != len([e for e in data['events'] if e['content_status'] != 'candidate']):
+            raise ValueError('Reader catalogue count mismatch')
+        for group in ('windows', 'details'):
+            for key, ref in reader[group].items():
+                value = checked_ref(ref, group + '/' + key + '.json')
+                if value['revision'] != version['revision'] or any(e['content_status'] == 'candidate' for e in value['events']):
+                    raise ValueError('Invalid reader content scope')
     release = json.loads((source / 'public-release.json').read_text())
     for name, digest in release['files'].items():
         if not eligible(name) or hashlib.sha256((source / name).read_bytes()).hexdigest() != digest:

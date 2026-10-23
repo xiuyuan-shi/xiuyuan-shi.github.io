@@ -6,6 +6,7 @@ from datetime import datetime,timezone
 from history_cloud import from_environment,file_hash
 from history_public import build_public,media_permitted,VERSION_PATH
 from history_api import project,connect
+from history_reader import API_PATTERN
 
 REPO='xiuyuan-shi/xiuyuan-shi.github.io'
 STATE='.github/cloud-history-state.json'
@@ -39,7 +40,10 @@ def hydrate(client,store,checkout):
 def apply_release(root,release,prior):
  desired=release.files
  for name,raw in desired.items():
-  if not re.fullmatch(r'api/history/(?:version\.json|snapshots/[a-f0-9]{64}\.json|assets/AS-[a-f0-9]{64}\.(?:jpg|png|webp))',name):raise ValueError('Unexpected public output')
+  if not re.fullmatch(API_PATTERN,name):raise ValueError('Unexpected public output')
+  path=root/name
+  if '/reader/' in name and path.is_file() and path.read_bytes()!=raw:raise ValueError('Immutable reader resource changed without a new revision')
+ for name,raw in desired.items():
   path=root/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_bytes(raw)
  for path in (root/'api/history/assets').glob('*'):
   if path.is_file() and path.relative_to(root).as_posix() not in desired:path.unlink()
@@ -50,6 +54,8 @@ def apply_release(root,release,prior):
  keep=[current,*previous[:2]]
  for path in (root/'api/history/snapshots').glob('*.json'):
   if path.relative_to(root).as_posix() not in keep:path.unlink()
+ for path in (root/'api/history/reader').glob('*'):
+  if path.is_dir() and re.fullmatch('[a-f0-9]{64}',path.name) and 'api/history/snapshots/'+path.name+'.json' not in keep:shutil.rmtree(path)
  return keep
 
 def decide_sync(cloud_version,prior,repo_revision,live_revision,today):
@@ -84,6 +90,7 @@ def main():
  prior=load(root/STATE);release=None
  live_revision=read_live_revision()
  decision=decide_sync(initial['version'],prior,load(root/VERSION_PATH).get('revision'),live_revision,utc()[:10])
+ if not load(root/VERSION_PATH).get('reader'):decision['export']=True
  if decision['export']:
   git(root,'sparse-checkout','disable')
   with tempfile.TemporaryDirectory(prefix='private-history-cloud-') as directory:

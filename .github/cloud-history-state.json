@@ -9,5 +9,6 @@
   ],
   "last_checked_at": "2026-10-23T14:28:02+00:00",
   "source": "private-cloud-d1",
-  "frontend_app_commit": "a998d480a93b072e2bb172487631b90ab2cc4bf0"
+  "frontend_app_commit": "b3f83b977405c34bf98276e03a46295ef9478e03",
+  "reader_schema_version": "1.0.0"
 }
