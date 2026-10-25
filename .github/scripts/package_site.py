@@ -32,9 +32,9 @@ def eligible(name):
     if name.startswith('assets/'):
         return not any(p.startswith('.') for p in name.split('/')) and not name.endswith(('.provenance.json', '.txt', '.map', '.key', '.pem', '.sqlite3', '.db'))
     if name.startswith('audio/'):
-        return name == 'audio/dream-of-hexi-corridor-96k.mp3'
+        return name in ('audio/dream-of-hexi-corridor-96k.mp3', 'audio/between-worlds-roger-subirana-96k.mp3')
     if name.startswith('data/'):
-        return name.split('/', 1)[1] in ('history-trial.json', 'history-map.json', 'content-receipt.json', 'map-receipt.json', 'music-source.json')
+        return name.split('/', 1)[1] in ('history-trial.json', 'history-map.json', 'content-receipt.json', 'map-receipt.json', 'music-source.json', 'music-source-hexi.json')
     return name in ('index.html', 'explore.html', 'prototype.html', 'favicon.svg', 'public-release.json', 'github-pages-release.json',
                     'explore/index.html', 'prototype/index.html', 'licenses/Inter.txt', 'licenses/Roboto.txt', 'licenses/Three.txt')
 
