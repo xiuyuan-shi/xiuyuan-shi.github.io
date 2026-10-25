@@ -1,12 +1,12 @@
 {
   "schema_version": "1.0.0",
   "provider": "github-pages-user-site",
-  "app_commit": "86755e37ed647b2a6e4e645d22a2a63b219071c6",
-  "public_release_sha256": "4ef15529e8ec2d355d212ea5ee24bf5976df00c21b6312be303d5cd7afe4010b",
+  "app_commit": "9c4d4936f26199680d442dd41809dd47132d6f38",
+  "public_release_sha256": "800d7f3ced8c55e4469c2190168cc92391f30cc35c0e9baca81d051cf85f5a06",
   "original_files_unchanged": true,
   "aliases": {
-    "explore/index.html": "5dc0858f7ff44d64b9a418eddbcd4e292953e0a9ea7cb074196741836e987f35",
-    "prototype/index.html": "5ed01bbc7cef877e72b4da58ff8b515522ffa3f3ec3cdd70642cf4a893058a2a"
+    "explore/index.html": "197b19cb300b69ae544ddcdc9a00eb319d3c2520876c60a781054ad3afa2bfb4",
+    "prototype/index.html": "f83c0d8e21dba3c79ab32c27b4e92775da5706fc3aa03d518c09d53197c83617"
   },
   "original_file_count": 113
 }
