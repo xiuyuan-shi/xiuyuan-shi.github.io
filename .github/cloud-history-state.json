@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0.0",
-  "cloud_version": "608bb801-44e0-4726-b0bc-adae6624c3dc:196148",
-  "public_revision": "c85df265acfdd040d1975367cc28f74268c04536e489670150a2e09533e7828c",
+  "cloud_version": "608bb801-44e0-4726-b0bc-adae6624c3dc:196738",
+  "public_revision": "dcb2ca39b8c0beb63348d0f688539f7f1fb78f0ad53e3c7e839e6be7685abd52",
   "snapshots": [
+    "api/history/snapshots/dcb2ca39b8c0beb63348d0f688539f7f1fb78f0ad53e3c7e839e6be7685abd52.json",
     "api/history/snapshots/c85df265acfdd040d1975367cc28f74268c04536e489670150a2e09533e7828c.json",
-    "api/history/snapshots/82eb5e4f0662b7295f2edf8df1dfbc1b87529f8ffd3687442fcd88c9547f2156.json",
-    "api/history/snapshots/97afe68b0efaaefd8288dd4827e5691d8e79754052ab8f2ad75532a627eddbfc.json"
+    "api/history/snapshots/82eb5e4f0662b7295f2edf8df1dfbc1b87529f8ffd3687442fcd88c9547f2156.json"
   ],
-  "last_checked_at": "2026-11-07T00:07:52+00:00",
+  "last_checked_at": "2026-11-07T13:01:12+00:00",
   "source": "private-cloud-d1",
   "frontend_app_commit": "1f0e9386d3c2404ed64edbe1b6a081445232480d"
 }
